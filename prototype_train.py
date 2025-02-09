@@ -1,36 +1,34 @@
 import torch
 from transformers import BartForConditionalGeneration, BartTokenizer, Trainer, TrainingArguments
-from datasets import Dataset
-import json
+from datasets import load_dataset
 
-# Load your English-Prolog pairs in JSON format
-data = json.load(open("prototype.json", "r"))
+# Load the WikiAuto dataset with trust_remote_code=True
+dataset = load_dataset("wiki_auto", trust_remote_code=True)
 
-# Convert the data to a Hugging Face dataset
-dataset = Dataset.from_dict({
-    'input_text': [item['english'] for item in data],
-    'target_text': [item['prolog'] for item in data]
-})
+# Print the dataset structure to understand its keys
+print(dataset)
 
 # Load the BART model and tokenizer from Hugging Face
-model_name = "facebook/bart-large"  # You can use other BART variants as well
+model_name = "facebook/bart-large"
 model = BartForConditionalGeneration.from_pretrained(model_name)
 tokenizer = BartTokenizer.from_pretrained(model_name)
 
 # Tokenize the dataset
 def tokenize_function(examples):
-    return tokenizer(examples['input_text'], padding='max_length', truncation=True)
-
-tokenized_datasets = dataset.map(tokenize_function, batched=True)
-
-# Prepare the inputs and labels
-def preprocess_data(examples):
-    inputs = tokenizer(examples['input_text'], padding='max_length', truncation=True)
-    targets = tokenizer(examples['target_text'], padding='max_length', truncation=True)
+    # Flatten the list of sentences
+    normal_articles = [" ".join(article['normal_article_content']['normal_sentence']) for article in examples['normal']]
+    simple_articles = [" ".join(article['simple_article_content']['simple_sentence']) for article in examples['simple']]
+    
+    # Ensure the lengths match
+    assert len(normal_articles) == len(simple_articles), "Mismatch in the number of normal and simple sentences"
+    
+    # Tokenize the sentences
+    inputs = tokenizer(normal_articles, padding='max_length', truncation=True, max_length=512)
+    targets = tokenizer(simple_articles, padding='max_length', truncation=True, max_length=512)
     inputs['labels'] = targets['input_ids']
     return inputs
 
-tokenized_datasets = tokenized_datasets.map(preprocess_data, batched=True)
+tokenized_datasets = dataset.map(tokenize_function, batched=True, remove_columns=dataset['part_1'].column_names)
 
 # Define training arguments
 training_args = TrainingArguments(
@@ -43,23 +41,31 @@ training_args = TrainingArguments(
     weight_decay=0.01,               # Weight decay for optimization
     logging_dir='./logs',            # Directory for logs
     logging_steps=10,
+    save_steps=200,                  # Save checkpoint every 200 steps
+    save_total_limit=3,              # Limit the total amount of checkpoints
+    report_to="none",                # Disable reporting to avoid errors if no logging service is set up
 )
 
 # Initialize the Trainer
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=tokenized_datasets,
-    eval_dataset=tokenized_datasets,  # You can split the dataset into train and eval if needed
+    train_dataset=tokenized_datasets['part_1'],
+    eval_dataset=tokenized_datasets['part_2'],  # You can split the dataset into train and eval if needed
 )
 
+# Move model to GPU if available
+if torch.cuda.is_available():
+    model.to('cuda')
+
+# Specify the path to the checkpoint directory
+checkpoint_path = './results/checkpoint-200'  # Replace with the actual checkpoint path
+
 # Fine-tune the model
-trainer.train()
+trainer.train(resume_from_checkpoint=checkpoint_path)
 
 # Save the model after fine-tuning
 model.save_pretrained('./fine_tuned_bart')
 tokenizer.save_pretrained('./fine_tuned_bart')
 
 print("Model fine-tuned and saved successfully!")
-
-
