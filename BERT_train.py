@@ -37,7 +37,7 @@ texts = [
     "Where is the Eiffel Tower located?",
     "Who is Mary's Mother?",
 ]
-labels = [0, 1, 2, 3, 4, 5]  # Corresponding to key-query pairs
+labels = [0, 1, 2, 3]  # Corresponding to key-query pairs
 label_map = {0: 'key:John query:Parent', 1: 'key:Arson query:Punishment', 2: 'key:EiffelTower query:Location', 3: 'key:Mary query:Parent'}
 
 # Save the label map to a file
