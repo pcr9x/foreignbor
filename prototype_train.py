@@ -41,7 +41,7 @@ training_args = TrainingArguments(
     weight_decay=0.01,               # Weight decay for optimization
     logging_dir='./logs',            # Directory for logs
     logging_steps=10,
-    save_steps=200,                  # Save checkpoint every 200 steps
+    save_steps=100,                  # Save checkpoint every 200 steps
     save_total_limit=3,              # Limit the total amount of checkpoints
     report_to="none",                # Disable reporting to avoid errors if no logging service is set up
 )
@@ -59,7 +59,7 @@ if torch.cuda.is_available():
     model.to('cuda')
 
 # Specify the path to the checkpoint directory
-checkpoint_path = './results/checkpoint-200'  # Replace with the actual checkpoint path
+checkpoint_path = './results/checkpoint-600'  # Replace with the actual checkpoint path
 
 # Fine-tune the model
 trainer.train(resume_from_checkpoint=checkpoint_path)
