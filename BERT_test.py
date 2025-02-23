@@ -35,5 +35,8 @@ print(classify_sentence("Where can I find the Eiffel tower??"))  # Output: key:E
 print(classify_sentence("What is the penalty for causing arson?"))  # Output: key:Arson query:Punishment
 print(classify_sentence("Who is the father of John?"))  # Output: key:John query:Parent
 print(classify_sentence("Who is Mary's Gaurdian?"))  # Output: key:Mary query:Parent
+print(classify_sentence("what do i get for causing a building fire"))  
+print(classify_sentence("i set a building alight, what will happen to me?"))
+print(classify_sentence("The house burned down, what will happen to me?"))
 
 

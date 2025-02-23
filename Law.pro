@@ -1,4 +1,4 @@
-% Definitions
+% section 5 Definitions
 definition(alien, "a natural person who is not of Thai nationality").
 definition(work, "engaging in work by exerting energy or using knowledge whether or not in consideration of wages or other benefits").
 definition(permit, "a work permit").
@@ -15,3 +15,4 @@ definition(minister, "the Minister having charge and control of the execution of
 
 % Query function
 query_definition(Term, Result) :- definition(Term, Result).
+
