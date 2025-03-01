@@ -6,13 +6,11 @@ from ..database import supabase
 router = APIRouter()
 
 
-# Pydantic model for request validation
 class AuthRequest(BaseModel):
     email: str
     password: str
 
 
-# Signup Route
 @router.post("/signup")
 async def signup(request: AuthRequest):
     try:
@@ -32,7 +30,6 @@ async def signup(request: AuthRequest):
         raise HTTPException(status_code=400, detail=str(e))
 
 
-# Login Route
 @router.post("/login")
 async def login(request: AuthRequest):
     try:
@@ -52,7 +49,6 @@ async def login(request: AuthRequest):
         raise HTTPException(status_code=400, detail=str(e))
 
 
-# Logout Route
 @router.post("/logout")
 async def logout():
     try:

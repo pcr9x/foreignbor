@@ -1,6 +1,6 @@
-# ForeignborGPT Setup Instructions
+# Foreignbor Setup Instructions
 
-This guide will help you set up the backend and frontend for the ForeignborGPT project.
+This guide will help you set up the backend and frontend for the Foreignbor project.
 
 ## Prerequisites
 
