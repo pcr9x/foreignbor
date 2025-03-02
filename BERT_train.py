@@ -56,10 +56,12 @@ texts = [
     "who is the holder of permit",
     "define holder of permit",
     "explain holder of permit",
+    "who is permit holder"
     #4
     "what is an employee",
     "define employee",
     "explain employee",
+    "who is an employee",
     #5
     "what is the fund",
     "define fund",
@@ -92,14 +94,39 @@ texts = [
     "who is the minister",
     "define minister",
     "explain minister"
+    #13
+    "what work can aliens do?",
+    "what is the regualtions for the works aliens can do?",
+    "what is the work that aliens can do?",
+    "what is section 7 of the act?",
+    "what work can standards aliens do?",
+    #14
+    "what is the reason for section 8?",
+    "why do i have to pay hiring levy",
+    "what is the hiring levy for?",
+    "why do i have to pay extra to hire alien workers?",
+    #15
+    "what is section 8 of the act?",
+    "do I have to pay levy when hiring alien workers?",
+    "what does section 8 of the act say?",
+    "what is the levy for hiring alien workers?",
+    "when do i have to pay levy for hiring alien workers?",
+    "do i have to pay anything when hiring alien workers?",
+    
+    #16
+    "what is the penalty for not paying the levy?",
+    "what will happen if i don't pay the levy",
+    "what is the punishment for not paying the levy?",
+    "what if i cannot pay levy on time?",
+    "what is the penalty for not paying the levy on time?",
 ]
 
 labels = [
     0, 0, 0, 0, 0,  # alien
     1, 1, 1, 1, 1, 1,  # work
     2, 2, 2, 2, 2,   # permit
-    3, 3, 3,        # holder_of_permit
-    4, 4, 4,        # employee
+    3, 3, 3, 3,        # holder_of_permit
+    4, 4, 4, 4,       # employee
     5, 5, 5,        # fund
     6, 6, 6,        # board
     7, 7, 7,        # committee
@@ -107,7 +134,11 @@ labels = [
     9, 9, 9,        # execution_of_official
     10, 10, 10,     # registrar
     11, 11, 11,     # director_general
-    12, 12, 12      # minister
+    12, 12, 12,     # minister
+    13, 13, 13, 13, 13,     # workable_work
+    14, 14, 14, 14,      # reason_sec8
+    15, 15, 15, 15, 15, 15,     # sec8
+    16, 16, 16, 16, 16,  # sec8_penalty
 ]
 
 label_map = {
@@ -123,7 +154,11 @@ label_map = {
     9: 'query_definition(execution_of_official, Result).',
     10: 'query_definition(registrar, Result).',
     11: 'query_definition(director_general, Result).',
-    12: 'query_definition(minister, Result).'
+    12: 'query_definition(minister, Result).',
+    13: 'sec7(Result).',
+    14: 'reason_sec8(Result).',
+    15: 'sec8(Result).',
+    16: 'sec8_penalty(standards, Result).',
 }
 
 # Save the label map to a file

@@ -13,6 +13,23 @@ definition(registrar, "the Director-General and the competent official appointed
 definition(director_general, "the Director-General of the Department of Employment").
 definition(minister, "the Minister having charge and control of the execution of this Act").
 
-% Query function
-query_definition(Term, Result) :- definition(Term, Result).
 
+% section 7
+sec7("The work that may be engaged by alien as well as
+    working area and period shall be prescribed by the Ministerial Regulation. In the
+    issuance of such Ministerial Regulation, regard shall be had to national security,
+    occupation opporfunity of Thais and demand for alien labour as necessary for the
+    development of the country. This may be different for aliens under section 13 and 14. 
+    This law section hoever is NOT applied to aliens working under section 12. ")
+
+% section 8
+reason_sec8("In order to limit the number of aliens other than skilled
+    workers or experts to engage in specific categories of works or in works with specific
+    nature in the Kingdom")
+
+sec8("Whoever desires to hire alien who are not experts or skilled workers, one shall notify
+    the registrar in the form as specified by the Director-General and shall pay the levy at
+    least three days prior to the date of hired contract")
+
+sec8_penalty("Whoever fails to comply with the provisions shall
+be liable to surcharge at the rate of one-time of the levy to be paid.")
