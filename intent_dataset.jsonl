@@ -1,0 +1,6 @@
+{"text":"What are my employment rights in the UK?","intent":"employment_rights"}
+{"text":"How much notice do I need to give before quitting?","intent":"termination_policy"}
+{"text":"what should i do if i want to quit my job","intent":"termination_policy"}
+{"text":"What is the minimum wage in the US?","intent":"employment_rights"}
+{"text":"How many hours can I legally work per week?","intent":"work_hours"}
+{"text":"whats the penalty for littering","intent":"littering_penalty"}
