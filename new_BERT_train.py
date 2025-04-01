@@ -37,10 +37,10 @@ class IntentClassifier:
     def train_model(self, train_dataset, eval_dataset=None):
         training_args = TrainingArguments(
             output_dir=self.output_dir,
-            evaluation_strategy="epoch" if eval_dataset else "no",
-            save_strategy="epoch",
+            evaluation_strategy="epoch" if eval_dataset else "no",  # Evaluate at the end of each epoch if eval_dataset is provided
+            save_strategy="no",  # Disable checkpoint saving
             per_device_train_batch_size=8,
-            num_train_epochs=100,
+            num_train_epochs=5,  # Reduce epochs to avoid overfitting
             weight_decay=0.01,
             logging_dir='./logs',
             logging_steps=10,
@@ -54,6 +54,10 @@ class IntentClassifier:
             compute_metrics=self.compute_metrics
         )
         self.trainer.train()
+        self.trainer.save_model(self.output_dir)  # Save the model
+        self.tokenizer.save_pretrained(self.output_dir)  # Save the tokenizer
+        with open(f"{self.output_dir}/IntentClassifierModel.json", "w") as f:
+            json.dump(self.label_encoder.classes_.tolist(), f)  # Save the label encoder
 
     def compute_metrics(self, p):
         preds = p.predictions.argmax(-1)
