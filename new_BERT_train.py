@@ -4,6 +4,8 @@ import pandas as pd
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer, pipeline
 from datasets import Dataset, load_dataset
 from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import KFold
+from sklearn.metrics import accuracy_score
 
 class IntentClassifier:
     def __init__(self, model_name="bert-base-uncased", dataset_path="dataset.json", output_dir="./results"):
@@ -16,36 +18,27 @@ class IntentClassifier:
         self.trainer = None
     
     def get_texts(self):
-        with open("dataset.json", "r") as f:
+        with open(self.dataset_path, "r") as f:
             raw_data = json.load(f)["data"]
         texts = [item["text"] for item in raw_data]
         return texts
 
     def load_dataset(self):
         with open(self.dataset_path, "r") as f:
-            raw_data = json.load(f)["data"]
-        df = pd.DataFrame(raw_data)
-        df.to_json("intent_dataset.jsonl", orient="records", lines=True)
-        dataset = load_dataset("json", data_files="intent_dataset.jsonl")
-        return dataset
+            raw_data = json.load(f)["data"]  # No "train" key
+        return raw_data  # Return the raw data directly as a list of dictionaries
 
     def tokenize_function(self, examples):
         return self.tokenizer(examples["text"], padding="max_length", truncation=True)
 
-    def prepare_data(self, dataset):
-        tokenized_datasets = dataset.map(self.tokenize_function, batched=True)
-        encoded_labels = self.label_encoder.fit_transform(dataset["train"]["intent"])
-        tokenized_datasets["train"] = tokenized_datasets["train"].add_column("labels", encoded_labels)
-        return tokenized_datasets
-
     def initialize_model(self, num_labels):
         self.model = AutoModelForSequenceClassification.from_pretrained(self.model_name, num_labels=num_labels)
 
-    def train_model(self, tokenized_datasets):
+    def train_model(self, train_dataset, eval_dataset=None):
         training_args = TrainingArguments(
             output_dir=self.output_dir,
-            evaluation_strategy="no",
-            save_strategy="no",
+            evaluation_strategy="epoch" if eval_dataset else "no",
+            save_strategy="epoch",
             per_device_train_batch_size=8,
             num_train_epochs=100,
             weight_decay=0.01,
@@ -56,9 +49,15 @@ class IntentClassifier:
         self.trainer = Trainer(
             model=self.model,
             args=training_args,
-            train_dataset=tokenized_datasets["train"],
+            train_dataset=train_dataset,
+            eval_dataset=eval_dataset,
+            compute_metrics=self.compute_metrics
         )
         self.trainer.train()
+
+    def compute_metrics(self, p):
+        preds = p.predictions.argmax(-1)
+        return {"accuracy": accuracy_score(p.label_ids, preds)}
 
     def save_model(self):
         self.trainer.save_model(self.output_dir)
@@ -75,19 +74,66 @@ class IntentClassifier:
         predicted_label = label_map[prediction[0]["label"]]
         return predicted_label
 
+    def cross_validate(self, dataset, n_splits=5):
+        kf = KFold(n_splits=n_splits, shuffle=True, random_state=42)
+        texts = [item["text"] for item in dataset]
+        intents = [item["intent"] for item in dataset]
+        
+        # Fit the LabelEncoder once on the entire dataset
+        self.label_encoder.fit(intents)
+        results = []
+
+        for fold, (train_index, val_index) in enumerate(kf.split(texts)):
+            print(f"Starting fold {fold + 1}/{n_splits}...")
+
+            # Split the dataset into training and validation sets
+            train_texts = [texts[i] for i in train_index]
+            val_texts = [texts[i] for i in val_index]
+            train_intents = [intents[i] for i in train_index]
+            val_intents = [intents[i] for i in val_index]
+
+            # Create datasets for this fold
+            train_dataset = Dataset.from_dict({"text": train_texts, "intent": train_intents})
+            val_dataset = Dataset.from_dict({"text": val_texts, "intent": val_intents})
+
+            # Tokenize the datasets
+            tokenized_train = train_dataset.map(self.tokenize_function, batched=True)
+            tokenized_val = val_dataset.map(self.tokenize_function, batched=True)
+
+            # Add labels to the tokenized datasets
+            tokenized_train = tokenized_train.add_column("labels", self.label_encoder.transform(train_intents))
+            tokenized_val = tokenized_val.add_column("labels", self.label_encoder.transform(val_intents))
+
+            # Initialize and train the model for this fold
+            self.initialize_model(num_labels=len(self.label_encoder.classes_))
+            self.train_model(tokenized_train, tokenized_val)
+
+            # Evaluate the model on the validation set
+            eval_result = self.trainer.evaluate(eval_dataset=tokenized_val)
+            print(f"Fold {fold + 1} Accuracy: {eval_result['eval_accuracy']}")
+            results.append(eval_result["eval_accuracy"])
+
+        # Calculate and return the average accuracy across all folds
+        avg_accuracy = sum(results) / len(results)
+        print(f"Average Accuracy across {n_splits} folds: {avg_accuracy}")
+        return avg_accuracy
+
 if __name__ == "__main__":
     classifier = IntentClassifier()
-    dataset = classifier.load_dataset()
-    tokenized_datasets = classifier.prepare_data(dataset)
-    classifier.initialize_model(num_labels=len(classifier.label_encoder.classes_))
-    classifier.train_model(tokenized_datasets)
-    classifier.save_model()
+    dataset = classifier.load_dataset()  # Load the dataset directly
+
+    # Encode labels
+    classifier.label_encoder.fit([item["intent"] for item in dataset])  # Fit the label encoder
+
+    # Perform K-Fold cross-validation
+    avg_accuracy = classifier.cross_validate(dataset, n_splits=5)
+    print(f"Final Average Accuracy: {avg_accuracy}")
 
     # Load model for inference
     inference_classifier = classifier.load_model_for_inference()
-
 
     trained_texts = classifier.get_texts()
     for sample_text in trained_texts:
         predicted_intent = classifier.predict_intent(sample_text, inference_classifier)
         print(f"Predicted intent for '{sample_text}': {predicted_intent}")
+

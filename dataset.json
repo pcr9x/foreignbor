@@ -7,7 +7,7 @@
         {"text": "How many hours can I legally work per week?", "intent": "work_hours"},
         {"text" : "whats the penalty for littering", "intent": "littering_penalty"}
     ],
-    "date updated cuz why not" : "2025-07-03"
+    "date_updated" : "2025-07-03"
     
   }
   
