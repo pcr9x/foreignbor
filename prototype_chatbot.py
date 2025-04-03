@@ -1,68 +1,99 @@
-from transformers import AutoModelForSequenceClassification, AutoModelForTokenClassification, AutoTokenizer, pipeline
+from pyswip import Prolog
+from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
+from ollama import chat, ChatResponse
 from sklearn.preprocessing import LabelEncoder
 import json
 
-# Load Pretrained Models
-INTENT_MODEL = "./results"  
-NER_MODEL = "dbmdz/bert-large-cased-finetuned-conll03-english"
+# Initialize Prolog
+prolog = Prolog()
+prolog.consult("Law.pro")  # Load Prolog knowledge base
 
-# Load the label encoder
-with open(f"{INTENT_MODEL}/label_encoder.json", "r") as f:
+# Load Pretrained BERT Model for Intent Classification
+INTENT_MODEL = "./results"
+intent_tokenizer = AutoTokenizer.from_pretrained(INTENT_MODEL)
+intent_model = AutoModelForSequenceClassification.from_pretrained(INTENT_MODEL)
+intent_pipeline = pipeline("text-classification", model=intent_model, tokenizer=intent_tokenizer, device=0)
+
+with open(f"{INTENT_MODEL}/IntentClassifierModel.json", "r") as f:
     label_classes = json.load(f)
 label_encoder = LabelEncoder()
 label_encoder.classes_ = label_classes
 
-# Tokenizers, models, and pipelines for Intent Classification 
-intent_tokenizer = AutoTokenizer.from_pretrained(INTENT_MODEL)
-intent_model = AutoModelForSequenceClassification.from_pretrained(INTENT_MODEL)
-intent_pipeline = pipeline("text-classification", model=intent_model, tokenizer=intent_tokenizer, device=0)  # Use GPU for inference
-
-# Tokenizers, models, and pipelines for Named Entity Recognition
-ner_tokenizer = AutoTokenizer.from_pretrained(NER_MODEL)
-ner_model = AutoModelForTokenClassification.from_pretrained(NER_MODEL)
-ner_pipeline = pipeline("ner", model=ner_model, tokenizer=ner_tokenizer, device=0)  # Use GPU for inference
-
-# Define intents and required entities
+# Define intent mappings and required keys
 INTENT_ENTITY_MAP = {
-    "employment_rights": ["country"],
-    "termination_policy": ["contract_type", "notice_period"],
-    "work_hours": ["country"],
-    "littering_penalty": ["country"]
+    "murder": ["intention", "circumstances", "victim_status"],
+    "theft": ["item_stolen", "value", "location"],
+    # Add more legal classifications and their required keys here
+}
+
+# Define follow-up questions for missing keys
+FOLLOW_UP_QUESTIONS = {
+    "intention": "Was the act intentional?",
+    "circumstances": "Was it self-defense?",
+    "victim_status": "Was the victim a government official?",
+    "item_stolen": "What item was stolen?",
+    "value": "What was the value of the stolen item?",
+    "location": "Where did the theft occur?",
+    # Add more follow-up questions for other keys here
 }
 
 def classify_intent(user_input):
-    """Classify the user's intent."""
+    """Predicts intent using the BERT classification model."""
     result = intent_pipeline(user_input)[0]
     label_map = {f"LABEL_{i}": label for i, label in enumerate(label_encoder.classes_)}
-    return label_map[result["label"]]  # Map the predicted label to the original label
+    return label_map[result["label"]]
 
-def extract_entities(user_input):
-    """Extract entities from the user's query."""
-    entities = ner_pipeline(user_input)
-    extracted = {e["entity"]: e["word"] for e in entities}
-    return extracted
+def extract_entities(user_input, required_keys):
+    """
+    Extracts required entities from user input using the deepseek library.
+    """
+    extracted_entities = {}
+    for key in required_keys:
+        # Use deepseek to extract the specific entity
+        response: ChatResponse = chat(
+            model="deepseek-r1:14b",
+            messages=[{"role": "user", "content": f"Extract the {key} from: {user_input}. Answer in one word for each key."}],
+        )
+        extracted_entities[key] = response.message.content.strip()
+    return extracted_entities
 
-def check_missing_entities(intent, extracted_entities):
-    """Check if any required entities are missing."""
-    required_entities = set(INTENT_ENTITY_MAP.get(intent, []))
-    found_entities = set(extracted_entities.keys())
+def ask_for_missing_entities_yes_no(extracted_entities, required_keys):
+    """
+    Iteratively asks the user for missing entities with yes/no questions.
+    """
+    for key in required_keys:
+        if key not in extracted_entities or not extracted_entities[key]:
+            # Ask the user for the missing entity
+            print(FOLLOW_UP_QUESTIONS[key])
+            while True:
+                user_response = input("> ").strip().lower()
+                if user_response in ["yes", "no"]:
+                    extracted_entities[key] = user_response
+                    break
+                else:
+                    print("Please answer with 'yes' or 'no'.")
+    return extracted_entities
 
-    missing = required_entities - found_entities
-    return list(missing)
-
-def process_user_input(user_input):
-    """Process the input, predict intent, extract entities, and handle missing info."""
+# Example usage
+if __name__ == "__main__":
+    user_input = input("Enter your legal query: ").strip()
+    
+    # Step 1: Classify intent
     intent = classify_intent(user_input)
-    entities = extract_entities(user_input)
+    print(f"Classified Intent: {intent}")
     
-    missing_entities = check_missing_entities(intent, entities)
+    # Step 2: Get required keys for the classified intent
+    required_keys = INTENT_ENTITY_MAP.get(intent, [])
     
-    if missing_entities:
-        return f"Missing details: {missing_entities}. Could you provide more information?"
+    # Step 3: Extract entities using deepseek
+    extracted_entities = {}
+    if required_keys:
+        extracted_entities = extract_entities(user_input, required_keys)
     
-    return f"Intent: {intent}\nExtracted Entities: {entities}"
-
-# Example
-user_input = "What is the minimum wage?"
-response = process_user_input(user_input)
-print(response)
+    # Step 4: Ask for missing entities with yes/no questions
+    extracted_entities = ask_for_missing_entities_yes_no(extracted_entities, required_keys)
+    
+    # Step 5: Construct Prolog query
+    prolog_args = [key if extracted_entities[key] == "yes" else "_" for key in required_keys]
+    prolog_query = f"{intent}({', '.join(prolog_args)}, Punishment)."
+    print(f"Prolog Query: {prolog_query}")

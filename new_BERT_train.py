@@ -47,7 +47,7 @@ class IntentClassifier:
             metric_for_best_model="eval_accuracy",  # Use accuracy as the metric to monitor
             greater_is_better=True,  # Higher accuracy is better
             per_device_train_batch_size=8,
-            num_train_epochs=200,  # Set a high number of epochs; early stopping will stop training earlier
+            num_train_epochs=20,  # Set a high number of epochs; early stopping will stop training earlier
             weight_decay=0.01,
             learning_rate=5e-5,
             logging_dir='./logs',
