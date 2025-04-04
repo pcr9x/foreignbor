@@ -3,6 +3,7 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipe
 from ollama import chat, ChatResponse
 from sklearn.preprocessing import LabelEncoder
 import json
+import re
 
 # Initialize Prolog
 prolog = Prolog()
@@ -21,16 +22,16 @@ label_encoder.classes_ = label_classes
 
 # Define intent mappings and required keys
 INTENT_ENTITY_MAP = {
-    "murder": ["intention", "circumstances", "victim_status"],
+    "murder": ["intentional?", "self-defense?", "Special_victim?"],
     "theft": ["item_stolen", "value", "location"],
     # Add more legal classifications and their required keys here
 }
 
 # Define follow-up questions for missing keys
 FOLLOW_UP_QUESTIONS = {
-    "intention": "Was the act intentional?",
-    "circumstances": "Was it self-defense?",
-    "victim_status": "Was the victim a government official?",
+    "intentional?": "Was the act intentional?",
+    "self-defense?": "Was it self-defense?",
+    "Special_victim?": "Was the victim a government official?",
     "item_stolen": "What item was stolen?",
     "value": "What was the value of the stolen item?",
     "location": "Where did the theft occur?",
@@ -43,19 +44,53 @@ def classify_intent(user_input):
     label_map = {f"LABEL_{i}": label for i, label in enumerate(label_encoder.classes_)}
     return label_map[result["label"]]
 
+
 def extract_entities(user_input, required_keys):
     """
-    Extracts required entities from user input using the deepseek library.
+    Extracts required entities from user input using the DeepSeek library.
     """
-    extracted_entities = {}
-    for key in required_keys:
-        # Use deepseek to extract the specific entity
-        response: ChatResponse = chat(
-            model="deepseek-r1:14b",
-            messages=[{"role": "user", "content": f"Extract the {key} from: {user_input}. Answer in one word for each key."}],
-        )
-        extracted_entities[key] = response.message.content.strip()
-    return extracted_entities
+    print(f"Extracting entities for keys: {required_keys}")
+    keys_with_context = {key: FOLLOW_UP_QUESTIONS[key] for key in required_keys}
+
+    # Prepare the message content
+    message_content = (
+        f"Extract the required entities from the input below. "
+        f"Respond in JSON format ONLY, with no explanation, put in null if no key is found for that category.\n\n"
+        f"Input: {user_input}\n"
+        f"Keys and Context:\n{json.dumps(keys_with_context, indent=2)}\n\n"
+        f"Example output:\n"
+        f'{{ "intentional?": "yes", "self-defense?": "no", "Special_victim?": null }}'
+    )
+
+    # Print the message content for debugging
+    print("Message sent to DeepSeek:")
+    #print(message_content)
+
+    # Call DeepSeek
+    response: ChatResponse = chat(
+        model="deepseek-r1:14b",
+        messages=[
+            {
+                "role": "system",
+                "content": message_content
+            }
+        ],
+    )
+    
+    try:
+        # Extract only the JSON substring from the response
+        print(response.message.content.strip())
+        json_match = re.search(r"\{.*?\}", response.message.content.strip(), re.DOTALL)
+        if json_match:
+            print("Extracted JSON:")
+            extracted_entities = json.loads(json_match.group(0))
+            return extracted_entities
+        else:
+            print("Error: No JSON found in DeepSeek response.")
+            return {}
+    except json.JSONDecodeError:
+        print("Error: DeepSeek returned invalid JSON.")
+        return {}
 
 def ask_for_missing_entities_yes_no(extracted_entities, required_keys):
     """
@@ -68,7 +103,8 @@ def ask_for_missing_entities_yes_no(extracted_entities, required_keys):
             while True:
                 user_response = input("> ").strip().lower()
                 if user_response in ["yes", "no"]:
-                    extracted_entities[key] = user_response
+                    # Map "yes" to the key name and "no" to "_"
+                    extracted_entities[key] = key if user_response == "yes" else "_"
                     break
                 else:
                     print("Please answer with 'yes' or 'no'.")
@@ -89,11 +125,11 @@ if __name__ == "__main__":
     extracted_entities = {}
     if required_keys:
         extracted_entities = extract_entities(user_input, required_keys)
-    
+        print(f"Extracted Entities: {extracted_entities}")
     # Step 4: Ask for missing entities with yes/no questions
     extracted_entities = ask_for_missing_entities_yes_no(extracted_entities, required_keys)
     
     # Step 5: Construct Prolog query
-    prolog_args = [key if extracted_entities[key] == "yes" else "_" for key in required_keys]
+    prolog_args = [extracted_entities[key] for key in required_keys]
     prolog_query = f"{intent}({', '.join(prolog_args)}, Punishment)."
     print(f"Prolog Query: {prolog_query}")

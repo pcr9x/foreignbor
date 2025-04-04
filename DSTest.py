@@ -6,5 +6,4 @@ response:ChatResponse = chat(model="deepseek-r1:14b", messages=[
      "content": "What is the capital of France?"}
 ])
 
-print (response)
 print (response.message.content)
