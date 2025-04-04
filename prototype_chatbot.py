@@ -22,16 +22,16 @@ label_encoder.classes_ = label_classes
 
 # Define intent mappings and required keys
 INTENT_ENTITY_MAP = {
-    "murder": ["intentional?", "self-defense?", "Special_victim?"],
+    "murder": ["intentional", "self-defense", "special_victim"],
     "theft": ["item_stolen", "value", "location"],
     # Add more legal classifications and their required keys here
 }
 
 # Define follow-up questions for missing keys
 FOLLOW_UP_QUESTIONS = {
-    "intentional?": "Was the act intentional?",
-    "self-defense?": "Was it self-defense?",
-    "Special_victim?": "Was the victim a government official?",
+    "intentional": "Was the act intentional?",
+    "self-defense": "Was it self-defense?",
+    "special_victim": "Was the victim a government official?",
     "item_stolen": "What item was stolen?",
     "value": "What was the value of the stolen item?",
     "location": "Where did the theft occur?",
@@ -59,7 +59,7 @@ def extract_entities(user_input, required_keys):
         f"Input: {user_input}\n"
         f"Keys and Context:\n{json.dumps(keys_with_context, indent=2)}\n\n"
         f"Example output:\n"
-        f'{{ "intentional?": "yes", "self-defense?": "no", "Special_victim?": null }}'
+        f'{{ "intentional": "yes", "self-defense": "no", "special_victim": null }}'
     )
 
     # Print the message content for debugging
@@ -108,6 +108,10 @@ def ask_for_missing_entities_yes_no(extracted_entities, required_keys):
                     break
                 else:
                     print("Please answer with 'yes' or 'no'.")
+        elif extracted_entities[key] == "yes":
+            extracted_entities[key] = key
+        elif extracted_entities[key] == "no":
+            extracted_entities[key] = "_"
     return extracted_entities
 
 # Example usage
