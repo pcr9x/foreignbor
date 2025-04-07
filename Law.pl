@@ -83,7 +83,7 @@ handle_case(affray_case(Person, PersonAge, GroupSize, Death, Prevented)) :-
     ( Prevented == true -> assertz(prevented_affray(Person)) ; true ).
 
 % =========================================================
-% Sentencing Rules (Sections 288–294)
+% Sentencing Rules (Sections 288-294)
 % =========================================================
 
 % --------- SECTION 289: AGGRAVATED MURDER ---------
