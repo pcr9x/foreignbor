@@ -1,14 +1,1205 @@
 {
     "data": [
-        {"text": "What are my employment rights in the UK?", "intent": "murder"},
-        {"text": "How much notice do I need to give before quitting?", "intent": "murder"},
-        {"text": "what should i do if i want to quit my job", "intent": "murder"},
-        {"text": "What is the minimum wage in the US?", "intent": "murder"},
-        {"text": "How many hours can I legally work per week?", "intent": "murder"},
-        {"text" : "whats the penalty for littering", "intent": "murder"},
-        {"text": "irr", "intent":"irr"}
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is it a crime if someone preplanned an attack but didn't injure anyone?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "How serious is it if a careless act leads to death?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is killing by torture punished more harshly?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Is psychological pressure leading to suicide punishable?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is abuse linked to someone's suicide attempt a crime?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "How does intent affect a murder sentence?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Is psychological pressure leading to suicide punishable?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is killing by torture punished more harshly?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What if someone accidentally caused death during construction?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Do all negligence cases result in jail?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is psychological pressure leading to suicide punishable?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "How serious is it if a careless act leads to death?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What if someone helps a mentally ill person attempt suicide?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What happens if someone tries to hurt another person but fails?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Do you go to jail for trying to injure a government officer?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "My uncle tried to stab someone but they survived, what now?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Can someone be fined instead of jailed for negligence?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone be jailed just for trying to hurt another person?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can someone get fined for cruelty that caused a suicide attempt?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is it illegal to be in a fight even if you didn't hurt anyone?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone be fined instead of jailed for negligence?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What happens if a guardian pushes their ward to attempt suicide?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "How serious is it if a careless act leads to death?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "If I was just watching a fight but someone died, can I be blamed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What is the sentence for killing someone with intent?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "I pushed someone but they weren't hurt, could I still be punished?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "How serious is aiding suicide of someone under 16?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Can someone get death penalty for murdering their parent?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Does planning a murder increase the punishment?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Are suicide instigators punished even if no death occurs?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Can someone get fined for cruelty that caused a suicide attempt?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is it a crime if someone preplanned an attack but didn't injure anyone?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Does group size matter when it comes to fight-related crimes?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "How serious is it to push someone to suicide through cruelty?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is it more serious if someone planned the harm in advance?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is killing by torture punished more harshly?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What if someone caused serious injury without using a weapon?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can you be jailed for encouraging a child to commit suicide?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Can someone get fined for cruelty that caused a suicide attempt?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone avoid punishment if they tried to stop the fight?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "If someone tried to kill their boss but failed, is it still a serious crime?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "If someone died due to a mistake, what's the likely outcome?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What's the penalty if someone kills an officer during duty?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Does group size matter when it comes to fight-related crimes?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What kind of jail time exists for these cruelty cases?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Can someone get fined for cruelty that caused a suicide attempt?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "If I was just watching a fight but someone died, can I be blamed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is psychological pressure leading to suicide punishable?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is it illegal to be in a fight even if you didn't hurt anyone?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Does planning a murder increase the punishment?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "I pushed someone but they weren't hurt, would I be punished?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What if a parent mistreats their child and they try to end their life?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone get fined for cruelty that caused a suicide attempt?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What's the penalty if someone kills an officer during duty?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Is it a crime if someone preplanned an attack but didn't injure anyone?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can someone be jailed just for trying to hurt another person?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What if someone dies in a fight involving a group of people?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Does planning a murder increase the punishment?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Do you go to jail for trying to injure a government officer?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "I pushed someone but they weren't hurt, could I still be punished?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What if someone helps a mentally ill person attempt suicide?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "My uncle tried to stab someone but they survived, what now?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone get fined for cruelty that caused a suicide attempt?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can you be jailed for encouraging a child to commit suicide?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What's the penalty if someone kills an officer during duty?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is instigating suicide treated the same as helping?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "How serious is it if a careless act leads to death?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can my brother go to jail for joining a street brawl?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "If someone tried to kill their boss but failed, is it still a serious crime?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Do all negligence cases result in jail?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is it a crime if someone preplanned an attack but didn't injure anyone?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can emotional abuse leading to suicide attempt result in prison?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "My uncle tried to stab someone but they survived, what now?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What if someone dies in a fight involving a group of people?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What happens if a guardian pushes their ward to attempt suicide?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is instigating suicide treated the same as helping?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Does planning a murder increase the punishment?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "What if someone caused serious injury without using a weapon?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "If I was just watching a fight but someone died, can I be blamed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "My uncle tried to stab someone but they survived, what now?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "If I was just watching a fight but someone died, can I be blamed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What if someone accidentally caused death during construction?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What if someone helps a mentally ill person attempt suicide?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What's the penalty if someone kills an officer during duty?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Are suicide instigators punished even if no death occurs?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What punishment for reckless driving that hurt someone?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What punishment for aiding suicide of someone with no self control?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is instigating suicide treated the same as helping?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone get death penalty for murdering their parent?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What if someone accidentally caused death during construction?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is it a crime if someone preplanned an attack but didn't injure anyone?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can someone get death penalty for murdering their parent?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Can someone get fined for cruelty that caused a suicide attempt?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What punishment for aiding suicide of someone with no self control?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What if the suicide didn't succeed, can you still be punished?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What happens if someone tries to hurt another person but fails?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What punishment for reckless driving that hurt someone?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Do participants in a group fight get fined?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What if someone dies in a fight involving a group of people?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What if a parent mistreats their child and they try to end their life?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is there jail time for hurting someone on purpose?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Do all negligence cases result in jail?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What if someone dies in a fight involving a group of people?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is it a crime if someone preplanned an attack but didn't injure anyone?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can someone avoid punishment if they tried to stop the fight?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "How serious is it if a careless act leads to death?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is negligence treated the same as intent?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is instigating suicide treated the same as helping?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is psychological pressure leading to suicide punishable?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is it a crime if someone preplanned an attack but didn't injure anyone?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What punishment for reckless driving that hurt someone?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone be jailed for abusing someone who then attempts suicide?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone be jailed just for trying to hurt another person?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can someone be jailed just for trying to hurt another person?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "My dad got into a fight with someone, will he go to jail?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Can someone get death penalty for murdering their parent?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "How serious is aiding suicide of someone under 16?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Can my brother go to jail for joining a street brawl?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Can someone be jailed just for trying to hurt another person?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is there jail time for hurting someone on purpose?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can someone avoid punishment if they tried to stop the fight?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is psychological pressure leading to suicide punishable?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "What's the penalty if someone kills an officer during duty?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is instigating suicide treated the same as helping?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is instigating suicide treated the same as helping?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "My neighbor left wires exposed and someone got hurt, what's the penalty?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What if a parent mistreats their child and they try to end their life?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "How serious is it if a careless act leads to death?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "I pushed someone but they weren't hurt, could I still be punished?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is it illegal to be in a fight even if you didn't hurt anyone?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What punishment for reckless driving that hurt someone?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What happens if a guardian pushes their ward to attempt suicide?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "How serious is aiding suicide of someone under 16?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone get fined for cruelty that caused a suicide attempt?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "If someone tried to kill their boss but failed, is it still a serious crime?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Are suicide instigators punished even if no death occurs?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What punishment for aiding suicide of someone with no self control?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What if someone dies in a fight involving a group of people?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is it more serious if someone planned the harm in advance?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can someone get death penalty for murdering their parent?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Is negligence treated the same as intent?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "If a murder wasn't planned, what kind of jail time is expected?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Is negligence treated the same as intent?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone be jailed for giving ideas about suicide to a teen?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Can someone avoid punishment if they tried to stop the fight?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is abuse linked to someone's suicide attempt a crime?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "My dad got into a fight with someone, will he go to jail?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What if someone caused serious injury without using a weapon?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "How serious is it if a careless act leads to death?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "My dad got into a fight with someone, will he go to jail?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What's the penalty if someone kills an officer during duty?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Do all negligence cases result in jail?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is psychological pressure leading to suicide punishable?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is psychological pressure leading to suicide punishable?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is it a crime if someone preplanned an attack but didn't injure anyone?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can someone get fined for cruelty that caused a suicide attempt?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Do you go to jail for trying to injure a government officer?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "I pushed someone but they weren't hurt, could I still be punished?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "How serious is it if a careless act leads to death?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Can someone avoid punishment if they tried to stop the fight?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Can someone get death penalty for murdering their parent?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What is the sentence for killing someone with intent?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Is abuse linked to someone's suicide attempt a crime?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is psychological pressure leading to suicide punishable?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "What if someone dies in a fight involving a group of people?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "If someone tried to kill their boss but failed, is it still a serious crime?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone be jailed for abusing someone who then attempts suicide?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Can someone get death penalty for murdering their parent?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Can someone be jailed just for trying to hurt another person?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can emotional abuse leading to suicide attempt result in prison?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "If someone tried to kill their boss but failed, is it still a serious crime?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Can someone be charged with attempted murder if no one died?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What happens if a guardian pushes their ward to attempt suicide?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "What's the penalty if a group fight causes serious injury?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Can someone be jailed for giving ideas about suicide to a teen?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Does planning a murder increase the punishment?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "Can my brother go to jail for joining a street brawl?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "How serious is aiding suicide of someone under 16?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "If someone hurts a person depending on them and they try to die, what happens?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "How serious is aiding suicide of someone under 16?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What happens if someone tries to hurt another person but fails?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "I pushed someone but they weren't hurt, could I still be punished?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "Is negligence treated the same as intent?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Do participants in a group fight get fined?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "What if someone accidentally caused death during construction?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What sentence applies if someone joins a group brawl and someone is harmed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is negligence treated the same as intent?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is instigating suicide treated the same as helping?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Are suicide instigators punished even if no death occurs?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Can someone be jailed just for trying to hurt another person?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What if someone accidentally caused death during construction?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Do you go to jail for accidentally injuring someone badly?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What's the penalty if someone kills an officer during duty?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What sentence applies if the person they hurt was an official?",
+            "intent": "injury_case"
+        },
+        {
+            "text": "What's the penalty if a group fight causes serious injury?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Do courts consider age of the victim in suicide assistance?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "What's the penalty if someone kills an officer during duty?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "If someone tried to kill their boss but failed, is it still a serious crime?",
+            "intent": "murder_case"
+        },
+        {
+            "text": "What if someone dies in a fight involving a group of people?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "How serious is aiding suicide of someone under 16?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "If I was just watching a fight but someone died, can I be blamed?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "Is abuse linked to someone's suicide attempt a crime?",
+            "intent": "suicide_cruelty_case"
+        },
+        {
+            "text": "What punishment for aiding suicide of someone with no self control?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Is jail time required if no serious injury happened?",
+            "intent": "negligent_case"
+        },
+        {
+            "text": "Is it illegal to suggest suicide to someone who's unstable?",
+            "intent": "suicide_aid_case"
+        },
+        {
+            "text": "Do participants in a group fight get fined?",
+            "intent": "affray_case"
+        },
+        {
+            "text": "My friend got into a fight but no serious injuries happened, what could happen?",
+            "intent": "injury_case"
+        }
     ],
-    "date_updated" : "2025-07-03"
-    
-  }
-  
+    "date_updated": "2025-04-07"
+}
