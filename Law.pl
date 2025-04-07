@@ -18,7 +18,7 @@
     death_occurred/0, prevented_affray/1.
 
 % =========================================================
-% Handle Murder Case (Sections 288–290)
+% Handle Murder Case (Sections 288-290)
 % =========================================================
 % murder_case(Person, Victim, PersonAge, Intent, Premeditated, Torture, CrimeRelated, VictimType).
 handle_case(murder_case(Person, Victim, PersonAge, Intent, Prem, Torture, CrimeRelated, VictimType)) :-
