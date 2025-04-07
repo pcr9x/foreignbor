@@ -215,7 +215,7 @@ sentence(Person, '1 to 6 years imprisonment (attempted aggravated grievous harm)
     ), !.
 % --------- Sentence None -----------
 sentence(Person, 'None') :-
-    harm(Person, Victim),
+    harm(Person, _),
     \+ intent(Person, true).
 
 % --------- SECTION 289: AGGRAVATED MURDER ---------
