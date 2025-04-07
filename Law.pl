@@ -14,19 +14,18 @@
     dependent_on/2, used_cruelty/1,
 
     % Affray Case
-    affray_participant/1, group_size/2,
+    affray_participant/1,
     death_occurred/0, prevented_affray/1.
 
 % =========================================================
 % Handle Murder Case (Sections 288-290)
 % =========================================================
 % murder_case(Person, Victim, PersonAge, Intent, Premeditated, Torture, CrimeRelated, VictimType)
-% VictimType can be one of:
-%   - ascendant: parent or grandparent of the offender
-%   - official: government officer on duty
-%   - assistant: someone helping an official
-%   - other: none of the above (or unspecified)
-
+% VictimType can be:
+%   - ascendant
+%   - official
+%   - assistant
+%   - other
 handle_case(murder_case(Person, Victim, PersonAge, Intent, Prem, Torture, CrimeRelated, VictimType)) :-
     assertz(murder(Person, Victim)),
     assertz(age(Person, PersonAge)),
@@ -39,7 +38,7 @@ handle_case(murder_case(Person, Victim, PersonAge, Intent, Prem, Torture, CrimeR
 % =========================================================
 % Handle Negligent Case (Section 291)
 % =========================================================
-% negligent_case(Person, Victim, PersonAge, Circumstance).
+% negligent_case(Person, Victim, PersonAge, Circumstance)
 handle_case(negligent_case(Person, Victim, PersonAge, Circumstance)) :-
     assertz(negligent_act(Person, Victim)),
     assertz(age(Person, PersonAge)),
@@ -48,7 +47,7 @@ handle_case(negligent_case(Person, Victim, PersonAge, Circumstance)) :-
 % =========================================================
 % Handle Suicide Case by Cruelty (Section 292)
 % =========================================================
-% suicide_cruelty_case(Person, Victim, PersonAge, VictimAge, SuicideOccurred, Dependent, UsedCruelty).
+% suicide_cruelty_case(Person, Victim, PersonAge, VictimAge, SuicideOccurred, Dependent, UsedCruelty)
 handle_case(suicide_cruelty_case(Person, Victim, PersonAge, VictimAge, Occurred, Dependent, UsedCruelty)) :-
     assertz(age(Person, PersonAge)),
     assertz(age(Victim, VictimAge)),
@@ -60,10 +59,10 @@ handle_case(suicide_cruelty_case(Person, Victim, PersonAge, VictimAge, Occurred,
 % Handle Suicide Case by Aiding or Instigation (Section 293)
 % =========================================================
 % suicide_aid_case(Person, Victim, PersonAge, VictimAge, SuicideOccurred, VictimType)
-% VictimType can be one of:
-%   - child: under 16 years old
-%   - incompetent: unable to understand their actions
-%   - uncontrollable: unable to control their actions
+% VictimType can be:
+%   - child
+%   - incompetent
+%   - uncontrollable
 handle_case(suicide_aid_case(Person, Victim, PersonAge, VictimAge, Occurred, VictimType)) :-
     assertz(age(Person, PersonAge)),
     assertz(age(Victim, VictimAge)),
@@ -74,11 +73,10 @@ handle_case(suicide_aid_case(Person, Victim, PersonAge, VictimAge, Occurred, Vic
 % =========================================================
 % Handle Group Affray Case (Section 294)
 % =========================================================
-% affray_case(Person, PersonAge, GroupSize, DeathOccurred, PreventedAffray).
-handle_case(affray_case(Person, PersonAge, GroupSize, Death, Prevented)) :-
+% affray_case(Person, PersonAge, DeathOccurred, PreventedAffray)
+handle_case(affray_case(Person, PersonAge, Death, Prevented)) :-
     assertz(age(Person, PersonAge)),
     assertz(affray_participant(Person)),
-    assertz(group_size(Person, GroupSize)),
     ( Death == true -> assertz(death_occurred) ; true ),
     ( Prevented == true -> assertz(prevented_affray(Person)) ; true ).
 
@@ -148,3 +146,24 @@ sentence(Person, none) :-
 sentence(Person, 'up to 2 years or 4,000 Baht fine or both') :-
     affray_participant(Person),
     death_occurred, !.
+
+% =========================================================
+% Utility: Clear all asserted case data
+% =========================================================
+clear_case :-
+    retractall(murder(_, _)),
+    retractall(age(_, _)),
+    retractall(intent(_, _)),
+    retractall(premeditated(_)),
+    retractall(used_torture(_)),
+    retractall(murder_related_to_crime(_)),
+    retractall(victim_type(_, _)),
+    retractall(negligent_act(_, _)),
+    retractall(circumstance(_, _)),
+    retractall(aided_suicide(_, _)),
+    retractall(suicide_occurred(_, _)),
+    retractall(dependent_on(_, _)),
+    retractall(used_cruelty(_)),
+    retractall(affray_participant(_)),
+    retractall(prevented_affray(_)),
+    retractall(death_occurred).
