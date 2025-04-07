@@ -20,7 +20,13 @@
 % =========================================================
 % Handle Murder Case (Sections 288-290)
 % =========================================================
-% murder_case(Person, Victim, PersonAge, Intent, Premeditated, Torture, CrimeRelated, VictimType).
+% murder_case(Person, Victim, PersonAge, Intent, Premeditated, Torture, CrimeRelated, VictimType)
+% VictimType can be one of:
+%   - ascendant: parent or grandparent of the offender
+%   - official: government officer on duty
+%   - assistant: someone helping an official
+%   - other: none of the above (or unspecified)
+
 handle_case(murder_case(Person, Victim, PersonAge, Intent, Prem, Torture, CrimeRelated, VictimType)) :-
     assertz(murder(Person, Victim)),
     assertz(age(Person, PersonAge)),
@@ -53,7 +59,11 @@ handle_case(suicide_cruelty_case(Person, Victim, PersonAge, VictimAge, Occurred,
 % =========================================================
 % Handle Suicide Case by Aiding or Instigation (Section 293)
 % =========================================================
-% suicide_aid_case(Person, Victim, PersonAge, VictimAge, SuicideOccurred, VictimType).
+% suicide_aid_case(Person, Victim, PersonAge, VictimAge, SuicideOccurred, VictimType)
+% VictimType can be one of:
+%   - child: under 16 years old
+%   - incompetent: unable to understand their actions
+%   - uncontrollable: unable to control their actions
 handle_case(suicide_aid_case(Person, Victim, PersonAge, VictimAge, Occurred, VictimType)) :-
     assertz(age(Person, PersonAge)),
     assertz(age(Victim, VictimAge)),
