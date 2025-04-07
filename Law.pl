@@ -18,7 +18,7 @@
     death_occurred/1, prevented_affray/1,
 
     % Injury Cases
-    harm/2, grievous_injury/2.
+    harm/2, grievous_injury/2, injured/1.
 
 % =========================================================
 % Handle Injury Case (Sections 295-298)
@@ -33,7 +33,7 @@
 handle_case(injury_case(Person, Victim, PersonAge, Injured, Intent, Grievous, Prem, Torture, CrimeRelated, VictimType)) :-
     assertz(harm(Person, Victim)),
     assertz(age(Person, PersonAge)),
-    ( Injured == true -> true ; true ),
+    ( Injured == true -> assertz(injured(Victim)) ; true ),
     assertz(intent(Person, Intent)),
     ( Grievous == true -> assertz(grievous_injury(Person, Victim)) ; true ),
     ( Prem == true -> assertz(premeditated(Person)) ; true ),
@@ -100,9 +100,10 @@ handle_case(affray_case(Person, PersonAge, Death, Prevented, Grievous)) :-
 
 % --------- SECTION 295: Basic Bodily Harm ---------
 sentence(Person, 'up to 2 years or 4,000 Baht fine or both') :-
-    harm(Person, _),
+    harm(Person, Victim),
     intent(Person, true),
-    injured(Person),
+    \+ grievous_injury(Person, Victim),
+    injured(Victim),
     \+ (
         premeditated(Person)
         ; used_torture(Person)
@@ -114,9 +115,10 @@ sentence(Person, 'up to 2 years or 4,000 Baht fine or both') :-
 
 % --------- ATTEMPTED SECTION 295 ---------
 sentence(Person, 'up to 1 year or 1,300 Baht fine or both (attempted)') :-
-    harm(Person, _),
+    harm(Person, Victim),
     intent(Person, true),
-    \+ injured(Person),
+    \+ grievous_injury(Person, Victim),
+    \+ injured(Victim),
     \+ (
         premeditated(Person)
         ; used_torture(Person)
@@ -128,10 +130,10 @@ sentence(Person, 'up to 1 year or 1,300 Baht fine or both (attempted)') :-
 
 % --------- SECTION 296: Bodily Harm with Section 289 circumstances ---------
 sentence(Person, 'not more than 3 years or 6,000 Baht fine or both') :-
-    harm(Person, _),
+    harm(Person, Victim),
     intent(Person, true),
-    injured(Person),
-    \+ grievous_injury(Person, _),
+    \+ grievous_injury(Person, _Victim),
+    injured(Victim),
     (
         premeditated(Person)
         ; used_torture(Person)
@@ -143,10 +145,10 @@ sentence(Person, 'not more than 3 years or 6,000 Baht fine or both') :-
 
 % --------- ATTEMPTED SECTION 296 ---------
 sentence(Person, 'up to 1 years or 4,000 Baht fine or both (attempted)') :-
-    harm(Person, _),
+    harm(Person, Victim),
     intent(Person, true),
-    \+ injured(Person),
-    \+ grievous_injury(Person, _),
+    \+ grievous_injury(Person, _Victim),
+    \+ injured(Victim),
     (
         premeditated(Person)
         ; used_torture(Person)
@@ -158,9 +160,9 @@ sentence(Person, 'up to 1 years or 4,000 Baht fine or both (attempted)') :-
 
 % --------- SECTION 297: Grievous Bodily Harm ---------
 sentence(Person, '6 months to 10 years imprisonment') :-
-    grievous_injury(Person, _),
+    grievous_injury(Person, Victim),
     intent(Person, true),
-    injured(Person),
+    injured(Victim),
     \+ (
         premeditated(Person)
         ; used_torture(Person)
@@ -172,9 +174,9 @@ sentence(Person, '6 months to 10 years imprisonment') :-
 
 % --------- ATTEMPTED SECTION 297 ---------
 sentence(Person, 'up to 6 years imprisonment (attempted grievous harm)') :-
-    grievous_injury(Person, _),
+    grievous_injury(Person, Victim),
     intent(Person, true),
-    \+ injured(Person),
+    \+ injured(Victim),
     \+ (
         premeditated(Person)
         ; used_torture(Person)
@@ -186,9 +188,9 @@ sentence(Person, 'up to 6 years imprisonment (attempted grievous harm)') :-
 
 % --------- SECTION 298: Grievous + Aggravated ---------
 sentence(Person, '2 to 10 years imprisonment') :-
-    grievous_injury(Person, _),
+    grievous_injury(Person, Victim),
     intent(Person, true),
-    injured(Person),
+    injured(Victim),
     (
         premeditated(Person)
         ; used_torture(Person)
@@ -200,9 +202,9 @@ sentence(Person, '2 to 10 years imprisonment') :-
 
 % --------- ATTEMPTED SECTION 298 ---------
 sentence(Person, '1 to 6 years imprisonment (attempted aggravated grievous harm)') :-
-    grievous_injury(Person, _),
+    grievous_injury(Person, Victim),
     intent(Person, true),
-    \+ injured(Person),
+    \+ injured(Victim),
     (
         premeditated(Person)
         ; used_torture(Person)
@@ -211,9 +213,13 @@ sentence(Person, '1 to 6 years imprisonment (attempted aggravated grievous harm)
         ; victim_type(_, official)
         ; victim_type(_, assistant)
     ), !.
+% --------- Sentence None -----------
+sentence(Person, 'None') :-
+    harm(Person, Victim),
+    \+ intent(Person, true).
 
 % --------- SECTION 289: AGGRAVATED MURDER ---------
-sentence(Person, death) :-
+sentence(Person, 'Death') :-
     murder(Person, Victim),
     intent(Person, true),
     death_occurred(murder),
@@ -296,7 +302,7 @@ sentence(Person, 'up to 5 years or 10,000 Baht fine or both') :-
     ), !.
 
 % --------- SECTION 294: AFFRAY RESULTING IN DEATH ---------
-sentence(Person, none) :-
+sentence(Person, 'None') :-
     prevented_affray(Person), !.
 
 sentence(Person, 'up to 2 years or 4,000 Baht fine or both') :-
@@ -331,4 +337,5 @@ clear_case :-
     retractall(prevented_affray(_)),
     retractall(death_occurred(_)),
     retractall(harm(_, _)),
-    retractall(grievous_injury(_, _)).
+    retractall(grievous_injury(_, _)),
+    retractall(injured(_)).
