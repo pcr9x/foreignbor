@@ -9,60 +9,71 @@
     % Negligence Case
     negligent_act/2, circumstance/2,
 
-    % Suicide Case
+    % Suicide Cases
     aided_suicide/2, suicide_occurred/2,
+    dependent_on/2, used_cruelty/1,
 
     % Affray Case
     affray_participant/1, group_size/2,
     death_occurred/0, prevented_affray/1.
 
 % =========================================================
-% Handle Murder Case (Sections 288-290)
+% Handle Murder Case (Sections 288–290)
 % =========================================================
-% murder_case(Person, Victim, Age, Intent, Premeditated, Torture, CrimeRelated, VictimType).
-% VictimType: ascendant / official / assistant / other
-
-handle_case(murder_case(Person, Victim, Age, Intent, Prem, Torture, CrimeRelated, VictimType)) :-
+% murder_case(Person, Victim, PersonAge, Intent, Premeditated, Torture, CrimeRelated, VictimType).
+handle_case(murder_case(Person, Victim, PersonAge, Intent, Prem, Torture, CrimeRelated, VictimType)) :-
     assertz(murder(Person, Victim)),
-    assertz(age(Person, Age)),
+    assertz(age(Person, PersonAge)),
     assertz(intent(Person, Intent)),
-    ( Prem == yes -> assertz(premeditated(Person)) ; true ),
-    ( Torture == yes -> assertz(used_torture(Person)) ; true ),
-    ( CrimeRelated == yes -> assertz(murder_related_to_crime(Person)) ; true ),
+    ( Prem == true -> assertz(premeditated(Person)) ; true ),
+    ( Torture == true -> assertz(used_torture(Person)) ; true ),
+    ( CrimeRelated == true -> assertz(murder_related_to_crime(Person)) ; true ),
     ( nonvar(VictimType) -> assertz(victim_type(Victim, VictimType)) ; true ).
 
 % =========================================================
 % Handle Negligent Case (Section 291)
 % =========================================================
-% negligent_case(Person, Victim, Age, Circumstance).
-handle_case(negligent_case(Person, Victim, Age, Circumstance)) :-
+% negligent_case(Person, Victim, PersonAge, Circumstance).
+handle_case(negligent_case(Person, Victim, PersonAge, Circumstance)) :-
     assertz(negligent_act(Person, Victim)),
-    assertz(age(Person, Age)),
+    assertz(age(Person, PersonAge)),
     assertz(circumstance(Person, Circumstance)).
 
 % =========================================================
-% Handle Suicide-Related Case (Section 293)
+% Handle Suicide Case by Cruelty (Section 292)
 % =========================================================
-% suicide_case(Person, Victim, Age, SuicideOccurred, VictimType).
-% VictimType: child / incompetent / uncontrollable
-handle_case(suicide_case(Person, Victim, Age, Occurred, VictimType)) :-
+% suicide_cruelty_case(Person, Victim, PersonAge, VictimAge, SuicideOccurred, Dependent, UsedCruelty).
+handle_case(suicide_cruelty_case(Person, Victim, PersonAge, VictimAge, Occurred, Dependent, UsedCruelty)) :-
+    assertz(age(Person, PersonAge)),
+    assertz(age(Victim, VictimAge)),
+    assertz(suicide_occurred(Victim, Occurred)),
+    ( Dependent == true -> assertz(dependent_on(Victim, Person)) ; true ),
+    ( UsedCruelty == true -> assertz(used_cruelty(Person)) ; true ).
+
+% =========================================================
+% Handle Suicide Case by Aiding or Instigation (Section 293)
+% =========================================================
+% suicide_aid_case(Person, Victim, PersonAge, VictimAge, SuicideOccurred, VictimType).
+handle_case(suicide_aid_case(Person, Victim, PersonAge, VictimAge, Occurred, VictimType)) :-
+    assertz(age(Person, PersonAge)),
+    assertz(age(Victim, VictimAge)),
     assertz(aided_suicide(Person, Victim)),
-    assertz(age(Person, Age)),
     assertz(suicide_occurred(Victim, Occurred)),
     assertz(victim_type(Victim, VictimType)).
 
 % =========================================================
 % Handle Group Affray Case (Section 294)
 % =========================================================
-% affray_case(Person, GroupSize, DeathOccurred, PreventedAffray).
-handle_case(affray_case(Person, GroupSize, Death, Prevented)) :-
+% affray_case(Person, PersonAge, GroupSize, DeathOccurred, PreventedAffray).
+handle_case(affray_case(Person, PersonAge, GroupSize, Death, Prevented)) :-
+    assertz(age(Person, PersonAge)),
     assertz(affray_participant(Person)),
     assertz(group_size(Person, GroupSize)),
-    ( Death == yes -> assertz(death_occurred) ; true ),
-    ( Prevented == yes -> assertz(prevented_affray(Person)) ; true ).
+    ( Death == true -> assertz(death_occurred) ; true ),
+    ( Prevented == true -> assertz(prevented_affray(Person)) ; true ).
 
 % =========================================================
-% Sentencing Rules
+% Sentencing Rules (Sections 288–294)
 % =========================================================
 
 % --------- SECTION 289: AGGRAVATED MURDER ---------
@@ -104,10 +115,16 @@ sentence(Person, '3-15 years imprisonment') :-
 sentence(Person, 'up to 10 years imprisonment or 20,000 Baht fine') :-
     negligent_act(Person, _), !.
 
-% --------- SECTION 293: AIDING/INSTIGATING SUICIDE ---------
+% --------- SECTION 292: Suicide due to cruelty toward dependent ---------
+sentence(Person, 'up to 7 years and 14,000 Baht fine') :-
+    suicide_occurred(Victim, true),
+    dependent_on(Victim, Person),
+    used_cruelty(Person), !.
+
+% --------- SECTION 293: Aiding/instigating suicide of vulnerable person ---------
 sentence(Person, 'up to 5 years or 10,000 Baht fine or both') :-
     aided_suicide(Person, Victim),
-    suicide_occurred(Victim, yes),
+    suicide_occurred(Victim, true),
     (
         victim_type(Victim, child)
         ; victim_type(Victim, incompetent)
