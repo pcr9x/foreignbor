@@ -18,7 +18,7 @@
     death_occurred/0, prevented_affray/1,
 
     % Injury Cases
-    caused_injury/2, grievous_injury/2.
+    harm/2, grievous_injury/2.
 
 % =========================================================
 % Handle Injury Case (Sections 295-298)
@@ -114,11 +114,14 @@ handle_case(affray_case(Person, PersonAge, Death, Prevented, Grievous)) :-
 % --------- SECTION 295: Basic Bodily Harm ---------
 sentence(Person, 'up to 2 years or 4,000 Baht fine or both') :-
     harm(Person, _),
-    \+ grievous_injury(Person, _),
-    \+ premeditated(Person),
-    \+ used_torture(Person),
-    \+ murder_related_to_crime(Person),
-    \+ victim_type(_, _), !.
+    \+ (
+        premeditated(Person)
+        ; used_torture(Person)
+        ; murder_related_to_crime(Person)
+        ; victim_type(_, ascendant)
+        ; victim_type(_, official)
+        ; victim_type(_, assistant)
+    ), !.
 
 % --------- SECTION 296: Bodily Harm with Section 289 circumstances ---------
 sentence(Person, 'not more than 3 years or 6,000 Baht fine or both') :-
