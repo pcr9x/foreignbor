@@ -22,11 +22,11 @@ label_encoder.classes_ = label_classes
 
 # Define intent mappings and required keys
 INTENT_ENTITY_MAP = {
-    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous"," Prem", "Torture", "CrimeRelated", "VictimType"],
+    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous","Prem", "Torture", "CrimeRelated", "VictimType"],
     "murder_case" : ["PersonAge", "Intent"," Prem", "Torture", "CrimeRelated", "VictimType", "Death"],
     "negligent_case" : ["PersonAge", "Circumstance", "Grievous", "Death"],
     "suicide_cruelty_case" : ["PersonAge", "VictimAge", "Occurred", "Dependent", "UsedCruelty"],
-    "suicide_aid_case" : ["PersonAge", "VictimAge", "Occurred", "VictimType"],
+    "suicide_aid_case" : ["PersonAge", "VictimAge", "Occurred", "SuicideVictimType"],
     "affray_case" : ["PersonAge", "Death", "Prevented", "Grievous"]
 }
 
@@ -60,7 +60,11 @@ FOLLOW_UP_QUESTIONS = {
     "VictimAge": "How old was the victim at the time of the incident?",
     "Dependent": "Was the victim dependent on the accused for care, support, or living needs?",
     "UsedCruelty": "Did the accused use cruel behavior, threats, or abuse toward the victim?",
-    "Prevented": "Did the person try to prevent the fight or act in lawful self-defense?"
+    "Prevented": "Did the person try to prevent the fight or act in lawful self-defense?",
+    "SuicideVictimType": """What is the status of the victim? Choose from:\n
+        - Child (A person who is under 16 years old)
+        - Incompetent (A person who is unable to understand the nature and importance of his act)
+        - Uncontrollable (A person who is unable to control his act)""",
 }
 
 def classify_intent(user_input):
@@ -134,6 +138,15 @@ def ask_for_missing_entities_yes_no(extracted_entities, required_keys):
                         break
                     else:
                         print("Please choose from: ascendant, official, official assistant, or other.")
+            elif key == "SuicideVictimType":
+                print(FOLLOW_UP_QUESTIONS[key])
+                while True:
+                    user_response = input("> ").strip().lower()
+                    if user_response in ["child", "incompetent", "uncontrollable"]:
+                        extracted_entities[key] = user_response
+                        break
+                    else:
+                        print("Please choose from: child, incompetent, or uncontrollable.")
             else:
                 print(FOLLOW_UP_QUESTIONS[key])
                 while True:
