@@ -22,8 +22,8 @@ label_encoder.classes_ = label_classes
 
 # Define intent mappings and required keys
 INTENT_ENTITY_MAP = {
-    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous"," Prem", "Torture", "CrimeRelated", "VictimType"],
-    "murder_case" : ["PersonAge", "Intent"," Prem", "Torture", "CrimeRelated", "VictimType", "Death"],
+    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous"," Prem", "Torture", "CrimeRelated", "VictimType", "ReasonableSelfDefense"],
+    "murder_case" : ["PersonAge", "Intent"," Prem", "Torture", "CrimeRelated", "VictimType", "Death", "ReasonableSelfDefense"],
     "negligent_case" : ["PersonAge", "Grievous", "Death"],
     "suicide_cruelty_case" : ["PersonAge", "Occurred", "Dependent", "UsedCruelty"],
     "suicide_aid_case" : ["PersonAge", "Occurred", "SuicideVictimType"],
@@ -67,6 +67,8 @@ FOLLOW_UP_QUESTIONS = {
         "- Assistant: A person aiding an official\n"
         "- Other: None of the above"
     ),
+    
+    "ReasonableSelfDefense": "Did you act in self-defense when you used force to protect yourself 'in the heat of the moment,' such as by using an object as a weapon or stopping an intruder from escaping (e.g., tackling them)?",
     
     "Death": "Did the act result in the death of the victim? This directly influences whether the crime is classified as murder, attempted murder, or a lesser offense.",
     

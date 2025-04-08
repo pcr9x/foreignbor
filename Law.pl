@@ -4,7 +4,7 @@
 :- dynamic
     % Murder Case
     murder/2, age/2, intent/2, premeditated/1, % age mean more than 18
-    used_torture/1, murder_related_to_crime/1, victim_type/2,
+    used_torture/1, murder_related_to_crime/1, victim_type/2, self_defense/1,
 
     % Negligence Case
     negligent_act/2, circumstance/2,
@@ -23,14 +23,14 @@
 % =========================================================
 % Handle Injury Case (Sections 295-298)
 % =========================================================
-% injury_case(Person, Victim, PersonAge, Injured, Intent, Grievous, Premeditated, Torture, CrimeRelated, VictimType)
+% injury_case(Person, Victim, PersonAge, Injured, Intent, Grievous, Premeditated, Torture, CrimeRelated, VictimType, ReasonableSelfDefense)
 % CrimeRelated = purpose of benefiting from, concealing, or escaping another offense
 % VictimType can be:
 %   - ascendant
 %   - official
 %   - assistant
 %   - other
-handle_case(injury_case(Person, Victim, PersonAge, Injured, Intent, Grievous, Prem, Torture, CrimeRelated, VictimType)) :-
+handle_case(injury_case(Person, Victim, PersonAge, Injured, Intent, Grievous, Prem, Torture, CrimeRelated, VictimType, ReasonableSelfDefense)) :-
     assertz(harm(Person, Victim)),
     assertz(age(Person, PersonAge)),
     ( Injured == true -> assertz(injured(Victim)) ; true ),
@@ -39,12 +39,13 @@ handle_case(injury_case(Person, Victim, PersonAge, Injured, Intent, Grievous, Pr
     ( Prem == true -> assertz(premeditated(Person)) ; true ),
     ( Torture == true -> assertz(used_torture(Person)) ; true ),
     ( CrimeRelated == true -> assertz(murder_related_to_crime(Person)) ; true ),
-    ( nonvar(VictimType) -> assertz(victim_type(Victim, VictimType)) ; true ).
+    ( nonvar(VictimType) -> assertz(victim_type(Victim, VictimType)) ; true ),
+    ( ReasonableSelfDefense == true -> assertz(self_defense(Person)) ; true ).
 
 % =========================================================
 % Handle Murder Case (Sections 288-290)
 % =========================================================
-handle_case(murder_case(Person, Victim, PersonAge, Intent, Prem, Torture, CrimeRelated, VictimType, Death)) :-
+handle_case(murder_case(Person, Victim, PersonAge, Intent, Prem, Torture, CrimeRelated, VictimType, Death, ReasonableSelfDefense)) :-
     assertz(murder(Person, Victim)),
     assertz(age(Person, PersonAge)),
     assertz(intent(Person, Intent)),
@@ -52,7 +53,8 @@ handle_case(murder_case(Person, Victim, PersonAge, Intent, Prem, Torture, CrimeR
     ( Torture == true -> assertz(used_torture(Person)) ; true ),
     ( CrimeRelated == true -> assertz(murder_related_to_crime(Person)) ; true ),
     ( nonvar(VictimType) -> assertz(victim_type(Victim, VictimType)) ; true ),
-    ( Death == true -> assertz(death_occurred(murder)) ; true ).
+    ( Death == true -> assertz(death_occurred(murder)) ; true ),
+    ( ReasonableSelfDefense == true -> assertz(self_defense(Person)) ; true ).
 
 % =========================================================
 % Handle Negligent Case (Section 291, 300)
@@ -101,6 +103,9 @@ handle_case(affray_case(Person, PersonAge, Death, Prevented, Grievous)) :-
 
 sentence(Person, "The Court shall take into account the sense of responsibility and all other things concerning such person in order to come to decision as to whether it is expedient to pass judgment inflicting punishment on such person or not.") :-
     \+ age(Person, true), !.
+
+sentence(Person, "if the act committed is in excess of what is reasonable under the circumstances or in excess of what is necessary, or in excess of what is necessary for the defense, the Court may inflict less punishment to any extent than that provided by the law for such offence. But, if such act occurs out of excitement, fright or fear, the Court may not inflict any punishment at all.") :-
+    self_defense(Person), !.
 
 % --------- SECTION 295: Basic Bodily Harm ---------
 sentence(Person, 'up to 2 years or 4,000 Baht fine or both') :-
@@ -343,4 +348,5 @@ clear_case :-
     retractall(death_occurred(_)),
     retractall(harm(_, _)),
     retractall(grievous_injury(_, _)),
-    retractall(injured(_)).
+    retractall(injured(_)),
+    retractall(self_defense(_)).
