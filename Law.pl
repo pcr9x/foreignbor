@@ -11,7 +11,7 @@
 
     % Suicide Cases
     aided_suicide/2, suicide_occurred/2,
-    dependent_on/2, used_cruelty/1,
+    dependent_on/2, used_cruelty/1, suicide_victim_type/2,
 
     % Affray Case
     affray_participant/1,
@@ -57,19 +57,17 @@ handle_case(murder_case(Person, Victim, PersonAge, Intent, Prem, Torture, CrimeR
 % =========================================================
 % Handle Negligent Case (Section 291, 300)
 % =========================================================
-handle_case(negligent_case(Person, Victim, PersonAge, Circumstance, Grievous, Death)) :-
+handle_case(negligent_case(Person, Victim, PersonAge, Grievous, Death)) :-
     assertz(negligent_act(Person, Victim)),
     assertz(age(Person, PersonAge)),
-    assertz(circumstance(Person, Circumstance)),
     ( Grievous == true -> assertz(grievous_injury(Person, Victim)) ; true ),
     ( Death == true -> assertz(death_occurred(negligence)) ; true ).
 
 % =========================================================
 % Handle Suicide Case by Cruelty (Section 292)
 % =========================================================
-handle_case(suicide_cruelty_case(Person, Victim, PersonAge, VictimAge, Occurred, Dependent, UsedCruelty)) :-
+handle_case(suicide_cruelty_case(Person, Victim, PersonAge, Occurred, Dependent, UsedCruelty)) :-
     assertz(age(Person, PersonAge)),
-    assertz(age(Victim, VictimAge)),
     assertz(suicide_occurred(Victim, Occurred)),
     ( Dependent == true -> assertz(dependent_on(Victim, Person)) ; true ),
     ( UsedCruelty == true -> assertz(used_cruelty(Person)) ; true ).
@@ -77,12 +75,15 @@ handle_case(suicide_cruelty_case(Person, Victim, PersonAge, VictimAge, Occurred,
 % =========================================================
 % Handle Suicide Case by Aiding or Instigation (Section 293)
 % =========================================================
-handle_case(suicide_aid_case(Person, Victim, PersonAge, VictimAge, Occurred, VictimType)) :-
+% SucideVictimType can be:
+% - Child (A person who is under 16 years old)
+% - Incompetent (A person who is unable to understand the nature and importance of his act)
+% - Uncontrollable (A person who is unable to control his act)
+handle_case(suicide_aid_case(Person, Victim, PersonAge, Occurred, SucideVictimType)) :-
     assertz(age(Person, PersonAge)),
-    assertz(age(Victim, VictimAge)),
     assertz(aided_suicide(Person, Victim)),
     assertz(suicide_occurred(Victim, Occurred)),
-    assertz(victim_type(Victim, VictimType)).
+    ( nonvar(SucideVictimType) -> assertz(suicide_victim_type(Victim, SucideVictimType)) ; true ).
 
 % =========================================================
 % Handle Group Affray Case (Section 294, 299)
@@ -97,6 +98,9 @@ handle_case(affray_case(Person, PersonAge, Death, Prevented, Grievous)) :-
 % =========================================================
 % Sentencing Rules (Sections 288-299)
 % =========================================================
+
+sentence(Person, "The Court shall take into account the sense of responsibility and all other things concerning such person in order to come to decision as to whether it is expedient to pass judgment inflicting punishment on such person or not.") :-
+    \+ age(Person, true), !.
 
 % --------- SECTION 295: Basic Bodily Harm ---------
 sentence(Person, 'up to 2 years or 4,000 Baht fine or both') :-
@@ -296,9 +300,9 @@ sentence(Person, 'up to 5 years or 10,000 Baht fine or both') :-
     aided_suicide(Person, Victim),
     suicide_occurred(Victim, true),
     (
-        victim_type(Victim, child)
-        ; victim_type(Victim, incompetent)
-        ; victim_type(Victim, uncontrollable)
+        suicide_victim_type(Victim, child)
+        ; suicide_victim_type(Victim, incompetent)
+        ; suicide_victim_type(Victim, uncontrollable)
     ), !.
 
 % --------- SECTION 294: AFFRAY RESULTING IN DEATH ---------
@@ -331,6 +335,7 @@ clear_case :-
     retractall(circumstance(_, _)),
     retractall(aided_suicide(_, _)),
     retractall(suicide_occurred(_, _)),
+    retractall(suicide_victim_type(_, _)),
     retractall(dependent_on(_, _)),
     retractall(used_cruelty(_)),
     retractall(affray_participant(_)),
