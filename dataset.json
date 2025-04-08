@@ -1,3204 +1,1156 @@
 {
   "data": [
     {
-      "text": "What's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He forgot to secure the ladder and someone fell. Is that criminal?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Can Joanna be fined if a child is injured due to their negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Can you get a life sentence for killing someone without motive?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Do you know what if someone kills another person but says it was an accident?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can you be fined for leaving someone with no access to food or care? Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Can I be arrested for encouraging suicide even as a joke? Please explain.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "What are the legal risks of home remedies for abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "What are the legal risks of home remedies for abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Someone punched another person during an argument. What penalty applies?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "What if someone kills another person but says it was an accident?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He was in a bar brawl and James died. What now?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Someone terminated their pregnancy at 8 months. What happens?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can you be fined for a group fight even if no one died?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can a minor be punished for seeking an abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Can someone be jailed for leaving their elderly parent unattended?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is helping someone get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is there a difference if someone tried to stop the affray?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "What's the punishment for deserting a child under 10?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "My neighbor left their grandma in a locked car for hours.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "My uncle got into a street fight. Will he be charged?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He said 'you should just die' to someone unstable.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "What's the punishment for deserting a child under 10?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "My uncle got into a street fight. Will he be charged?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "She constantly insulted her child, and now the child attempted suicide. Please explain.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "What if you suggest suicide to someone and they actually try it?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Does it matter if the murder was planned? Please explain.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is abortion illegal if done at home without medical supervision?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "What are the legal risks of home remedies for abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "What happens when three people fight and one gets badly hurt?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Someone was abusive and their spouse attempted suicide. What now?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "She cheered someone on while they were trying to end their life.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "They drove their partner to attempt suicide through cruelty.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can Mario be jailed for emotional abuse that led to suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "She cheered someone on while they were trying to end their life.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "She constantly insulted her child, and now the child attempted suicide.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Can you be fined for a group fight even if no one died?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "My uncle got into a street fight. Will he be charged?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He was in a bar brawl and someone died. What now?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "She helped someone buy supplies to commit suicide. Legal?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Someone terminated their pregnancy at 8 months. What happens?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is abortion illegal if done at home without medical supervision?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "What if someone planned to hurt someone else but didn't follow through?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Do you know what if someone kills another person but says it was an accident?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is carelessness a crime if no one was badly hurt?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "My uncle got into a street fight. Will he be charged?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can someone be jailed for leaving their elderly parent unattended?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "What happens when three people fight and one gets badly hurt?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Do you know what's the penalty for stabbing someone to death intentionally?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Left the stove on and caused a fire. Do you know what's the charge?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Can I be arrested for encouraging suicide even as a joke?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can you be fined for leaving Charles with no access to food or care? Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened? Please explain.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Someone punched another person during an argument. What penalty applies?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "What's the punishment for deserting a child under 10?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "She cheered Stacey on while they were trying to end their life.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Someone terminated their pregnancy at 8 months. Do you know what happens?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can someone go to jail for giving suicide advice to a child?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Someone was abusive and their spouse attempted suicide. What now?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "They were all fighting and someone got their jaw broken.",
-      "intent": "affray_case"
-    },
-    {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "How serious is joining a fight that injures someone?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Someone terminated their pregnancy at 8 months. What happens?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is attempted murder treated almost the same as murder? Please explain.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can someone go to jail for giving suicide advice to a child?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Can Beth be jailed for leaving their elderly parent unattended?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Is it illegal to share methods of suicide to people online?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Can you get a life sentence for killing someone without motive?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is abortion illegal if done at home without medical supervision?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can women be jailed for terminating their pregnancy?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is it illegal to walk away from someone who depends on you?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "She poisoned someone but they didn't die. What happens?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is helping Daisy get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "What if someone kills another person but says it was an accident?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Can someone be jailed for leaving their elderly parent unattended?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is there punishment for attacking someone with fists but not using weapons?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can you go to jail for hurting Nathan even if they weren't seriously injured?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can Amanda go to jail for giving suicide advice to a child?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Someone punched another person during an argument. What penalty applies?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can you be sentenced to death for killing a government worker?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He attacked the guy, but the guy didn't press charges. What now?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "What's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She constantly insulted her child, and now the child attempted suicide.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "What happens when three people fight and one gets badly hurt?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "My friend pushed Lisa down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is attempted murder treated almost the same as murder?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is there punishment for attacking someone with fists but not using weapons?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "My friend gave their cousin pills and said 'take them all'. Please explain.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "He said 'you should just die' to Brianna unstable. Please explain.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Someone was abusive and their spouse attempted suicide. What now?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Got into a fight and caused a nosebleed. Is it serious?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Do you know what's the penalty for causing someone else to abort?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Do I need to report it if no injury happened but there was a fight?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is there a difference if someone tried to stop the affray?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Does it matter if the murder was planned?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "What if someone planned to hurt someone else but didn't follow through?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "She helped someone buy supplies to commit suicide. Legal?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "They dropped a child at a temple and drove away.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "What's the punishment for deserting a child under 10?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "What if someone planned to hurt someone else but didn't follow through?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He murdered his father in cold blood. What does the law say?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "What if someone planned to hurt someone else but didn't follow through?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "My uncle got into a street fight. Will he be charged?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is helping someone get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "What if someone planned to hurt someone else but didn't follow through?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can someone be jailed for emotional abuse that led to suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is it illegal to share methods of suicide to people online?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "My friend pushed Jorge down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "They were all fighting and someone got their jaw broken.",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Left the stove on and caused a fire. What's the charge?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He punched his dad. Will the punishment be more severe? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "They dropped a child at a temple and drove away.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "They were all fighting and someone got their jaw broken.",
-      "intent": "affray_case"
-    },
-    {
-      "text": "What happens when three people fight and one gets badly hurt?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is attempted murder treated almost the same as murder?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "What if you suggest suicide to someone and they actually try it?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "He planned to kill his neighbor but got caught before doing it. Please explain.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can you be sentenced to death for killing a government worker? Please explain.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can you be sentenced to death for killing a government worker?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can you be sentenced to death for killing a government worker?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can someone be fined if a child is injured due to their negligence? Please explain.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can women be jailed for terminating their pregnancy?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He murdered his father in cold blood. What does the law say?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is there punishment for attacking someone with fists but not using weapons?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "What's the penalty for causing someone else to abort?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "They were all fighting and someone got their jaw broken.",
-      "intent": "affray_case"
-    },
-    {
-      "text": "They drove their partner to attempt suicide through cruelty.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He murdered his father in cold blood. What does the law say?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "How serious is joining a fight that injures someone?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can someone be fined if a child is injured due to their negligence? Please explain.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is attempted murder treated almost the same as murder?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "What's the penalty for causing someone else to abort? Please explain.",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "I left the gate open and the dog attacked someone. Am I liable?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He starved his dependent until they wanted to die. Is that a crime? Please explain.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He murdered his father in cold blood. What does the law say?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can someone be jailed for emotional abuse that led to suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can someone be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is there a difference if someone tried to stop the affray?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "My neighbor left their grandma in a locked car for hours.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is attempted murder treated almost the same as murder? Please explain.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "How serious is joining a fight that injures someone?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is helping Katrina get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "My neighbor left their grandma in a locked car for hours.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Left the stove on and caused a fire. What's the charge?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She poisoned Hayley but they didn't die. What happens?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is there a difference if David tried to stop the affray?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "What's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Someone punched another person during an argument. Do you know what penalty applies?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can a minor be punished for seeking an abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Someone was abusive and their spouse attempted suicide. What now?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "What's the punishment for deserting a child under 10?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Do you know what's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Someone punched another person during an argument. What penalty applies? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "She helped Ashley buy supplies to commit suicide. Legal?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Do I need to report it if no injury happened but there was a fight?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Are there laws against leaving sick relatives in remote areas? Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "They dropped a child at a temple and drove away.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "She didn't start the fight, but she joined it. Legal consequences?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can you be fined for leaving John with no access to food or care?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "I left the gate open and the dog attacked someone. Am I liable?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill? Please explain.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "What if you suggest suicide to someone and they actually try it?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "They were all fighting and someone got their jaw broken.",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can women be jailed for terminating their pregnancy?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "He shot someone in self-defense, but now he's being charged.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is abortion illegal if done at home without medical supervision?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Left the stove on and caused a fire. What's the charge?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Do you know what if Sarah kills another person but says it was an accident?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "What if someone planned to hurt someone else but didn't follow through?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can you go to jail for hurting Jennifer even if they weren't seriously injured?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Does it matter if the murder was planned?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "My uncle got into a street fight. Will he be charged?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Someone terminated their pregnancy at 8 months. What happens? Please explain.",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "She didn't start the fight, but she joined it. Legal consequences?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "What's the penalty for causing someone else to abort?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "He shot someone in self-defense, but now he's being charged.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "What's the penalty for stabbing April to death intentionally?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can someone be fined if a child is injured due to their negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "What's the penalty for causing someone else to abort?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Can I be arrested for encouraging suicide even as a joke?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Is helping someone get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "She cheered Kimberly on while they were trying to end their life.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "What's the penalty for causing Andrew else to abort?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "She self-aborted in secret. What does the law say? Please explain.",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "How serious is joining a fight that injures someone?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "She was texting while driving and hit a cyclist.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Do you know what's the penalty for causing Paul else to abort?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide? Please explain.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "What are the legal risks of home remedies for abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can someone be fined if a child is injured due to their negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Is helping someone get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "She was texting while driving and hit a cyclist.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Can you get a life sentence for killing Noah without motive?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He forced his girlfriend to take pills. Is that abortion? Please explain.",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can a minor be punished for seeking an abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "What's the penalty for stabbing someone to death intentionally?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "They drove their partner to attempt suicide through cruelty.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can you be fined for leaving Heather with no access to food or care?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "What are the legal risks of home remedies for abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can you get a life sentence for killing someone without motive?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "She constantly insulted her child, and now the child attempted suicide.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He shot someone in self-defense, but now he's being charged.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "What if someone kills another person but says it was an accident?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "What's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She poisoned someone but they didn't die. Do you know what happens?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can you get a life sentence for killing Joshua without motive?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Do I need to report it if no injury happened but there was a fight?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "What's the penalty for causing someone else to abort?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can you be sentenced to death for killing a government worker?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "They drove their partner to attempt suicide through cruelty. Please explain.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is helping someone get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "She didn't start the fight, but she joined it. Legal consequences?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Is carelessness a crime if no one was badly hurt?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Can I be arrested for encouraging suicide even as a joke?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Can Alicia be fined if a child is injured due to their negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Someone was abusive and their spouse attempted suicide. What now?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He was in a bar brawl and someone died. What now?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can women be jailed for terminating their pregnancy?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Someone was abusive and their spouse attempted suicide. What now?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is there punishment for attacking Benjamin with fists but not using weapons?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can someone be fined if a child is injured due to their negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "What is the punishment for fatal workplace negligence? Please explain.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "They dropped a child at a temple and drove away.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can you be fined for leaving someone with no access to food or care?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "How serious is joining a fight that injures someone?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Someone was abusive and their spouse attempted suicide. What now?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Someone terminated their pregnancy at 8 months. What happens?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can someone be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "They dropped a child at a temple and drove away. Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is there punishment for attacking Paige with fists but not using weapons?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "What is the punishment for fatal workplace negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He said 'you should just die' to someone unstable.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Do I need to report it if no injury happened but there was a fight?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "They drove their partner to attempt suicide through cruelty.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "She constantly insulted her child, and now the child attempted suicide.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can you be sentenced to death for killing a government worker?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is helping someone get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "What's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Can harsh parenting lead to legal trouble if the child self-harms? Please explain.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is there a difference if someone tried to stop the affray?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "What's the penalty for stabbing someone to death intentionally?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "What if someone kills another person but says it was an accident?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He attacked the guy, but the guy didn't press charges. What now?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "She was texting while driving and hit a cyclist.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "What is the punishment for fatal workplace negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "She poisoned Brent but they didn't die. What happens?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is there punishment for attacking someone with fists but not using weapons?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "They were all fighting and Meagan got their jaw broken.",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can you be fined for leaving Anthony with no access to food or care?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "My uncle got into a street fight. Will he be charged?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is it illegal to walk away from someone who depends on you? Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "She cheered someone on while they were trying to end their life.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "My friend wants to abort but doesn't have access to a clinic. Please explain.",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "What if someone planned to hurt someone else but didn't follow through? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Got into a fight and caused a nosebleed. Is it serious?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Someone punched another person during an argument. Do you know what penalty applies?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "She was texting while driving and hit a cyclist.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "What's the penalty for stabbing someone to death intentionally?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "What if you suggest suicide to someone and they actually try it?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "He attacked the guy, but the guy didn't press charges. What now?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Can I be arrested for encouraging suicide even as a joke?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "My neighbor left their grandma in a locked car for hours.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can I be arrested for encouraging suicide even as a joke?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Can Troy be fined if a child is injured due to their negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "I left the gate open and the dog attacked someone. Am I liable?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She constantly insulted her child, and now the child attempted suicide.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "What is the punishment for fatal workplace negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Can you go to jail for hurting Mason even if they weren't seriously injured?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal? Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "What happens when three people fight and one gets badly hurt?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "I left the gate open and the dog attacked someone. Am I liable?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "My neighbor left their grandma in a locked car for hours. Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "My friend wants to abort but doesn't have access to a clinic.",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She helped someone buy supplies to commit suicide. Legal? Please explain.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable? Please explain.",
-      "intent": "affray_case"
-    },
-    {
-      "text": "What's the penalty for stabbing someone to death intentionally?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "What's the punishment for deserting a child under 10?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He attacked the guy, but the guy didn't press charges. What now?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "She was texting while driving and hit a cyclist.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "She constantly insulted her child, and now the child attempted suicide.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "She cheered Barbara on while they were trying to end their life.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Can I be arrested for encouraging suicide even as a joke?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "She was texting while driving and hit a cyclist.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Someone was abusive and their spouse attempted suicide. What now?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "My neighbor left their grandma in a locked car for hours.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is carelessness a crime if no one was badly hurt?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Is there punishment for attacking someone with fists but not using weapons? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "How serious is joining a fight that injures someone?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is helping Amy get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is it illegal to share methods of suicide to people online?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Can you be sentenced to death for killing a government worker?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can you go to jail for hurting someone even if they weren't seriously injured?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is there a difference if someone tried to stop the affray?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can you get a life sentence for killing someone without motive? Please explain.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "My friend gave their cousin pills and said 'take them all'. Please explain.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Can a minor be punished for seeking an abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "They dropped a child at a temple and drove away. Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Can Amber be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is carelessness a crime if no one was badly hurt?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Can you get a life sentence for killing Steven without motive?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Is helping Andrew get an abortion a crime? Please explain.",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is there a difference if Angelica tried to stop the affray?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can someone be charged for attempting to hurt a public official? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "What is the punishment for fatal workplace negligence?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "What's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She was texting while driving and hit a cyclist.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "How serious is joining a fight that injures James?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Is there punishment for attacking Katie with fists but not using weapons?",
-      "intent": "injury_case"
+      "text": "Is abandoning dependents legally punishable by prison terms?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "My friend pushed Rhonda down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
+      "text": "Legal consequences if negligence leads to a worker's injury on site?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Is abortion illegal if done at home without medical supervision?",
-      "intent": "abortion_case"
+      "text": "If a shooting is planned, does that automatically mean life imprisonment?",
+      "intent": "murder_case"
     },
     {
-      "text": "How serious is joining a fight that injures Anthony?",
+      "text": "Penalty for getting into a public fight at a restaurant?",
       "intent": "affray_case"
-    },
-    {
-      "text": "Can women be jailed for terminating their pregnancy?",
-      "intent": "abortion_case"
     },
     {
-      "text": "Can Ricky go to jail for giving suicide advice to a child?",
-      "intent": "suicide_aid_case"
+      "text": "Can someone be imprisoned for cruelty that results in suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can Jeffrey be jailed for leaving their elderly parent unattended?",
+      "text": "What charges apply for abandoning elderly family members?",
       "intent": "abandonment_case"
-    },
-    {
-      "text": "My uncle got into a street fight. Will he be charged?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "Can Douglas be fined if a child is injured due to their negligence?",
-      "intent": "negligent_case"
     },
     {
-      "text": "Can a minor be punished for seeking an abortion?",
-      "intent": "abortion_case"
+      "text": "Penalty for causing suicide through systematic emotional abuse?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "What's the law if death happens by accident, not on purpose? Please explain.",
+      "text": "Legal outcomes for accidental deaths caused by negligent safety practices?",
       "intent": "negligent_case"
-    },
-    {
-      "text": "Someone terminated their pregnancy at 8 months. What happens?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is it illegal to share methods of suicide to people online?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "She cheered someone on while they were trying to end their life.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Do you know what if Tracy kills another person but says it was an accident?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "They drove their partner to attempt suicide through cruelty.",
-      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "text": "Penalty for driving someone to suicide through harsh cruelty?",
       "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Can Kayla be fined if a child is injured due to their negligence?",
-      "intent": "negligent_case"
     },
     {
-      "text": "My uncle got into a street fight. Will he be charged?",
+      "text": "Penalty for involvement in public fighting?",
       "intent": "affray_case"
-    },
-    {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "He forgot to secure the ladder and someone fell. Is that criminal?",
-      "intent": "negligent_case"
     },
     {
-      "text": "Is it illegal to walk away from someone who depends on you?",
-      "intent": "abandonment_case"
+      "text": "Is emotional abuse leading directly to suicide considered criminal?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "What's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
+      "text": "Penalty for advising someone on suicide methods?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "He planned to kill his neighbor but got caught before doing it. Please explain.",
+      "text": "How long is the jail term for a murder that wasn't accidental?",
       "intent": "murder_case"
-    },
-    {
-      "text": "My friend wants to abort but doesn't have access to a clinic.",
-      "intent": "abortion_case"
     },
     {
-      "text": "Is carelessness a crime if no one was badly hurt?",
+      "text": "What legal actions apply if negligence results in accidental drowning?",
       "intent": "negligent_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "He said 'you should just die' to Kathleen unstable.",
-      "intent": "suicide_aid_case"
     },
     {
-      "text": "Left the stove on and caused a fire. What's the charge?",
+      "text": "If someone negligently injures another during sports, what's the punishment?",
       "intent": "negligent_case"
-    },
-    {
-      "text": "My friend pushed Savannah down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
     },
     {
-      "text": "Is carelessness a crime if no one was badly hurt?",
+      "text": "Charges for accidental death due to improper medical procedure?",
       "intent": "negligent_case"
     },
     {
-      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed?",
+      "text": "What charges can you face for aiding someone else's suicide attempt?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "What's the penalty for causing Craig else to abort?",
-      "intent": "abortion_case"
+      "text": "Penalty for intentionally drowning someone?",
+      "intent": "murder_case"
     },
     {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
+      "text": "If someone causes public disturbance through fighting, what's next legally?",
+      "intent": "affray_case"
     },
     {
-      "text": "She cheered Rachel on while they were trying to end their life.",
+      "text": "Is it criminal to suggest suicide methods to someone depressed?",
       "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Can women be jailed for terminating their pregnancy?",
-      "intent": "abortion_case"
     },
     {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "text": "Legal repercussions for emotional cruelty that drives suicide?",
       "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Is it illegal to share methods of suicide to people online?",
-      "intent": "suicide_aid_case"
     },
     {
-      "text": "My uncle got into a street fight. Will he be charged?",
+      "text": "Can fighting at a club lead to arrest?",
       "intent": "affray_case"
     },
     {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "text": "Legal outcomes if psychological cruelty directly results in suicide?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can you be sentenced to death for killing a government worker?",
+      "text": "Is intentional fatal poisoning punished as murder?",
       "intent": "murder_case"
     },
     {
-      "text": "Is helping someone get an abortion a crime? Please explain.",
-      "intent": "abortion_case"
+      "text": "Legal outcomes of joining a violent crowd fight?",
+      "intent": "affray_case"
     },
     {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
+      "text": "Can abandonment of a mentally ill family member lead to jail?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "What if you suggest suicide to someone and they actually try it?",
+      "text": "What's the penalty for helping a friend commit suicide?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "She didn't start the fight, but she joined it. Legal consequences?",
+      "text": "Does joining a fight in a bar lead to criminal charges?",
       "intent": "affray_case"
     },
     {
-      "text": "Is carelessness a crime if no one was badly hurt?",
-      "intent": "negligent_case"
+      "text": "Is it illegal to give advice on how to end one's life?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Is attempted murder treated almost the same as murder? Please explain.",
-      "intent": "murder_case"
+      "text": "What happens legally if negligence in food handling causes illness?",
+      "intent": "negligent_case"
     },
     {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
+      "text": "What charges apply to a negligent boat operator who injures someone?",
+      "intent": "negligent_case"
     },
     {
-      "text": "He was in a bar brawl and Barbara died. What now?",
+      "text": "What happens if someone starts a public fight?",
       "intent": "affray_case"
     },
     {
-      "text": "How serious is joining a fight that injures Kathleen?",
-      "intent": "affray_case"
+      "text": "What are the penalties if negligence causes severe injury to someone?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Can someone be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
+      "text": "Can providing lethal substances for suicide lead to jail?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "He attacked the guy, but the guy didn't press charges. What now? Please explain.",
-      "intent": "injury_case"
+      "text": "What's the legal risk of abandoning elderly relatives deliberately?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Can you go to jail for hurting Alexandria even if they weren't seriously injured? Please explain.",
-      "intent": "injury_case"
+      "text": "Legal consequences for leaving a child alone at home for days?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Is there a difference if someone tried to stop the affray?",
+      "text": "What's the punishment for a violent public altercation?",
       "intent": "affray_case"
     },
     {
-      "text": "He let his kid ride without a helmet. What if something happened?",
+      "text": "If negligence causes accidental electrocution, what charges apply?",
       "intent": "negligent_case"
     },
     {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "text": "Can someone be jailed for encouraging suicide online?",
       "intent": "suicide_aid_case"
-    },
-    {
-      "text": "What are the legal risks of home remedies for abortion?",
-      "intent": "abortion_case"
     },
     {
-      "text": "He was in a bar brawl and Kevin died. What now?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "She poisoned Patricia but they didn't die. What happens?",
+      "text": "If a murder is preplanned, what's the usual verdict?",
       "intent": "murder_case"
     },
     {
-      "text": "Do you know what is the punishment for fatal workplace negligence?",
+      "text": "Penalty for negligence leading to severe injury in sports events?",
       "intent": "negligent_case"
     },
     {
-      "text": "Left the stove on and caused a fire. What's the charge?",
+      "text": "What happens legally when a driver's negligence injures pedestrians?",
       "intent": "negligent_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "He planned to kill his neighbor but got caught before doing it. Please explain.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "What if you suggest suicide to someone and they actually try it?",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "My friend wants to abort but doesn't have access to a clinic. Please explain.",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can women be jailed for terminating their pregnancy?",
-      "intent": "abortion_case"
     },
     {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "What if you suggest suicide to someone and they actually try it?",
+      "text": "Legal repercussions of guiding someone in suicidal methods?",
       "intent": "suicide_aid_case"
-    },
-    {
-      "text": "He attacked the guy, but the guy didn't press charges. What now?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
-      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "My friend wants to abort but doesn't have access to a clinic.",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "text": "Can emotional torment resulting in suicide lead to criminal prosecution?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "text": "What charges apply for cruelty that leads someone to kill themselves?",
       "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "Can Mario go to jail for giving suicide advice to a child?",
-      "intent": "suicide_aid_case"
     },
     {
-      "text": "She locked the elderly parent indoors for weeks. They tried to take their life. Please explain.",
+      "text": "Can someone go to prison for psychological torture that causes suicide?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can someone be jailed for emotional abuse that led to suicide?",
-      "intent": "suicide_cruelty_case"
+      "text": "What sentence does someone face for killing intentionally during burglary?",
+      "intent": "murder_case"
     },
     {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
+      "text": "Is child abandonment considered a serious crime?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Can Chad go to jail for giving suicide advice to a child?",
-      "intent": "suicide_aid_case"
+      "text": "Is participating in public brawls punishable by imprisonment?",
+      "intent": "affray_case"
     },
     {
-      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed? Please explain.",
-      "intent": "suicide_aid_case"
+      "text": "Consequences for leaving minors alone for extended periods?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "He said 'you should just die' to Brianna unstable. Please explain.",
-      "intent": "suicide_aid_case"
+      "text": "Consequences for leaving a minor unattended without support?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "He shot Jonathan in self-defense, but now he's being charged.",
+      "text": "If someone intentionally sets a fatal trap, what's the legal outcome?",
       "intent": "murder_case"
     },
     {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
-      "intent": "suicide_cruelty_case"
+      "text": "Is causing accidental injury through negligence considered criminal?",
+      "intent": "negligent_case"
     },
     {
-      "text": "He was in a bar brawl and someone died. What now?",
+      "text": "Is initiating a fight on public transportation criminal?",
       "intent": "affray_case"
-    },
-    {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
-      "intent": "suicide_aid_case"
-    },
-    {
-      "text": "Is abortion illegal if done at home without medical supervision?",
-      "intent": "abortion_case"
     },
     {
-      "text": "Is carelessness a crime if no one was badly hurt?",
+      "text": "Penalty for negligent driving leading to pedestrian injury?",
       "intent": "negligent_case"
-    },
-    {
-      "text": "Is abortion illegal if done at home without medical supervision?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "What are the legal risks of home remedies for abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Someone punched another person during an argument. Do you know what penalty applies?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Do you know what if you suggest suicide to someone and they actually try it?",
-      "intent": "suicide_aid_case"
     },
     {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "text": "Is psychological torment causing suicide punishable by imprisonment?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "He shot Elizabeth in self-defense, but now he's being charged.",
-      "intent": "murder_case"
-    },
-    {
-      "text": "She helped Loretta buy supplies to commit suicide. Legal?",
-      "intent": "suicide_aid_case"
+      "text": "If someone accidentally causes injury at work, can they face charges?",
+      "intent": "negligent_case"
     },
     {
-      "text": "How serious is joining a fight that injures someone?",
+      "text": "Can participating in a brawl at a stadium lead to charges?",
       "intent": "affray_case"
-    },
-    {
-      "text": "Can Melissa go to jail for giving suicide advice to a child?",
-      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can Brianna go to jail for giving suicide advice to a child?",
+      "text": "Is providing suicide instructions over social media punishable by law?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "Is there a difference if someone tried to stop the affray? Please explain.",
-      "intent": "affray_case"
+      "text": "What's the charge if someone leaves their child at a public place and walks away?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "text": "Penalty if someone helps another carry out suicide?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "My uncle got into a street fight. Will he be charged?",
-      "intent": "affray_case"
+      "text": "What legal outcomes result from aiding a suicide?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "text": "What's the legal punishment for deserting a child intentionally?",
       "intent": "abandonment_case"
-    },
-    {
-      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can a minor be punished for seeking an abortion?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
     },
     {
-      "text": "He forgot to secure the ladder and someone fell. Is that criminal?",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "text": "Legal implications of participating in public disorder through fighting?",
       "intent": "affray_case"
-    },
-    {
-      "text": "Do I need to report it if no injury happened but there was a fight?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can someone be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
     },
     {
-      "text": "He was in a bar brawl and someone died. Do you know what now?",
+      "text": "What legal charges follow participating in street brawls?",
       "intent": "affray_case"
     },
     {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "text": "What's the charge for fighting openly in public spaces?",
       "intent": "affray_case"
-    },
-    {
-      "text": "Got into a fight and caused a nosebleed. Is it serious?",
-      "intent": "injury_case"
     },
     {
-      "text": "What if someone kills another person but says it was an accident? Please explain.",
+      "text": "What's the sentence if someone deliberately suffocates another person?",
       "intent": "murder_case"
-    },
-    {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can you be fined for a group fight even if no one died?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He attacked the guy, but the guy didn't press charges. What now? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can Wesley be fined if a child is injured due to their negligence? Please explain.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "I left the gate open and the dog attacked someone. Am I liable?",
-      "intent": "negligent_case"
+      "text": "Legal risks of abandoning vulnerable adults without supervision?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "text": "Can engaging in affray at a sporting event lead to jail time?",
       "intent": "affray_case"
     },
     {
-      "text": "He said 'you should just die' to someone unstable.",
+      "text": "What's the consequence of helping someone plan their suicide?",
       "intent": "suicide_aid_case"
-    },
-    {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is attempted murder treated almost the same as murder? Please explain.",
-      "intent": "murder_case"
     },
     {
-      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can you be fined for leaving Vincent with no access to food or care?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Is abortion illegal if done at home without medical supervision?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "They drove their partner to attempt suicide through cruelty.",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "She was texting while driving and hit a cyclist. Please explain.",
-      "intent": "negligent_case"
-    },
-    {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal? Please explain.",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Do you know what if someone kills another person but says it was an accident?",
+      "text": "Legal penalty for killing someone intentionally with a knife?",
       "intent": "murder_case"
     },
     {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Is attempted murder treated almost the same as murder?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "He shot Karen in self-defense, but now he's being charged. Please explain.",
+      "text": "Can intentional lethal injection be considered murder legally?",
       "intent": "murder_case"
-    },
-    {
-      "text": "Is helping Alicia get an abortion a crime?",
-      "intent": "abortion_case"
-    },
-    {
-      "text": "Can someone be jailed for leaving their elderly parent unattended?",
-      "intent": "abandonment_case"
     },
     {
-      "text": "Is there punishment for attacking someone with fists but not using weapons? Please explain.",
-      "intent": "injury_case"
+      "text": "Is causing suicide through psychological abuse punishable by law?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Is there a difference if someone tried to stop the affray?",
-      "intent": "affray_case"
+      "text": "Legal outcomes for providing pills for suicide?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Left the stove on and caused a fire. Do you know what's the charge?",
+      "text": "Legal outcomes if negligence causes someone's accidental death during diving?",
       "intent": "negligent_case"
     },
     {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
+      "text": "What's the punishment for participating in street altercations?",
+      "intent": "affray_case"
     },
     {
-      "text": "Do you know what's the penalty for stabbing someone to death intentionally?",
+      "text": "Can deliberate stabbing that leads to death result in execution?",
       "intent": "murder_case"
-    },
-    {
-      "text": "He abandoned a mentally challenged relative at a station.",
-      "intent": "abandonment_case"
     },
     {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "text": "Penalty if someone commits suicide due to continuous bullying?",
       "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "Does it matter if the murder was planned?",
-      "intent": "murder_case"
     },
     {
-      "text": "Can you get a life sentence for killing someone without motive?",
+      "text": "Is deliberate poisoning considered murder under law?",
       "intent": "murder_case"
     },
     {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
-      "intent": "suicide_cruelty_case"
-    },
-    {
-      "text": "He shot someone in self-defense, but now he's being charged.",
-      "intent": "murder_case"
+      "text": "Is being involved in a public affray considered criminal?",
+      "intent": "affray_case"
     },
     {
-      "text": "He let his kid ride without a helmet. Do you know what if something happened?",
+      "text": "Does causing accidental harm by negligence in healthcare result in jail?",
       "intent": "negligent_case"
     },
     {
-      "text": "He let his kid ride without a helmet. What if something happened?",
+      "text": "If negligence during surgery leads to patient's death, what penalty?",
       "intent": "negligent_case"
-    },
-    {
-      "text": "Can you be fined for leaving someone with no access to food or care?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Does it matter if the murder was planned?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can someone be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
-    },
-    {
-      "text": "Can you go to jail for hurting someone even if they weren't seriously injured?",
-      "intent": "injury_case"
     },
     {
-      "text": "He said 'you should just die' to someone unstable.",
+      "text": "Can someone face serious charges for assisting suicide?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "What if you suggest suicide to someone and they actually try it?",
-      "intent": "suicide_aid_case"
+      "text": "What's the punishment for causing death by negligence in a hospital?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Is helping someone get an abortion a crime?",
-      "intent": "abortion_case"
+      "text": "Legal charges if caregivers abandon disabled adults intentionally?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "He said 'you should just die' to Michael unstable.",
+      "text": "Is it punishable to share information about committing suicide?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "Is carelessness a crime if no one was badly hurt?",
+      "text": "Is causing harm due to carelessness punishable by jail time?",
       "intent": "negligent_case"
-    },
-    {
-      "text": "Is there a difference if someone tried to stop the affray?",
-      "intent": "affray_case"
-    },
-    {
-      "text": "He shot someone in self-defense, but now he's being charged.",
-      "intent": "murder_case"
     },
     {
-      "text": "He shot someone in self-defense, but now he's being charged.",
-      "intent": "murder_case"
+      "text": "Legal repercussions of leaving minors without guardian oversight?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
+      "text": "Legal risks of involvement in an affray at a public event?",
+      "intent": "affray_case"
     },
     {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
-      "intent": "suicide_cruelty_case"
+      "text": "Is giving suicide-related instructions punishable?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can women be jailed for terminating their pregnancy?",
-      "intent": "abortion_case"
+      "text": "Does intentional drowning constitute murder?",
+      "intent": "murder_case"
     },
     {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "text": "Can someone face imprisonment for promoting suicide?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "How serious is joining a fight that injures someone?",
+      "text": "Legal outcomes for people participating in street violence?",
       "intent": "affray_case"
-    },
-    {
-      "text": "Someone terminated their pregnancy at 8 months. What happens?",
-      "intent": "abortion_case"
     },
     {
-      "text": "Can someone be jailed for leaving their elderly parent unattended? Please explain.",
-      "intent": "abandonment_case"
+      "text": "What happens legally if someone dies because of negligent driving?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Is it illegal to share methods of suicide to people online?",
-      "intent": "suicide_aid_case"
+      "text": "He drowned his victim intentionally; what's the likely sentence?",
+      "intent": "murder_case"
     },
     {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
+      "text": "Legal punishment for premeditated murder by arson?",
+      "intent": "murder_case"
     },
     {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
+      "text": "What punishment applies if someone intentionally kills their spouse?",
+      "intent": "murder_case"
     },
     {
-      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "text": "If severe bullying leads to suicide, what charges can be filed?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "She locked the elderly parent indoors for weeks. They tried to take their life. Please explain.",
+      "text": "Legal consequences of causing suicide through severe harassment?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Someone punched another person during an argument. What penalty applies? Please explain.",
-      "intent": "injury_case"
+      "text": "Charges for psychologically pressuring someone until they commit suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Is there jail time for abandonment if the victim dies?",
+      "text": "Is abandoning dependent children in dangerous conditions criminal?",
       "intent": "abandonment_case"
     },
     {
-      "text": "Can someone be jailed for leaving their elderly parent unattended?",
-      "intent": "abandonment_case"
+      "text": "Consequences of offering guidance to someone planning suicide?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can negligence lead to jail even if no one died?",
+      "text": "Can negligent behavior that results in someone's harm lead to jail?",
       "intent": "negligent_case"
     },
     {
-      "text": "Someone terminated their pregnancy at 8 months. What happens? Please explain.",
-      "intent": "abortion_case"
+      "text": "Consequences of continuous emotional torment causing suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Is it illegal to share methods of suicide to people online?",
+      "text": "Can assisting in suicide result in severe jail sentences?",
       "intent": "suicide_aid_case"
-    },
-    {
-      "text": "What's the penalty for causing someone else to abort?",
-      "intent": "abortion_case"
     },
     {
-      "text": "Do you know what if Brian kills another person but says it was an accident?",
+      "text": "Can you be executed for premeditated murder?",
       "intent": "murder_case"
     },
     {
-      "text": "Someone terminated their pregnancy at 8 months. What happens?",
-      "intent": "abortion_case"
+      "text": "Penalty for supplying poison used in suicide?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "He was in a bar brawl and someone died. What now?",
-      "intent": "affray_case"
+      "text": "What penalties apply if someone deserts their child permanently?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "He shot Stephanie in self-defense, but now he's being charged.",
-      "intent": "murder_case"
+      "text": "Charges applied if someone abandons a spouse who is severely ill?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Is it illegal to walk away from Cynthia who depends on you?",
-      "intent": "abandonment_case"
+      "text": "Does planned vehicular homicide equate to murder legally?",
+      "intent": "murder_case"
     },
     {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
+      "text": "Legal outcomes for intentionally running someone over?",
+      "intent": "murder_case"
     },
     {
-      "text": "My friend pushed Kimberly down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
+      "text": "Can parents go to jail for leaving their child unattended?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
+      "text": "Penalty for emotional cruelty leading to someone's suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
+      "text": "Penalty for offering suicide assistance over phone calls?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Is abortion illegal if done at home without medical supervision?",
-      "intent": "abortion_case"
+      "text": "Legal consequences of encouraging suicide through private messages?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can women be jailed for terminating their pregnancy?",
-      "intent": "abortion_case"
+      "text": "Penalty for accidental injury caused by careless use of equipment?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Do you know what if Richard planned to hurt Richard else but didn't follow through?",
-      "intent": "injury_case"
+      "text": "What penalty is applicable for emotional abuse that causes suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Is it illegal to walk away from someone who depends on you?",
-      "intent": "abandonment_case"
+      "text": "Can someone be charged for explaining suicide techniques online?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Got into a fight and caused a nosebleed. Is it serious?",
-      "intent": "injury_case"
+      "text": "If murder is planned and executed, what's the likely legal verdict?",
+      "intent": "murder_case"
     },
     {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "text": "Is fighting openly in the streets considered a criminal offense?",
       "intent": "affray_case"
     },
     {
-      "text": "He murdered his father in cold blood. What does the law say?",
-      "intent": "murder_case"
+      "text": "What's the legal consequence of fighting publicly?",
+      "intent": "affray_case"
     },
     {
-      "text": "Do you know what if you suggest suicide to Sharon and they actually try it?",
-      "intent": "suicide_aid_case"
+      "text": "Penalty for being involved in fights at public celebrations?",
+      "intent": "affray_case"
     },
     {
-      "text": "Can harsh parenting lead to legal trouble if the child self-harms? Please explain.",
-      "intent": "suicide_cruelty_case"
+      "text": "Can someone be prosecuted for starting a fight in a park?",
+      "intent": "affray_case"
     },
     {
-      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
+      "text": "Penalty if someone deliberately leaves their elderly parent stranded?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "She helped Christine buy supplies to commit suicide. Legal?",
-      "intent": "suicide_aid_case"
+      "text": "Legal consequences of leaving a child unattended causing injury?",
+      "intent": "negligent_case"
     },
     {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
+      "text": "What's the penalty for intentionally causing someone's death in a fight?",
+      "intent": "murder_case"
     },
     {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
+      "text": "Can someone face charges for leaving a disabled relative alone?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Can you get a life sentence for killing someone without motive?",
+      "text": "Legal outcomes for intentionally burning someone to death?",
       "intent": "murder_case"
     },
     {
-      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
+      "text": "Legal penalties for driving someone to suicide through severe emotional distress?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "She cheered someone on while they were trying to end their life.",
+      "text": "Can encouraging suicide through online platforms lead to jail?",
       "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What happens legally when someone abandons their disabled parent?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "text": "If someone provides assistance for suicide, what's the charge?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "He murdered his father in cold blood. What does the law say?",
-      "intent": "murder_case"
+      "text": "Can abandonment of children result in serious legal action?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Can Megan be jailed for emotional abuse that led to suicide?",
-      "intent": "suicide_cruelty_case"
+      "text": "Can fighting in public result in criminal charges?",
+      "intent": "affray_case"
     },
     {
-      "text": "Someone was abusive and their spouse attempted suicide. What now? Please explain.",
-      "intent": "suicide_cruelty_case"
+      "text": "Consequences if negligent supervision results in accidental drowning?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Can someone be jailed for emotional abuse that led to suicide?",
+      "text": "Is pushing someone emotionally to suicide considered a severe crime?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "What's the law if death happens by accident, not on purpose? Please explain.",
+      "text": "Penalty for a builder whose negligence causes a fatal collapse?",
       "intent": "negligent_case"
     },
     {
-      "text": "Got into a fight and caused a nosebleed. Is it serious?",
-      "intent": "injury_case"
+      "text": "Can someone go to jail for sharing suicide methods?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "text": "Can participants in a street brawl face jail time?",
       "intent": "affray_case"
     },
     {
-      "text": "Can someone be jailed for leaving their elderly parent unattended?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Does it matter if the murder was planned? Please explain.",
+      "text": "Can you face life imprisonment for poisoning someone?",
       "intent": "murder_case"
     },
     {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
+      "text": "Does public fighting lead to criminal prosecution?",
+      "intent": "affray_case"
     },
     {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
+      "text": "Consequences if someone neglectfully leaves a dependent unattended?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "He shot someone in self-defense, but now he's being charged. Please explain.",
+      "text": "What charges apply if someone deliberately sets fire to kill?",
       "intent": "murder_case"
-    },
-    {
-      "text": "He let his kid ride without a helmet. What if something happened?",
-      "intent": "negligent_case"
     },
     {
-      "text": "Can you be fined for leaving Charles with no access to food or care?",
-      "intent": "abandonment_case"
+      "text": "Charges for severe bullying if it leads someone to commit suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "text": "Is systematically driving someone to suicide through cruelty a criminal offense?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Do you know what is the punishment for fatal workplace negligence?",
+      "text": "Charges for accidentally injuring someone due to negligent property maintenance?",
       "intent": "negligent_case"
-    },
-    {
-      "text": "Can Justin be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
     },
     {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
+      "text": "Legal outcomes for causing suicide through ongoing harassment?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can someone be jailed for leaving their elderly parent unattended?",
-      "intent": "abandonment_case"
+      "text": "Legal punishment for causing someone's suicide via emotional cruelty?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Is it illegal to walk away from someone who depends on you?",
-      "intent": "abandonment_case"
+      "text": "What happens legally if someone is poisoned intentionally?",
+      "intent": "murder_case"
     },
     {
-      "text": "What if you suggest suicide to someone and they actually try it?",
+      "text": "Is providing tools for suicide legally punishable?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "Is helping someone get an abortion a crime?",
-      "intent": "abortion_case"
+      "text": "Is it criminal to mentally torment someone until they commit suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can you get a life sentence for killing someone without motive?",
-      "intent": "murder_case"
+      "text": "If a person helps another commit suicide, what's their legal risk?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
+      "text": "Can psychological cruelty causing suicide result in jail time?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can Sandra go to jail for giving suicide advice to a child? Please explain.",
+      "text": "If I give information on suicide methods, am I breaking the law?",
       "intent": "suicide_aid_case"
-    },
-    {
-      "text": "He attacked the guy, but the guy didn't press charges. What now?",
-      "intent": "injury_case"
     },
     {
-      "text": "Is it illegal to walk away from someone who depends on you?",
+      "text": "Legal consequences if minors are left unsupervised intentionally?",
       "intent": "abandonment_case"
     },
     {
-      "text": "Can you be fined for leaving Edward with no access to food or care?",
+      "text": "Is it illegal to abandon a spouse with disabilities?",
       "intent": "abandonment_case"
     },
     {
-      "text": "My cousin threw the first punch in a group fight. Jail?",
-      "intent": "affray_case"
+      "text": "If accidental harm is due to negligent handling of animals, what's the charge?",
+      "intent": "negligent_case"
     },
     {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "text": "What's the sentence for public affray?",
       "intent": "affray_case"
     },
     {
-      "text": "Is it illegal to share methods of suicide to people online?",
-      "intent": "suicide_aid_case"
+      "text": "What legal risks come with involvement in public affray?",
+      "intent": "affray_case"
     },
     {
-      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
-      "intent": "suicide_cruelty_case"
+      "text": "Consequences of accidental injury due to neglected maintenance?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Can Michael be jailed for emotional abuse that led to suicide?",
+      "text": "What sentence does a bully receive if their victim commits suicide?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "She poisoned Bradley but they didn't die. What happens?",
+      "text": "If someone shoots another deliberately, what's the punishment?",
       "intent": "murder_case"
-    },
-    {
-      "text": "A bystander got hit during a group altercation. Is everyone liable?",
-      "intent": "affray_case"
     },
     {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
+      "text": "What's the maximum sentence for murder using a firearm?",
+      "intent": "murder_case"
     },
     {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
-      "intent": "abandonment_case"
+      "text": "Consequences of relentless bullying resulting in suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "What's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
+      "text": "Penalty for murdering someone in their sleep?",
+      "intent": "murder_case"
     },
     {
-      "text": "Someone punched another person during an argument. What penalty applies?",
-      "intent": "injury_case"
+      "text": "Does preplanned murder with a firearm guarantee a life sentence?",
+      "intent": "murder_case"
     },
     {
-      "text": "Can you get a life sentence for killing Christopher without motive?",
+      "text": "Does premeditated murder always result in severe punishment?",
       "intent": "murder_case"
     },
     {
-      "text": "He attacked the guy, but the guy didn't press charges. What now?",
-      "intent": "injury_case"
+      "text": "Can intentional killing with poison result in the death sentence?",
+      "intent": "murder_case"
     },
     {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
+      "text": "Can premeditated murder charges lead to the death penalty?",
+      "intent": "murder_case"
     },
     {
-      "text": "Can you be fined for a group fight even if no one died?",
+      "text": "Can individuals face jail for being involved in public fights?",
       "intent": "affray_case"
     },
     {
-      "text": "Does it matter if the murder was planned?",
-      "intent": "murder_case"
-    },
-    {
-      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "text": "Can leaving elderly parents without assistance lead to criminal charges?",
       "intent": "abandonment_case"
     },
     {
-      "text": "What's the penalty for causing someone else to abort?",
-      "intent": "abortion_case"
+      "text": "What sentence does a person get for planned murder?",
+      "intent": "murder_case"
     },
     {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
-      "intent": "abandonment_case"
+      "text": "Legal outcomes for murder committed using explosives?",
+      "intent": "murder_case"
     },
     {
-      "text": "He abandoned a mentally challenged relative at a station.",
-      "intent": "abandonment_case"
+      "text": "Legal consequences of physical altercations at public gatherings?",
+      "intent": "affray_case"
     },
     {
-      "text": "She helped someone buy supplies to commit suicide. Legal?",
+      "text": "If someone helps a person commit suicide, will they face charges?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "Can someone be jailed for emotional abuse that led to suicide?",
-      "intent": "suicide_cruelty_case"
+      "text": "Legal penalties for starting fights at concerts or gatherings?",
+      "intent": "affray_case"
     },
     {
-      "text": "Can you go to jail for hurting April even if they weren't seriously injured?",
-      "intent": "injury_case"
+      "text": "Consequences of accidental injury caused by negligent childcare?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Left the stove on and caused a fire. What's the charge?",
-      "intent": "negligent_case"
+      "text": "What legal charges apply to a stabbing death during an argument?",
+      "intent": "murder_case"
     },
     {
-      "text": "Can you be fined for a group fight even if no one died?",
+      "text": "Can street fights lead to jail sentences?",
       "intent": "affray_case"
     },
     {
-      "text": "They drove their partner to attempt suicide through cruelty.",
+      "text": "If someone is emotionally driven to suicide, can the perpetrator be prosecuted?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Is there punishment for attacking someone with fists but not using weapons?",
-      "intent": "injury_case"
+      "text": "Legal consequences of providing suicide advice to a vulnerable person?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "How serious is joining a fight that injures Jared?",
-      "intent": "affray_case"
+      "text": "If someone is accidentally poisoned due to negligence, what's the legal outcome?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
+      "text": "Penalty for leaving children alone without adequate support?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can individuals in public fights be prosecuted?",
+      "intent": "affray_case"
     },
     {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "text": "What's the legal outcome if prolonged bullying results in suicide?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can a minor be punished for seeking an abortion?",
-      "intent": "abortion_case"
+      "text": "Can deliberate fatal attacks lead to capital punishment?",
+      "intent": "murder_case"
     },
     {
-      "text": "Is aiding suicide a crime if the person is mentally ill?",
-      "intent": "suicide_aid_case"
+      "text": "If someone fights publicly, what's their legal risk?",
+      "intent": "affray_case"
     },
     {
-      "text": "She didn't start the fight, but she joined it. Legal consequences?",
+      "text": "Is causing a disturbance by fighting punishable by law?",
       "intent": "affray_case"
     },
     {
-      "text": "My neighbor bullied his son until he tried to hang himself.",
-      "intent": "suicide_cruelty_case"
+      "text": "Legal outcomes if a caregiver abandons an elderly person?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "What if you suggest suicide to someone and they actually try it?",
+      "text": "What charges apply to someone who helps another plan their suicide?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "She helped Laurie buy supplies to commit suicide. Legal? Please explain.",
-      "intent": "suicide_aid_case"
+      "text": "Legal outcomes for accidental poisoning due to negligence?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Got into a fight and caused a nosebleed. Is it serious?",
-      "intent": "injury_case"
+      "text": "Legal repercussions for deserting vulnerable adults without proper care?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Can you get a life sentence for killing someone without motive?",
-      "intent": "murder_case"
+      "text": "What legal outcome occurs if someone leaves a dependent person alone?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "She was texting while driving and hit a cyclist.",
+      "text": "What's the penalty for accidentally causing someone's death in a car accident?",
       "intent": "negligent_case"
     },
     {
-      "text": "Can you get a life sentence for killing someone without motive? Please explain.",
-      "intent": "murder_case"
+      "text": "Is deserting elderly dependents considered criminally negligent?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "She didn't start the fight, but she joined it. Legal consequences?",
-      "intent": "affray_case"
+      "text": "What's the legal consequence of deliberate strangulation resulting in death?",
+      "intent": "murder_case"
     },
     {
-      "text": "He was in a bar brawl and Francisco died. What now?",
-      "intent": "affray_case"
+      "text": "What happens legally if persistent cruelty leads someone to end their life?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "text": "Can someone face jail for neglecting elderly family members?",
       "intent": "abandonment_case"
     },
     {
-      "text": "She was texting while driving and hit a cyclist.",
+      "text": "If an accident is caused by negligence in equipment handling, what's the outcome?",
       "intent": "negligent_case"
-    },
-    {
-      "text": "Someone terminated their pregnancy at 8 months. What happens?",
-      "intent": "abortion_case"
     },
     {
-      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "text": "If someone is psychologically harassed until they kill themselves, what's the legal result?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can you go to jail for hurting someone even if they weren't seriously injured?",
-      "intent": "injury_case"
+      "text": "Consequences for involvement in physical fights publicly?",
+      "intent": "affray_case"
     },
     {
-      "text": "She was texting while driving and hit a cyclist.",
-      "intent": "negligent_case"
+      "text": "Does fighting outside a nightclub lead to charges?",
+      "intent": "affray_case"
     },
     {
-      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
-      "intent": "suicide_cruelty_case"
+      "text": "Are there criminal penalties for abandoning vulnerable adults?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Do I need to report it if no injury happened but there was a fight?",
-      "intent": "injury_case"
+      "text": "Is engaging in a public disturbance by fighting punishable?",
+      "intent": "affray_case"
     },
     {
-      "text": "My friend wants to abort but doesn't have access to a clinic. Please explain.",
-      "intent": "abortion_case"
+      "text": "Consequences for negligently causing a gas leak that injures others?",
+      "intent": "negligent_case"
     },
     {
-      "text": "She was texting while driving and hit a cyclist.",
+      "text": "Can negligent management of construction sites leading to harm result in prison?",
       "intent": "negligent_case"
     },
     {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "text": "What's the penalty for abandoning a child in public?",
       "intent": "abandonment_case"
     },
     {
-      "text": "Can a minor be punished for seeking an abortion?",
-      "intent": "abortion_case"
+      "text": "Is it punishable if someone is accidentally injured due to poor safety measures?",
+      "intent": "negligent_case"
     },
     {
-      "text": "My neighbor left their grandma in a locked car for hours.",
+      "text": "What's the sentence for intentional abandonment of vulnerable dependents?",
       "intent": "abandonment_case"
     },
     {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
+      "text": "Can someone face imprisonment for neglectful abandonment of a child?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Can you get a life sentence for killing someone without motive?",
-      "intent": "murder_case"
+      "text": "Consequences of violent confrontations in public places?",
+      "intent": "affray_case"
     },
     {
-      "text": "What's the law if death happens by accident, not on purpose?",
-      "intent": "negligent_case"
+      "text": "Are individuals criminally liable for abandoning dependent family members?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
-      "intent": "suicide_cruelty_case"
+      "text": "Legal punishment for intentionally suffocating a family member?",
+      "intent": "murder_case"
     },
     {
-      "text": "He shot Lydia in self-defense, but now he's being charged.",
-      "intent": "murder_case"
+      "text": "Can you be prosecuted for advising someone to commit suicide?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Is there jail time for abandonment if the victim dies?",
-      "intent": "abandonment_case"
+      "text": "Can starting a fight at a public event result in arrest?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "If someone falls and dies due to negligent maintenance, what charges apply?",
+      "intent": "negligent_case"
     },
     {
-      "text": "Is there a difference if someone tried to stop the affray?",
+      "text": "What's the charge for violent public disturbances?",
       "intent": "affray_case"
     },
     {
-      "text": "Can you be sentenced to death for killing a government worker?",
-      "intent": "murder_case"
+      "text": "What penalty applies if negligence during sports coaching results in injury?",
+      "intent": "negligent_case"
     },
     {
-      "text": "She self-aborted in secret. What does the law say?",
-      "intent": "abortion_case"
+      "text": "Consequences of encouraging suicide via emails?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "They drove their partner to attempt suicide through cruelty.",
+      "text": "What's the punishment for emotionally abusing someone into suicide?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
+      "text": "Penalty for abandoning family members who need constant care?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
+      "text": "Can emotional torture leading to suicide result in severe penalties?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "text": "Charges for abandonment of mentally disabled dependents?",
       "intent": "abandonment_case"
     },
     {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "text": "What happens legally if I support someone's decision to end their life?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
-      "intent": "abandonment_case"
+      "text": "Penalty for continuous mental cruelty resulting in suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
-      "intent": "abandonment_case"
+      "text": "Can one be prosecuted for advising suicide through social media?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
+      "text": "What's the legal penalty for enabling someone's suicide?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Is there punishment for attacking someone with fists but not using weapons?",
-      "intent": "injury_case"
+      "text": "Is negligence causing injury in workplaces considered a criminal act?",
+      "intent": "negligent_case"
     },
     {
-      "text": "He abandoned a mentally challenged relative at a station.",
-      "intent": "abandonment_case"
+      "text": "What penalty applies to intentional killing via hit-and-run?",
+      "intent": "murder_case"
     },
     {
-      "text": "Can you get a life sentence for killing Patricia without motive?",
-      "intent": "murder_case"
+      "text": "If someone instigates a public fight, will they be prosecuted?",
+      "intent": "affray_case"
     },
     {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
+      "text": "What happens legally if someone bullies another into suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Got into a fight and caused a nosebleed. Is it serious?",
-      "intent": "injury_case"
+      "text": "What happens legally if you help someone obtain suicide tools?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "What if you suggest suicide to Jasmine and they actually try it?",
+      "text": "Is advising suicide through texts a criminal offense?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "Can you be fined for leaving Timothy with no access to food or care?",
+      "text": "Penalty for neglectfully leaving elderly parents without care?",
       "intent": "abandonment_case"
     },
     {
-      "text": "He starved his dependent until they wanted to die. Is that a crime? Please explain.",
+      "text": "Can someone face charges if their cruelty leads to suicide?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
+      "text": "Is abandoning elderly family members without care provision illegal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can someone be prosecuted for accidental injuries from neglected equipment?",
+      "intent": "negligent_case"
     },
     {
-      "text": "He was in a bar brawl and someone died. What now? Please explain.",
+      "text": "Consequences of initiating a physical conflict in public?",
       "intent": "affray_case"
+    },
+    {
+      "text": "Is killing someone during a robbery treated as murder?",
+      "intent": "murder_case"
     },
     {
-      "text": "He punched his dad. Will the punishment be more severe?",
-      "intent": "injury_case"
+      "text": "Can someone be jailed for neglectful abandonment of elderly relatives?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "My friend pushed Sarah down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
+      "text": "Is supplying lethal means for suicide punishable by law?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed?",
+      "text": "Legal repercussions for aiding suicide through medication?",
       "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Are participants in public scuffles charged criminally?",
+      "intent": "affray_case"
     },
     {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "text": "Penalty for abandoning elderly relatives with no care provision?",
       "intent": "abandonment_case"
     },
     {
-      "text": "He was in a bar brawl and someone died. What now?",
+      "text": "Penalty if caught fighting in public places?",
       "intent": "affray_case"
     },
     {
-      "text": "She cheered someone on while they were trying to end their life.",
-      "intent": "suicide_aid_case"
+      "text": "Can someone face charges for fighting at a street festival?",
+      "intent": "affray_case"
     },
     {
-      "text": "Is attempted murder treated almost the same as murder?",
-      "intent": "murder_case"
+      "text": "Can abandoning elderly parents lead to criminal prosecution?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "She constantly insulted her child, and now the child attempted suicide.",
+      "text": "If emotional cruelty leads to suicide, what's the likely legal charge?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
+      "text": "Legal consequences of deliberately causing someone's death through starvation?",
+      "intent": "murder_case"
     },
     {
-      "text": "He said 'you should just die' to someone unstable.",
-      "intent": "suicide_aid_case"
+      "text": "Can premeditated murder by strangulation result in capital punishment?",
+      "intent": "murder_case"
     },
     {
-      "text": "My friend gave their cousin pills and said 'take them all'.",
-      "intent": "suicide_aid_case"
+      "text": "If a nurse mistakenly gives the wrong medication and someone dies, what's the charge?",
+      "intent": "negligent_case"
     },
     {
-      "text": "What's the punishment for deserting a child under 10?",
-      "intent": "abandonment_case"
+      "text": "Consequences of aiding suicide through personal communication?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Does it matter if the murder was planned? Please explain.",
+      "text": "Is life imprisonment mandatory for intentional drowning cases?",
       "intent": "murder_case"
+    },
+    {
+      "text": "Does assisting in suicide have severe legal consequences?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can someone be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
+      "text": "Is life imprisonment mandatory for intentional killing?",
+      "intent": "murder_case"
     },
     {
-      "text": "Is there punishment for attacking someone with fists but not using weapons?",
-      "intent": "injury_case"
+      "text": "Can persistent emotional abuse resulting in suicide lead to jail?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "What happens when three people fight and one gets badly hurt?",
+      "text": "Legal actions against those involved in public fighting incidents?",
       "intent": "affray_case"
     },
     {
-      "text": "My neighbor left their grandma in a locked car for hours. Please explain.",
-      "intent": "abandonment_case"
+      "text": "What's the typical punishment for a calculated murder?",
+      "intent": "murder_case"
     },
     {
-      "text": "He said 'you should just die' to someone unstable.",
+      "text": "Is helping someone commit suicide by providing resources illegal?",
       "intent": "suicide_aid_case"
     },
     {
-      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
+      "text": "Legal implications of bullying someone until they commit suicide?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Can Ronald be jailed for leaving their elderly parent unattended?",
-      "intent": "abandonment_case"
-    },
-    {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
+      "text": "Consequences if severe harassment causes a victim to commit suicide?",
+      "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Does it matter if the murder was planned?",
-      "intent": "murder_case"
+      "text": "Consequences of engaging in physical fights during protests?",
+      "intent": "affray_case"
     },
     {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
+      "text": "Legal penalties for encouraging suicide via messaging?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "My friend wants to abort but doesn't have access to a clinic.",
-      "intent": "abortion_case"
+      "text": "Legal outcomes if suicide is aided through direct assistance?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "He starved his dependent until they wanted to die. Is that a crime?",
-      "intent": "suicide_cruelty_case"
+      "text": "Penalty if someone leaves their sick parent without care?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Can someone be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
+      "text": "Legal outcome of deserting children intentionally?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "What if David kills another person but says it was an accident?",
+      "text": "Does premeditated murder warrant automatic life imprisonment?",
       "intent": "murder_case"
     },
     {
-      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
-      "intent": "injury_case"
+      "text": "Is accidental injury due to negligent management of machinery punishable?",
+      "intent": "negligent_case"
     },
     {
-      "text": "He murdered his father in cold blood. What does the law say?",
+      "text": "What's the punishment for deliberately killing someone during kidnapping?",
       "intent": "murder_case"
-    },
-    {
-      "text": "Do you know what happens when three people fight and one gets badly hurt?",
-      "intent": "affray_case"
     },
     {
-      "text": "They dropped a child at a temple and drove away.",
+      "text": "Can one be prosecuted for deserting their dependent children?",
       "intent": "abandonment_case"
     },
     {
-      "text": "They drove their partner to attempt suicide through cruelty.",
+      "text": "Can someone face jail if their harassment pushes someone to suicide?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "text": "What sentence can you face for negligently causing a fire that harms someone?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Does joining a public fight automatically mean legal trouble?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is abandoning a dependent family member punishable by law?",
       "intent": "abandonment_case"
     },
     {
-      "text": "Is it illegal to share methods of suicide to people online?",
-      "intent": "suicide_aid_case"
+      "text": "Consequences of intentional death by causing fall from height?",
+      "intent": "murder_case"
     },
     {
-      "text": "Can you be fined for a group fight even if no one died?",
+      "text": "Legal outcomes for those participating in violent street fights?",
       "intent": "affray_case"
     },
     {
-      "text": "Can Elizabeth be charged for attempting to hurt a public official?",
-      "intent": "injury_case"
+      "text": "Penalty for helping someone find methods for suicide?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
+      "text": "Consequences of leaving a child without necessary support?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "He planned to kill his neighbor but got caught before doing it.",
-      "intent": "murder_case"
+      "text": "If I provide suicide methods online, what are the legal risks?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "text": "What's the legal stance if persistent cruelty drives a person to suicide?",
       "intent": "suicide_cruelty_case"
     },
     {
-      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
-      "intent": "abandonment_case"
+      "text": "Can providing advice on suicide techniques lead to legal punishment?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Is this still illegal if they only attempted and didn't succeed?",
-      "intent": "suicide_cruelty_case"
+      "text": "Charges applicable for abandoning disabled family members without care?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "Is carelessness a crime if no one was badly hurt?",
-      "intent": "negligent_case"
+      "text": "What's the consequence of intentionally causing a fatal overdose?",
+      "intent": "murder_case"
     },
     {
-      "text": "Is attempted murder treated almost the same as murder?",
-      "intent": "murder_case"
+      "text": "Can someone face imprisonment for suicide-related advice?",
+      "intent": "suicide_aid_case"
     },
     {
-      "text": "Can someone be fined if a child is injured due to their negligence?",
+      "text": "If a pedestrian is accidentally injured due to a driver's negligence, consequences?",
       "intent": "negligent_case"
     },
     {
-      "text": "Can negligence lead to jail even if no one died?",
-      "intent": "negligent_case"
+      "text": "If someone is deliberately pushed from a building, what's the charge?",
+      "intent": "murder_case"
     },
     {
-      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
-      "intent": "injury_case"
+      "text": "Is deserting family members requiring care punishable by law?",
+      "intent": "abandonment_case"
     },
     {
-      "text": "He forced his girlfriend to take pills. Is that abortion?",
-      "intent": "abortion_case"
+      "text": "Can negligent supervision of children leading to harm result in charges?",
+      "intent": "negligent_case"
     }
   ],
   "date_updated": "2025-04-08"
