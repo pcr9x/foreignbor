@@ -167,15 +167,27 @@ def ask_for_missing_entities_yes_no(extracted_entities, required_keys):
                     user_response = input("> ").strip().lower()
                     if user_response in ["yes", "no"]:
                         # Map "yes" to the key name and "no" to "_"
-                        extracted_entities[key] = key if user_response == "yes" else "_"
+                        extracted_entities[key] = "true" if user_response == "yes" else "false"
                         break
                     else:
                         print("Please answer with 'yes' or 'no'.")
         elif extracted_entities[key] == "yes":
-            extracted_entities[key] = key
+            extracted_entities[key] = "true"
         elif extracted_entities[key] == "no":
-            extracted_entities[key] = "_"
+            extracted_entities[key] = "false"
     return extracted_entities
+
+def query_from_prolog(prolog_query):
+    """
+    Queries the Prolog knowledge base with the constructed query.
+    """
+    try:
+        result = list(prolog.query(prolog_query))
+        return result
+    except Exception as e:
+        print(f"Error querying Prolog: {e}")
+        return []
+    
 
 # Example usage
 if __name__ == "__main__":
@@ -201,9 +213,21 @@ if __name__ == "__main__":
     
     # Step 5: Construct Prolog query
     prolog_args = [extracted_entities[key] for key in required_keys]
-    prolog_query = f"handle_case({intent}(Person, Victim, {', '.join(prolog_args)}))."
+    prolog_query = f"clear_case, handle_case({intent}(person, victim, {', '.join(prolog_args)})), sentence(person, S)."
     print(f"Prolog Query: {prolog_query}")
     
+    # Step 6: Query Prolog and get results
+    result = query_from_prolog(prolog_query)
+    if result:
+        print("Prolog Results:")
+        for res in result:
+            print(res)
+        
+    else:
+        print("No results found in Prolog.")
+    
+
+
 #    clear_case,
 #    handle_case(injury_case(ella, frank, true, true, true, true, true, true, false, official)),
 #    sentence(ella, S).
