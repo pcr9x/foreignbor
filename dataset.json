@@ -1,3205 +1,3205 @@
 {
-    "data": [
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "They forgot to lock a gate and a child drowned.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "They forgot to lock a gate and a child drowned.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "They forgot to lock a gate and a child drowned.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "They forgot to lock a gate and a child drowned.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "They forgot to lock a gate and a child drowned.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "They forgot to lock a gate and a child drowned.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "They forgot to lock a gate and a child drowned.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "They forgot to lock a gate and a child drowned.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "They forgot to lock a gate and a child drowned.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My cousin threatened his wife until she attempted suicide.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "How much sugar in a cup of tea?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She helped a teen hang himself.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Best way to grow tomatoes indoors?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "How bad is it if I accidentally elbow someone hard?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He fired a gun but missed the victim.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "What's the latest iPhone price?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "What seasoning goes best with steak?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "A man got beaten to death in a bar brawl.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My cousin almost killed someone with a bat.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He left the stove on and caused a fire accident.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He pushed someone into suicide by constant bullying.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Is aiding suicide punishable by law?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "Can you go to jail for pushing someone to hurt themselves?",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My uncle dropped a heavy object and injured someone.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "Someone was caught trying to suffocate another person.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "She attempted to poison her friend.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He was part of a gang fight that led to death.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "My neighbor shot someone to death.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "She hit someone with a stick. Is that serious?",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Someone was so cruel their partner jumped off a bridge.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "There was a big group fight and someone got hurt.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He strangled a person until they stopped breathing.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She poisoned her husband.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "Can I go to Japan in December?",
-        "intent": "out_of_scope"
-      },
-      {
-        "text": "He tried to stab someone but they lived.",
-        "intent": "attempted_murder_case"
-      },
-      {
-        "text": "My dad was in a fight with three other people.",
-        "intent": "affray_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He gave pills to someone to end their life.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Someone got slapped during an argument.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "They stabbed someone and he died.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "She was speeding and hit a pedestrian.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "My brother kicked a guy during a fight.",
-        "intent": "injury_case"
-      },
-      {
-        "text": "He killed a man last night.",
-        "intent": "murder_case"
-      },
-      {
-        "text": "She abused her child until they tried to hang themselves.",
-        "intent": "suicide_cruelty_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "My friend said 'just do it' to a depressed kid.",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "Is it illegal to tell a child to kill themselves?",
-        "intent": "suicide_aid_case"
-      },
-      {
-        "text": "He left wires exposed and someone died.",
-        "intent": "negligent_case"
-      },
-      {
-        "text": "How serious is participating in a street fight?",
-        "intent": "affray_case"
-      },
-      {
-        "text": "He punched someone in the face.",
-        "intent": "injury_case"
-      }
-    ],
-    "date_updated": "2025-04-08"
-  }
+  "data": [
+    {
+      "text": "What's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He forgot to secure the ladder and someone fell. Is that criminal?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can Joanna be fined if a child is injured due to their negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Do you know what if someone kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can you be fined for leaving someone with no access to food or care? Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can I be arrested for encouraging suicide even as a joke? Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What are the legal risks of home remedies for abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What are the legal risks of home remedies for abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Someone punched another person during an argument. What penalty applies?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What if someone kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He was in a bar brawl and James died. What now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can you be fined for a group fight even if no one died?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can a minor be punished for seeking an abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can someone be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is helping someone get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "What's the punishment for deserting a child under 10?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My neighbor left their grandma in a locked car for hours.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He said 'you should just die' to someone unstable.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What's the punishment for deserting a child under 10?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "She constantly insulted her child, and now the child attempted suicide. Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Does it matter if the murder was planned? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is abortion illegal if done at home without medical supervision?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What are the legal risks of home remedies for abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "What happens when three people fight and one gets badly hurt?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She cheered someone on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can Mario be jailed for emotional abuse that led to suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She cheered someone on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She constantly insulted her child, and now the child attempted suicide.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can you be fined for a group fight even if no one died?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He was in a bar brawl and someone died. What now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She helped someone buy supplies to commit suicide. Legal?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is abortion illegal if done at home without medical supervision?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "What if someone planned to hurt someone else but didn't follow through?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Do you know what if someone kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can someone be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What happens when three people fight and one gets badly hurt?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Do you know what's the penalty for stabbing someone to death intentionally?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Left the stove on and caused a fire. Do you know what's the charge?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can I be arrested for encouraging suicide even as a joke?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can you be fined for leaving Charles with no access to food or care? Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened? Please explain.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Someone punched another person during an argument. What penalty applies?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "What's the punishment for deserting a child under 10?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She cheered Stacey on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. Do you know what happens?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can someone go to jail for giving suicide advice to a child?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "They were all fighting and someone got their jaw broken.",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures someone?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can someone go to jail for giving suicide advice to a child?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can Beth be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is it illegal to share methods of suicide to people online?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is abortion illegal if done at home without medical supervision?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can women be jailed for terminating their pregnancy?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is it illegal to walk away from someone who depends on you?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She poisoned someone but they didn't die. What happens?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is helping Daisy get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "What if someone kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can someone be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is there punishment for attacking someone with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can you go to jail for hurting Nathan even if they weren't seriously injured?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can Amanda go to jail for giving suicide advice to a child?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Someone punched another person during an argument. What penalty applies?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can you be sentenced to death for killing a government worker?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He attacked the guy, but the guy didn't press charges. What now?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She constantly insulted her child, and now the child attempted suicide.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What happens when three people fight and one gets badly hurt?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My friend pushed Lisa down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is there punishment for attacking someone with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'. Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He said 'you should just die' to Brianna unstable. Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Got into a fight and caused a nosebleed. Is it serious?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Do you know what's the penalty for causing someone else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Does it matter if the murder was planned?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What if someone planned to hurt someone else but didn't follow through?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "She helped someone buy supplies to commit suicide. Legal?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "They dropped a child at a temple and drove away.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "What's the punishment for deserting a child under 10?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What if someone planned to hurt someone else but didn't follow through?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He murdered his father in cold blood. What does the law say?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What if someone planned to hurt someone else but didn't follow through?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is helping someone get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "What if someone planned to hurt someone else but didn't follow through?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can someone be jailed for emotional abuse that led to suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is it illegal to share methods of suicide to people online?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My friend pushed Jorge down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "They were all fighting and someone got their jaw broken.",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Left the stove on and caused a fire. What's the charge?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "They dropped a child at a temple and drove away.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "They were all fighting and someone got their jaw broken.",
+      "intent": "affray_case"
+    },
+    {
+      "text": "What happens when three people fight and one gets badly hurt?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it. Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can you be sentenced to death for killing a government worker? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can you be sentenced to death for killing a government worker?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can you be sentenced to death for killing a government worker?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can someone be fined if a child is injured due to their negligence? Please explain.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can women be jailed for terminating their pregnancy?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He murdered his father in cold blood. What does the law say?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is there punishment for attacking someone with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What's the penalty for causing someone else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "They were all fighting and someone got their jaw broken.",
+      "intent": "affray_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He murdered his father in cold blood. What does the law say?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures someone?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can someone be fined if a child is injured due to their negligence? Please explain.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What's the penalty for causing someone else to abort? Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "I left the gate open and the dog attacked someone. Am I liable?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime? Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He murdered his father in cold blood. What does the law say?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can someone be jailed for emotional abuse that led to suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can someone be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My neighbor left their grandma in a locked car for hours.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures someone?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is helping Katrina get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "My neighbor left their grandma in a locked car for hours.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Left the stove on and caused a fire. What's the charge?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She poisoned Hayley but they didn't die. What happens?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is there a difference if David tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Someone punched another person during an argument. Do you know what penalty applies?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can a minor be punished for seeking an abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What's the punishment for deserting a child under 10?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Do you know what's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Someone punched another person during an argument. What penalty applies? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "She helped Ashley buy supplies to commit suicide. Legal?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas? Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "They dropped a child at a temple and drove away.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She didn't start the fight, but she joined it. Legal consequences?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can you be fined for leaving John with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "I left the gate open and the dog attacked someone. Am I liable?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill? Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "They were all fighting and someone got their jaw broken.",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can women be jailed for terminating their pregnancy?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He shot someone in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is abortion illegal if done at home without medical supervision?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Left the stove on and caused a fire. What's the charge?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Do you know what if Sarah kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What if someone planned to hurt someone else but didn't follow through?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can you go to jail for hurting Jennifer even if they weren't seriously injured?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Does it matter if the murder was planned?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens? Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She didn't start the fight, but she joined it. Legal consequences?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What's the penalty for causing someone else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He shot someone in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What's the penalty for stabbing April to death intentionally?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can someone be fined if a child is injured due to their negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "What's the penalty for causing someone else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can I be arrested for encouraging suicide even as a joke?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is helping someone get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She cheered Kimberly on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What's the penalty for causing Andrew else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say? Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures someone?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Do you know what's the penalty for causing Paul else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide? Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What are the legal risks of home remedies for abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can someone be fined if a child is injured due to their negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is helping someone get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing Noah without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion? Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can a minor be punished for seeking an abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "What's the penalty for stabbing someone to death intentionally?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can you be fined for leaving Heather with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What are the legal risks of home remedies for abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She constantly insulted her child, and now the child attempted suicide.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He shot someone in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What if someone kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She poisoned someone but they didn't die. Do you know what happens?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing Joshua without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "What's the penalty for causing someone else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can you be sentenced to death for killing a government worker?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty. Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is helping someone get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She didn't start the fight, but she joined it. Legal consequences?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can I be arrested for encouraging suicide even as a joke?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can Alicia be fined if a child is injured due to their negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He was in a bar brawl and someone died. What now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can women be jailed for terminating their pregnancy?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is there punishment for attacking Benjamin with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can someone be fined if a child is injured due to their negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "What is the punishment for fatal workplace negligence? Please explain.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "They dropped a child at a temple and drove away.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures someone?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can someone be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "They dropped a child at a temple and drove away. Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is there punishment for attacking Paige with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What is the punishment for fatal workplace negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He said 'you should just die' to someone unstable.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She constantly insulted her child, and now the child attempted suicide.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can you be sentenced to death for killing a government worker?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is helping someone get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can harsh parenting lead to legal trouble if the child self-harms? Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What's the penalty for stabbing someone to death intentionally?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What if someone kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He attacked the guy, but the guy didn't press charges. What now?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "What is the punishment for fatal workplace negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She poisoned Brent but they didn't die. What happens?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is there punishment for attacking someone with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "They were all fighting and Meagan got their jaw broken.",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can you be fined for leaving Anthony with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is it illegal to walk away from someone who depends on you? Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She cheered someone on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My friend wants to abort but doesn't have access to a clinic. Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "What if someone planned to hurt someone else but didn't follow through? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Got into a fight and caused a nosebleed. Is it serious?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Someone punched another person during an argument. Do you know what penalty applies?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "What's the penalty for stabbing someone to death intentionally?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He attacked the guy, but the guy didn't press charges. What now?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can I be arrested for encouraging suicide even as a joke?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My neighbor left their grandma in a locked car for hours.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can I be arrested for encouraging suicide even as a joke?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can Troy be fined if a child is injured due to their negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "I left the gate open and the dog attacked someone. Am I liable?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She constantly insulted her child, and now the child attempted suicide.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What is the punishment for fatal workplace negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you go to jail for hurting Mason even if they weren't seriously injured?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal? Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What happens when three people fight and one gets badly hurt?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "I left the gate open and the dog attacked someone. Am I liable?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "My neighbor left their grandma in a locked car for hours. Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My friend wants to abort but doesn't have access to a clinic.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She helped someone buy supplies to commit suicide. Legal? Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable? Please explain.",
+      "intent": "affray_case"
+    },
+    {
+      "text": "What's the penalty for stabbing someone to death intentionally?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "What's the punishment for deserting a child under 10?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He attacked the guy, but the guy didn't press charges. What now?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station. Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She constantly insulted her child, and now the child attempted suicide.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She cheered Barbara on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can I be arrested for encouraging suicide even as a joke?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "My neighbor left their grandma in a locked car for hours.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is there punishment for attacking someone with fists but not using weapons? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures someone?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is helping Amy get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is it illegal to share methods of suicide to people online?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can you be sentenced to death for killing a government worker?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can you go to jail for hurting someone even if they weren't seriously injured?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'. Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can a minor be punished for seeking an abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "They dropped a child at a temple and drove away. Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can Amber be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing Steven without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is helping Andrew get an abortion a crime? Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is there a difference if Angelica tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can someone be charged for attempting to hurt a public official? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What is the punishment for fatal workplace negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures James?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is there punishment for attacking Katie with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My friend pushed Rhonda down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is abortion illegal if done at home without medical supervision?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures Anthony?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can women be jailed for terminating their pregnancy?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can Ricky go to jail for giving suicide advice to a child?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can Jeffrey be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can Douglas be fined if a child is injured due to their negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can a minor be punished for seeking an abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose? Please explain.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is it illegal to share methods of suicide to people online?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She cheered someone on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Do you know what if Tracy kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can Kayla be fined if a child is injured due to their negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He forgot to secure the ladder and someone fell. Is that criminal?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is it illegal to walk away from someone who depends on you?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it. Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "My friend wants to abort but doesn't have access to a clinic.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He said 'you should just die' to Kathleen unstable.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Left the stove on and caused a fire. What's the charge?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "My friend pushed Savannah down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What's the penalty for causing Craig else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "She cheered Rachel on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can women be jailed for terminating their pregnancy?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is it illegal to share methods of suicide to people online?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can you be sentenced to death for killing a government worker?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is helping someone get an abortion a crime? Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She didn't start the fight, but she joined it. Legal consequences?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He was in a bar brawl and Barbara died. What now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures Kathleen?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can someone be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He attacked the guy, but the guy didn't press charges. What now? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can you go to jail for hurting Alexandria even if they weren't seriously injured? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What are the legal risks of home remedies for abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He was in a bar brawl and Kevin died. What now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "She poisoned Patricia but they didn't die. What happens?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Do you know what is the punishment for fatal workplace negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Left the stove on and caused a fire. What's the charge?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it. Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My friend wants to abort but doesn't have access to a clinic. Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can women be jailed for terminating their pregnancy?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He attacked the guy, but the guy didn't press charges. What now?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "My friend wants to abort but doesn't have access to a clinic.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can Mario go to jail for giving suicide advice to a child?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She locked the elderly parent indoors for weeks. They tried to take their life. Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can someone be jailed for emotional abuse that led to suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can Chad go to jail for giving suicide advice to a child?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed? Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He said 'you should just die' to Brianna unstable. Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He shot Jonathan in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He was in a bar brawl and someone died. What now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is abortion illegal if done at home without medical supervision?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is abortion illegal if done at home without medical supervision?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "What are the legal risks of home remedies for abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Someone punched another person during an argument. Do you know what penalty applies?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Do you know what if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He shot Elizabeth in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She helped Loretta buy supplies to commit suicide. Legal?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures someone?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can Melissa go to jail for giving suicide advice to a child?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can Brianna go to jail for giving suicide advice to a child?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray? Please explain.",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My uncle got into a street fight. Will he be charged?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can a minor be punished for seeking an abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He forgot to secure the ladder and someone fell. Is that criminal?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can someone be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He was in a bar brawl and someone died. Do you know what now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Got into a fight and caused a nosebleed. Is it serious?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What if someone kills another person but says it was an accident? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can you be fined for a group fight even if no one died?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He attacked the guy, but the guy didn't press charges. What now? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can Wesley be fined if a child is injured due to their negligence? Please explain.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "I left the gate open and the dog attacked someone. Am I liable?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He said 'you should just die' to someone unstable.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can you be fined for leaving Vincent with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is abortion illegal if done at home without medical supervision?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist. Please explain.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal? Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Do you know what if someone kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He shot Karen in self-defense, but now he's being charged. Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is helping Alicia get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can someone be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is there punishment for attacking someone with fists but not using weapons? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Left the stove on and caused a fire. Do you know what's the charge?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Do you know what's the penalty for stabbing someone to death intentionally?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Does it matter if the murder was planned?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He shot someone in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. Do you know what if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Does it matter if the murder was planned?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can someone be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can you go to jail for hurting someone even if they weren't seriously injured?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He said 'you should just die' to someone unstable.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is helping someone get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He said 'you should just die' to Michael unstable.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He shot someone in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He shot someone in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can women be jailed for terminating their pregnancy?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures someone?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can someone be jailed for leaving their elderly parent unattended? Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is it illegal to share methods of suicide to people online?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is it criminal to abuse a dependent who then attempts suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She locked the elderly parent indoors for weeks. They tried to take their life. Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Someone punched another person during an argument. What penalty applies? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can someone be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens? Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is it illegal to share methods of suicide to people online?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What's the penalty for causing someone else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Do you know what if Brian kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He was in a bar brawl and someone died. What now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He shot Stephanie in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is it illegal to walk away from Cynthia who depends on you?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "My friend pushed Kimberly down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is abortion illegal if done at home without medical supervision?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can women be jailed for terminating their pregnancy?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Do you know what if Richard planned to hurt Richard else but didn't follow through?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is it illegal to walk away from someone who depends on you?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Got into a fight and caused a nosebleed. Is it serious?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He murdered his father in cold blood. What does the law say?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Do you know what if you suggest suicide to Sharon and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can harsh parenting lead to legal trouble if the child self-harms? Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "She helped Christine buy supplies to commit suicide. Legal?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "She cheered someone on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He murdered his father in cold blood. What does the law say?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can Megan be jailed for emotional abuse that led to suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now? Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can someone be jailed for emotional abuse that led to suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose? Please explain.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Got into a fight and caused a nosebleed. Is it serious?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can someone be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Does it matter if the murder was planned? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He shot someone in self-defense, but now he's being charged. Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He let his kid ride without a helmet. What if something happened?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you be fined for leaving Charles with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Do you know what is the punishment for fatal workplace negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can Justin be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can someone be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is it illegal to walk away from someone who depends on you?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is helping someone get an abortion a crime?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can Sandra go to jail for giving suicide advice to a child? Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "He attacked the guy, but the guy didn't press charges. What now?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is it illegal to walk away from someone who depends on you?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can you be fined for leaving Edward with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My cousin threw the first punch in a group fight. Jail?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is it illegal to share methods of suicide to people online?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can Michael be jailed for emotional abuse that led to suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She poisoned Bradley but they didn't die. What happens?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "A bystander got hit during a group altercation. Is everyone liable?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Someone punched another person during an argument. What penalty applies?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing Christopher without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He attacked the guy, but the guy didn't press charges. What now?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can you be fined for a group fight even if no one died?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Does it matter if the murder was planned?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "What's the penalty for causing someone else to abort?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She helped someone buy supplies to commit suicide. Legal?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can someone be jailed for emotional abuse that led to suicide?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can you go to jail for hurting April even if they weren't seriously injured?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Left the stove on and caused a fire. What's the charge?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you be fined for a group fight even if no one died?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is there punishment for attacking someone with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "How serious is joining a fight that injures Jared?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can a minor be punished for seeking an abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Is aiding suicide a crime if the person is mentally ill?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She didn't start the fight, but she joined it. Legal consequences?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My neighbor bullied his son until he tried to hang himself.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "What if you suggest suicide to someone and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She helped Laurie buy supplies to commit suicide. Legal? Please explain.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Got into a fight and caused a nosebleed. Is it serious?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She didn't start the fight, but she joined it. Legal consequences?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He was in a bar brawl and Francisco died. What now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Someone terminated their pregnancy at 8 months. What happens?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Someone was abusive and their spouse attempted suicide. What now?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can you go to jail for hurting someone even if they weren't seriously injured?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She locked the elderly parent indoors for weeks. They tried to take their life.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My friend wants to abort but doesn't have access to a clinic. Please explain.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "She was texting while driving and hit a cyclist.",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can a minor be punished for seeking an abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "My neighbor left their grandma in a locked car for hours.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing someone without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "What's the law if death happens by accident, not on purpose?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He shot Lydia in self-defense, but now he's being charged.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is there jail time for abandonment if the victim dies?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is there a difference if someone tried to stop the affray?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can you be sentenced to death for killing a government worker?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She self-aborted in secret. What does the law say?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can you be fined for leaving someone with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there punishment for attacking someone with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He abandoned a mentally challenged relative at a station.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can you get a life sentence for killing Patricia without motive?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Got into a fight and caused a nosebleed. Is it serious?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What if you suggest suicide to Jasmine and they actually try it?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can you be fined for leaving Timothy with no access to food or care?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime? Please explain.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He was in a bar brawl and someone died. What now? Please explain.",
+      "intent": "affray_case"
+    },
+    {
+      "text": "He punched his dad. Will the punishment be more severe?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "My friend pushed Sarah down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He told a 14-year-old to go ahead and kill herself. Can he be jailed?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He was in a bar brawl and someone died. What now?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "She cheered someone on while they were trying to end their life.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "She constantly insulted her child, and now the child attempted suicide.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He said 'you should just die' to someone unstable.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "My friend gave their cousin pills and said 'take them all'.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "What's the punishment for deserting a child under 10?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Does it matter if the murder was planned? Please explain.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can someone be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Is there punishment for attacking someone with fists but not using weapons?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What happens when three people fight and one gets badly hurt?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "My neighbor left their grandma in a locked car for hours. Please explain.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "He said 'you should just die' to someone unstable.",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can harsh parenting lead to legal trouble if the child self-harms?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can Ronald be jailed for leaving their elderly parent unattended?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Does it matter if the murder was planned?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "My friend wants to abort but doesn't have access to a clinic.",
+      "intent": "abortion_case"
+    },
+    {
+      "text": "He starved his dependent until they wanted to die. Is that a crime?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Can someone be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "What if David kills another person but says it was an accident?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "My friend pushed someone down the stairs, but they didn't get badly hurt.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He murdered his father in cold blood. What does the law say?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Do you know what happens when three people fight and one gets badly hurt?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "They dropped a child at a temple and drove away.",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "They drove their partner to attempt suicide through cruelty.",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Are there laws against leaving sick relatives in remote areas?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is it illegal to share methods of suicide to people online?",
+      "intent": "suicide_aid_case"
+    },
+    {
+      "text": "Can you be fined for a group fight even if no one died?",
+      "intent": "affray_case"
+    },
+    {
+      "text": "Can Elizabeth be charged for attempting to hurt a public official?",
+      "intent": "injury_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "He planned to kill his neighbor but got caught before doing it.",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "She left her baby on a stranger's doorstep. Is that criminal?",
+      "intent": "abandonment_case"
+    },
+    {
+      "text": "Is this still illegal if they only attempted and didn't succeed?",
+      "intent": "suicide_cruelty_case"
+    },
+    {
+      "text": "Is carelessness a crime if no one was badly hurt?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Is attempted murder treated almost the same as murder?",
+      "intent": "murder_case"
+    },
+    {
+      "text": "Can someone be fined if a child is injured due to their negligence?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Can negligence lead to jail even if no one died?",
+      "intent": "negligent_case"
+    },
+    {
+      "text": "Do I need to report it if no injury happened but there was a fight? Please explain.",
+      "intent": "injury_case"
+    },
+    {
+      "text": "He forced his girlfriend to take pills. Is that abortion?",
+      "intent": "abortion_case"
+    }
+  ],
+  "date_updated": "2025-04-08"
+}
