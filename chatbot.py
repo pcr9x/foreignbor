@@ -22,8 +22,8 @@ label_encoder.classes_ = label_classes
 
 # Define intent mappings and required keys
 INTENT_ENTITY_MAP = {
-    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous"," Prem", "Torture", "CrimeRelated", "VictimType", "ReasonableSelfDefense"],
-    "murder_case" : ["PersonAge", "Intent"," Prem", "Torture", "CrimeRelated", "VictimType", "Death", "ReasonableSelfDefense"],
+    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous", "Prem", "Torture", "CrimeRelated", "VictimType", "ReasonableSelfDefense"],
+    "murder_case" : ["PersonAge", "Intent", "Prem", "Torture", "CrimeRelated", "VictimType", "Death", "ReasonableSelfDefense"],
     "negligent_case" : ["PersonAge", "Grievous", "Death"],
     "suicide_cruelty_case" : ["PersonAge", "Occurred", "Dependent", "UsedCruelty"],
     "suicide_aid_case" : ["PersonAge", "Occurred", "SuicideVictimType"],
