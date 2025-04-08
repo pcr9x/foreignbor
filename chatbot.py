@@ -109,7 +109,8 @@ def extract_entities(user_input, required_keys):
         f"Extract the required entities from the input below. "
         f"Respond in JSON format ONLY, with no explanation, put in null if no key is found for that category.\n\n"
         f"for yes/no questions, use 'yes' or 'no' as the answer.\n\n"
-        f"for VictimType, use 'ascendant', 'official', 'official assistant' or 'other' as the answer.\n\n"
+        f"for VictimType, use 'ascendant', 'official', 'official assistant' or 'other' as the answer, or null if not specified.\n\n"
+        f"for SuicideVictimType, use 'child', 'incompetent', 'uncontrollable' or 'other' as the answer, or null if not specified.\n\n"
         f"Input: {user_input}\n"
         f"Keys and Context:\n{json.dumps(keys_with_context, indent=2)}\n\n"
         f"make sure the keys are in the same order as the input.\n\n"
@@ -161,6 +162,15 @@ def ask_for_missing_entities_yes_no(extracted_entities, required_keys):
                         break
                     else:
                         print("Please choose from: ascendant, official, official assistant, or other.")
+            elif key == "SuicideVictimType":
+                print(FOLLOW_UP_QUESTIONS[key])
+                while True:
+                    user_response = input("> ").strip().lower()
+                    if user_response in ["child", "incompetent", "uncontrollable", "other"]:
+                        extracted_entities[key] = user_response
+                        break
+                    else:
+                        print("Please choose from: child, incompetent, uncontrollable, or other.")
             else:
                 print(FOLLOW_UP_QUESTIONS[key])
                 while True:
