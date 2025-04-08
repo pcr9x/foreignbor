@@ -21,46 +21,60 @@ label_encoder = LabelEncoder()
 label_encoder.classes_ = label_classes
 
 # Define intent mappings and required keys
-INTENT_ENTITY_MAP = {
-    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous"," Prem", "Torture", "CrimeRelated", "VictimType"],
-    "murder_case" : ["PersonAge", "Intent"," Prem", "Torture", "CrimeRelated", "VictimType", "Death"],
-    "negligent_case" : ["PersonAge", "Circumstance", "Grievous", "Death"],
-    "suicide_cruelty_case" : ["PersonAge", "VictimAge", "Occurred", "Dependent", "UsedCruelty"],
-    "suicide_aid_case" : ["PersonAge", "VictimAge", "Occurred", "VictimType"],
-    "affray_case" : ["PersonAge", "Death", "Prevented", "Grievous"]
-}
-
-# Define follow-up questions for missing keys (detailed)
 FOLLOW_UP_QUESTIONS = {
-    "PersonAge": "What is the age of the person who committed the act? Are they over 18?",
-    "Injured": "Was the victim physically or mentally injured as a result of the act?",
-    "Intent": "Was the act committed intentionally or accidentally?",
-    "Grievous":
-        """Did the victim suffer grievous bodily harm? Grievous injuries include:\n
-        1. Loss of sight, hearing, tongue, or sense of smell\n
-        2. Loss of reproductive organs or ability\n
-        3. Loss of limbs, fingers, or other body parts\n
-        4. Permanent disfiguration of the face\n
-        5. Abortion caused by the act\n
-        6. Permanent mental illness or insanity\n
-        7. Chronic illness or severe pain lasting over 20 days\n
-        8. Inability to perform ordinary duties for over 20 days""",
-    "Prem": "Was the act committed after premeditation or planning?",
-    "Torture": "Did the person use torture or acts of cruelty while committing the act?",
-    "CrimeRelated": "Was the act done to commit, conceal, benefit from, or escape punishment for another crime?",
-    "VictimType": 
-        """What is the relationship or status of the victim? Choose from:\n
-        - Ascendant (e.g. parent or grandparent)\n
-        - Official (e.g. police, judge, etc. in duty)\n
-        - Assistant to an official\n
-        - Other (no special status)""",
-    "Death": "Did the victim die as a result of the act?",
-    "Circumstance": "What was the negligent or careless circumstance that led to the incident?",
-    "Occurred": "Was the suicide attempt successful, or did the person survive?",
-    "VictimAge": "How old was the victim at the time of the incident?",
-    "Dependent": "Was the victim dependent on the accused for care, support, or living needs?",
-    "UsedCruelty": "Did the accused use cruel behavior, threats, or abuse toward the victim?",
-    "Prevented": "Did the person try to prevent the fight or act in lawful self-defense?"
+    "PersonAge": "What is the age of the person who committed the act? Please confirm whether they are over 18 years old or not, as it can affect sentencing.",
+    
+    "Injured": "Was the victim physically or mentally injured as a result of the act? Even minor harm may count in legal terms.",
+    
+    "Intent": "Was the act committed intentionally, or was it an accident? Intent is important for determining the severity of punishment.",
+    
+    "Grievous": (
+        "Did the victim suffer grievous bodily harm? This includes any of the following:\n"
+        "1. Loss of senses such as sight, hearing, speech, or smell\n"
+        "2. Loss of reproductive organs or function\n"
+        "3. Loss of limbs or major body parts (e.g., hand, foot, finger)\n"
+        "4. Permanent disfigurement of the face\n"
+        "5. Forced abortion\n"
+        "6. Permanent insanity\n"
+        "7. Chronic illness or pain lasting 20+ days, or inability to follow daily activities for the same period"
+    ),
+    
+    "Prem": "Was the act premeditated or planned in advance? Premeditation increases the severity of criminal liability.",
+    
+    "Torture": "Was any form of torture or excessive cruelty used in the commission of the act? This can lead to aggravated sentencing.",
+    
+    "CrimeRelated": (
+        "Was this act committed to support, conceal, or escape punishment from another crime? For example:\n"
+        "- To silence a witness\n"
+        "- To destroy evidence\n"
+        "- To help commit another offense"
+    ),
+    
+    "VictimType": (
+        "What is the classification of the victim? Choose from the following types:\n"
+        "- Ascendant: A parent, grandparent, or ancestor\n"
+        "- Official: A government officer performing their duty\n"
+        "- Assistant: A person aiding an official\n"
+        "- Other: None of the above"
+    ),
+    
+    "Death": "Did the act result in the death of the victim? This directly influences whether the crime is classified as murder, attempted murder, or a lesser offense.",
+    
+    "Occurred": "Did the suicide actually occur or was it merely attempted? Both cases are considered serious, but the legal consequences may differ.",
+    
+    "Dependent": "Was the victim dependent on the accused for food, care, protection, or shelter? This includes minors, spouses, or people in the care of the offender.",
+    
+    "UsedCruelty": "Did the person use any form of physical, emotional, or psychological cruelty toward the victim? This includes persistent abuse or threats.",
+    
+    "SuicideVictimType": (
+        "How would you classify the person who attempted or committed suicide?\n"
+        "- Child: Under 16 years old\n"
+        "- Incompetent: Unable to understand the nature or seriousness of their actions\n"
+        "- Uncontrollable: Lacking ability to control their own actions (e.g., due to mental state)\n"
+        "- Other: Does not fit any of the above categories"
+    ),
+    
+    "Prevented": "Did the accused attempt to stop or lawfully intervene in the situation (e.g., during a group fight)? If they took preventive actions, they may not be held responsible."
 }
 
 def classify_intent(user_input):
