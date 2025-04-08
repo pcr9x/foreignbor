@@ -32,7 +32,7 @@ INTENT_ENTITY_MAP = {
 
 # Define follow-up questions for missing keys (detailed)
 FOLLOW_UP_QUESTIONS = {
-    "PersonAge": "What is the age of the person who committed the act? Please confirm whether they are over 18 years old or not, as it can affect sentencing.",
+    "PersonAge": "Is the person in question over 18 years old or not, as it can affect sentencing.",
     
     "Injured": "Was the victim physically or mentally injured as a result of the act? Even minor harm may count in legal terms.",
     
@@ -68,7 +68,7 @@ FOLLOW_UP_QUESTIONS = {
         "- Other: None of the above"
     ),
     
-    "ReasonableSelfDefense": "Did you act in self-defense when you used force to protect yourself 'in the heat of the moment,' such as by using an object as a weapon or stopping an intruder from escaping (e.g., tackling them)?",
+    "ReasonableSelfDefense": "Did the accused act in self-defense when you used force to protect yourself 'in the heat of the moment,' such as by using an object as a weapon or stopping an intruder from escaping (e.g., tackling them)?",
     
     "Death": "Did the act result in the death of the victim? This directly influences whether the crime is classified as murder, attempted murder, or a lesser offense.",
     
@@ -76,7 +76,7 @@ FOLLOW_UP_QUESTIONS = {
     
     "Dependent": "Was the victim dependent on the accused for food, care, protection, or shelter? This includes minors, spouses, or people in the care of the offender.",
     
-    "UsedCruelty": "Did the person use any form of physical, emotional, or psychological cruelty toward the victim? This includes persistent abuse or threats.",
+    "UsedCruelty": "Did the accused use any form of physical, emotional, or psychological cruelty toward the victim? This includes persistent abuse or threats.",
     
     "SuicideVictimType": (
         "How would you classify the person who attempted or committed suicide?\n"
