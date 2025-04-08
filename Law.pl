@@ -3,7 +3,7 @@
 % =========================================================
 :- dynamic
     % Murder Case
-    murder/2, age/2, intent/2, premeditated/1,
+    murder/2, age/2, intent/2, premeditated/1, % age mean more than 18
     used_torture/1, murder_related_to_crime/1, victim_type/2,
 
     % Negligence Case
