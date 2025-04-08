@@ -39,7 +39,7 @@ class IntentClassifier:
     def train_model(self, train_dataset, eval_dataset=None):
         training_args = TrainingArguments(
             output_dir=self.output_dir,
-            evaluation_strategy="epoch" if eval_dataset else "no",  # Evaluate at the end of each epoch
+            eval_strategy="epoch" if eval_dataset else "no",  # Evaluate at the end of each epoch
             save_strategy="no",
             #save_strategy="epoch",  
             #save_total_limit=1,  
@@ -84,6 +84,9 @@ class IntentClassifier:
         prediction = classifier(text)
         label_map = {f"LABEL_{i}": label for i, label in enumerate(self.label_encoder.classes_)}
         predicted_label = label_map[prediction[0]["label"]]
+        confidence = prediction[0]["score"]
+        if confidence < 0.7:
+            return "Out of scope"
         return predicted_label
 
     def KF_cross_validate(self, dataset, n_splits=5):

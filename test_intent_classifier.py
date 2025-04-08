@@ -1,0 +1,24 @@
+from new_BERT_train import IntentClassifier
+import json
+import torch
+import pandas as pd
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer, pipeline
+from datasets import Dataset, load_dataset
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import KFold
+from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
+from transformers import EarlyStoppingCallback
+
+classifier = IntentClassifier()
+dataset = classifier.load_dataset()
+
+# Encode labels
+classifier.label_encoder.fit([item["intent"] for item in dataset])  # Fit the label encoder
+
+# Load model for inference
+inference_classifier = classifier.load_model_for_inference()
+
+trained_texts = ["My friend punch a guy in a bar 2 days ago what will happen to him", "What if I call my friends fat lead to him commited sucide will I be punished?", "How much salt do I put on the steak?", "What sentence do woman get if she does abortion?"]
+for sample_text in trained_texts:
+    predicted_intent = classifier.predict_intent(sample_text, inference_classifier)
+    print(f"Predicted intent for '{sample_text}': {predicted_intent}")
