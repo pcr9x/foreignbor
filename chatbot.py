@@ -203,5 +203,5 @@ if __name__ == "__main__":
     print(f"Prolog Query: {prolog_query}")
     
 #    clear_case,
-#    handle_case(injury_case(ella, frank, 40, true, true, true, true, true, false, official)),
+#    handle_case(injury_case(ella, frank, true, true, true, true, true, true, false, official)),
 #    sentence(ella, S).
