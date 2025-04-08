@@ -182,7 +182,7 @@ class IntentClassifier:
         label_map = {f"LABEL_{i}": label for i, label in enumerate(self.label_encoder.classes_)}
         predicted_label = label_map[prediction[0]["label"]]
         confidence = prediction[0]["score"]
-        if confidence < 0.3:
+        if confidence < 0.7:
             return "Out of scope", confidence
         return predicted_label, confidence
 
