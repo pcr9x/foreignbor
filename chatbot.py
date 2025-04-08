@@ -21,6 +21,16 @@ label_encoder = LabelEncoder()
 label_encoder.classes_ = label_classes
 
 # Define intent mappings and required keys
+INTENT_ENTITY_MAP = {
+    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous","Prem", "Torture", "CrimeRelated", "VictimType"],
+    "murder_case" : ["PersonAge", "Intent"," Prem", "Torture", "CrimeRelated", "VictimType", "Death"],
+    "negligent_case" : ["PersonAge", "Circumstance", "Grievous", "Death"],
+    "suicide_cruelty_case" : ["PersonAge", "VictimAge", "Occurred", "Dependent", "UsedCruelty"],
+    "suicide_aid_case" : ["PersonAge", "VictimAge", "Occurred", "SuicideVictimType"],
+    "affray_case" : ["PersonAge", "Death", "Prevented", "Grievous"]
+}
+
+# Define follow-up questions for missing keys (detailed)
 FOLLOW_UP_QUESTIONS = {
     "PersonAge": "What is the age of the person who committed the act? Please confirm whether they are over 18 years old or not, as it can affect sentencing.",
     
@@ -148,6 +158,15 @@ def ask_for_missing_entities_yes_no(extracted_entities, required_keys):
                         break
                     else:
                         print("Please choose from: ascendant, official, official assistant, or other.")
+            elif key == "SuicideVictimType":
+                print(FOLLOW_UP_QUESTIONS[key])
+                while True:
+                    user_response = input("> ").strip().lower()
+                    if user_response in ["child", "incompetent", "uncontrollable"]:
+                        extracted_entities[key] = user_response
+                        break
+                    else:
+                        print("Please choose from: child, incompetent, or uncontrollable.")
             else:
                 print(FOLLOW_UP_QUESTIONS[key])
                 while True:
