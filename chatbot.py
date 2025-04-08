@@ -22,11 +22,11 @@ label_encoder.classes_ = label_classes
 
 # Define intent mappings and required keys
 INTENT_ENTITY_MAP = {
-    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous","Prem", "Torture", "CrimeRelated", "VictimType"],
+    "injury_case" : ["PersonAge", "Injured", "Intent", "Grievous"," Prem", "Torture", "CrimeRelated", "VictimType"],
     "murder_case" : ["PersonAge", "Intent"," Prem", "Torture", "CrimeRelated", "VictimType", "Death"],
-    "negligent_case" : ["PersonAge", "Circumstance", "Grievous", "Death"],
-    "suicide_cruelty_case" : ["PersonAge", "VictimAge", "Occurred", "Dependent", "UsedCruelty"],
-    "suicide_aid_case" : ["PersonAge", "VictimAge", "Occurred", "SuicideVictimType"],
+    "negligent_case" : ["PersonAge", "Grievous", "Death"],
+    "suicide_cruelty_case" : ["PersonAge", "Occurred", "Dependent", "UsedCruelty"],
+    "suicide_aid_case" : ["PersonAge", "Occurred", "SuicideVictimType"],
     "affray_case" : ["PersonAge", "Death", "Prevented", "Grievous"]
 }
 
@@ -86,6 +86,7 @@ FOLLOW_UP_QUESTIONS = {
     
     "Prevented": "Did the accused attempt to stop or lawfully intervene in the situation (e.g., during a group fight)? If they took preventive actions, they may not be held responsible."
 }
+
 
 def classify_intent(user_input):
     """Predicts intent using the BERT classification model."""
@@ -158,15 +159,6 @@ def ask_for_missing_entities_yes_no(extracted_entities, required_keys):
                         break
                     else:
                         print("Please choose from: ascendant, official, official assistant, or other.")
-            elif key == "SuicideVictimType":
-                print(FOLLOW_UP_QUESTIONS[key])
-                while True:
-                    user_response = input("> ").strip().lower()
-                    if user_response in ["child", "incompetent", "uncontrollable"]:
-                        extracted_entities[key] = user_response
-                        break
-                    else:
-                        print("Please choose from: child, incompetent, or uncontrollable.")
             else:
                 print(FOLLOW_UP_QUESTIONS[key])
                 while True:
