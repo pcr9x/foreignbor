@@ -28,11 +28,21 @@ interface Chat {
   id: string;
   title: string;
   last_updated: string;
+  user_id: string; // Assuming each chat has a user_id field
 }
 
 export function AppSidebar() {
   const [chats, setChats] = useState<Chat[]>([]);
   const router = useRouter();
+  const [userId, setUserId] = useState<string | null>(null);
+
+  // Get the user_id from localStorage
+  useEffect(() => {
+    const storedUserId = localStorage.getItem("user_id");
+    if (storedUserId) {
+      setUserId(storedUserId);
+    }
+  }, []);
 
   useEffect(() => {
     async function fetchChats() {
@@ -40,13 +50,21 @@ export function AppSidebar() {
         const res = await fetch("http://localhost:8000/chats");
         if (!res.ok) throw new Error("Failed to fetch chats");
         const data = await res.json();
-        setChats(data.chats || []);
+
+        // Filter chats based on user_id
+        const filteredChats = data.chats.filter(
+          (chat: Chat) => chat.user_id === userId
+        );
+        setChats(filteredChats);
       } catch (error) {
         console.error("Error fetching chats:", error);
       }
     }
-    fetchChats();
-  }, []);
+
+    if (userId) {
+      fetchChats();
+    }
+  }, [userId]); // Fetch chats when userId changes
 
   // Navigate to chat page
   const handleSelectChat = (chatId: string) => {

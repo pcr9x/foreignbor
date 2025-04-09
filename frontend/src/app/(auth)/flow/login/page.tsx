@@ -34,8 +34,13 @@ export default function Login() {
       console.log(data);
 
       if (response.ok) {
-        const accessToken = data.access_token; // directly access access_token from the response
-        localStorage.setItem("access_token", accessToken); // save the token to localStorage
+        const accessToken = data.access_token;
+        const userId = data.user_id; // Extract user_id from the response
+
+        // Save both access_token and user_id in localStorage
+        localStorage.setItem("access_token", accessToken);
+        localStorage.setItem("user_id", userId);
+        
         setIsAuthenticated(true);
 
         router.push("/"); // redirect to home page or wherever

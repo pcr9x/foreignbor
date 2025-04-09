@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import Dict, List, Optional, Any
 from ..database import supabase
-from uuid import uuid4
+from uuid import uuid4, UUID
 from datetime import datetime
 
 # Import the chatbot components
@@ -162,6 +162,7 @@ def query_from_prolog(prolog_query):
 
 
 class MessageInput(BaseModel):
+    userId: UUID
     message: str
     id: str = None
     entities: Optional[Dict[str, Any]] = None
