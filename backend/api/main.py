@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import auth, labor_law
+from .routers import auth, law
 
 app = FastAPI()
 
@@ -18,4 +18,4 @@ def health_check():
     return "Health check complete"
 
 app.include_router(auth.router)
-app.include_router(labor_law.router)
+app.include_router(law.router)

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useAuth } from "../../../context/AuthContext";
 import { Card, CardContent, CardHeader } from "../../../../components/ui/card";
 import { Input } from "../../../../components/ui/input";
 import { Button } from "../../../../components/ui/button";
@@ -8,6 +9,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function Login() {
+  const { setIsAuthenticated } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -34,8 +36,10 @@ export default function Login() {
       if (response.ok) {
         const accessToken = data.access_token; // directly access access_token from the response
         localStorage.setItem("access_token", accessToken); // save the token to localStorage
+        setIsAuthenticated(true);
 
         router.push("/"); // redirect to home page or wherever
+        router.refresh();
       } else {
         setError(data.detail || "Invalid credentials");
       }

@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { ProfileMenu } from "../components/ProfileMenu";
 import "./globals.css";
 import { AppSidebar } from "../components/app-sidebar";
+import { AuthProvider } from "../app/context/AuthContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,34 +52,35 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <SidebarProvider open={open} onOpenChange={setOpen}>
-          <div className="flex flex-col min-h-screen w-full">
-            <ProfileMenu isAuthenticated={isAuthenticated} />
-
-            <div className="flex flex-1 w-full">
-              {isAuthenticated && (
-                <>
-                  <AppSidebar />
-                  {/* Hide SidebarTrigger and Pencil when sidebar is open */}
-                  {!open && (
-                    <div className="flex pt-3 pl-4">
-                      <SidebarTrigger />
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        className={cn("h-7 w-7", "ml-2")}
-                        onClick={redirectToHome}
-                      >
-                        <Pencil />
-                      </Button>
-                    </div>
-                  )}
-                </>
-              )}
-              <main className="flex-1 flex flex-col">{children}</main>
+        <AuthProvider>
+          <SidebarProvider open={open} onOpenChange={setOpen}>
+            <div className="flex flex-col min-h-screen w-full">
+              <ProfileMenu />
+              <div className="flex flex-1 w-full">
+                {isAuthenticated && (
+                  <>
+                    <AppSidebar />
+                    {/* Hide SidebarTrigger and Pencil when sidebar is open */}
+                    {!open && (
+                      <div className="flex pt-3 pl-4">
+                        <SidebarTrigger />
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className={cn("h-7 w-7", "ml-2")}
+                          onClick={redirectToHome}
+                        >
+                          <Pencil />
+                        </Button>
+                      </div>
+                    )}
+                  </>
+                )}
+                <main className="flex-1 flex flex-col">{children}</main>
+              </div>
             </div>
-          </div>
-        </SidebarProvider>
+          </SidebarProvider>
+        </AuthProvider>
       </body>
     </html>
   );

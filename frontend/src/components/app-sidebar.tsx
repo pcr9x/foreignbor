@@ -53,13 +53,22 @@ export function AppSidebar() {
     router.push(`/chat/${chatId}`);
   };
 
-  // Delete chat
+  // Delete chat with confirmation
   const handleDeleteChat = async (chatId: string) => {
-    try {
-      await fetch(`http://localhost:8000/chat/${chatId}`, { method: "DELETE" });
-      setChats((prevChats) => prevChats.filter((chat) => chat.id !== chatId));
-    } catch (error) {
-      console.error("Error deleting chat:", error);
+    const isConfirmed = window.confirm(
+      "Are you sure you want to delete this chat? This action cannot be undone."
+    );
+
+    if (isConfirmed) {
+      try {
+        await fetch(`http://localhost:8000/chat/${chatId}`, {
+          method: "DELETE",
+        });
+        setChats((prevChats) => prevChats.filter((chat) => chat.id !== chatId));
+        router.push("/"); // Redirect to home page or wherever after deletion
+      } catch (error) {
+        console.error("Error deleting chat:", error);
+      }
     }
   };
 
@@ -91,8 +100,8 @@ export function AppSidebar() {
           <SidebarGroupLabel>
             <SidebarTrigger />
           </SidebarGroupLabel>
-          <SidebarGroupAction title="Add Project">
-            <Pencil /> <span className="sr-only">Add Project</span>
+          <SidebarGroupAction title="New Chat" onClick={() => router.push("/")}>
+            <Pencil /> <span className="sr-only">New Chat</span>
           </SidebarGroupAction>
           <SidebarGroupContent>
             <SidebarMenu>
