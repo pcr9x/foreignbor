@@ -8,23 +8,22 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useAuth } from "@/app/context/AuthContext";
 
-interface ProfileMenuProps {
-  isAuthenticated: boolean;
-}
-
-export function ProfileMenu({ isAuthenticated }: ProfileMenuProps) {
+export function ProfileMenu() {
+  const { isAuthenticated, setIsAuthenticated } = useAuth();
   const router = useRouter();
 
   const handleLogout = () => {
     localStorage.removeItem("access_token");
-    router.push("/login");
+    localStorage.removeItem("user_id");
+    setIsAuthenticated(false); // Update the global authentication state
+    router.push("/flow/login"); // Redirect to login
     router.refresh();
   };
 
   return (
     <div className="relative">
-      {/* Profile Button (Fixed on Top-Right) */}
       <div className="fixed top-4 right-4">
         {isAuthenticated ? (
           <DropdownMenu>
@@ -32,14 +31,11 @@ export function ProfileMenu({ isAuthenticated }: ProfileMenuProps) {
               <button className="w-10 h-10 rounded-full bg-blue-500 hover:bg-blue-600 transition" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem onClick={() => router.push("/profile")}>
-                Manage Profile
-              </DropdownMenuItem>
               <DropdownMenuItem onClick={handleLogout}>Logout</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         ) : (
-          <Button onClick={() => router.push("/login")}>Sign In</Button>
+          <Button onClick={() => router.push("/flow/login")}>Sign In</Button>
         )}
       </div>
     </div>

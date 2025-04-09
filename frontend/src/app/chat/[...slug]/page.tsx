@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { use } from "react";
+import { use, useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -17,18 +16,21 @@ interface ChatMessagesResponse {
   messages: Message[];
 }
 
-export default function ChatPage({
+export default function Page({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  // Unwrap the Promise to get the actual params object
-  const resolvedParams = use(params);
-  const chatId = resolvedParams.slug;
+  const { slug } = use(params);
+  const chatId = slug[0];
 
   const [messages, setMessages] = useState<Message[]>([]);
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isSending, setIsSending] = useState<boolean>(false);
+
+  // Create a ref to the messages container
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
 
   // Function to fetch the messages from the backend
   const fetchMessages = async () => {
@@ -46,7 +48,6 @@ export default function ChatPage({
       );
 
       setMessages(sortedMessages);
-      console.log("Sorted messages by ID:", sortedMessages);
     } catch (error) {
       console.error("Error fetching chat messages:", error);
     } finally {
@@ -59,18 +60,26 @@ export default function ChatPage({
     fetchMessages();
   }, [chatId]); // Only re-run when chatId changes
 
+  // Scroll to the bottom of the messages container after messages change
+  useEffect(() => {
+    if (messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTop =
+        messagesContainerRef.current.scrollHeight;
+    }
+  }, [messages]);
+
   // Function to handle sending a message
   const handleSendMessage = async () => {
-    if (!message.trim()) return;
+    if (!message.trim() || isSending) return;
+
+    setIsSending(true);
 
     try {
-      // Looking at your backend, it expects a MessageInput with message and id
+      // Send the message to the backend
       const payload = {
         message: message,
-        id: chatId[0], // Make sure this is a string, not undefined
+        id: chatId, // Make sure this is a string, not undefined
       };
-
-      console.log("Sending payload:", payload); // Debug the payload
 
       const response = await fetch(`http://localhost:8000/generate-answer`, {
         method: "POST",
@@ -88,17 +97,26 @@ export default function ChatPage({
         );
       }
 
-      const data = await response.json();
-      console.log("Response data:", data);
-
-      // Fetch updated messages after sending
-      fetchMessages();
-
       // Clear the message input after sending
       setMessage("");
+
+      // Fetch updated messages to show the new conversation
+      await fetchMessages();
     } catch (error) {
       console.error("Error sending message:", error);
+    } finally {
+      setIsSending(false);
     }
+  };
+
+  // Format the message content with proper line breaks
+  const formatMessage = (content: string) => {
+    return content.split("\n").map((line, i) => (
+      <span key={i}>
+        {line}
+        {i < content.split("\n").length - 1 && <br />}
+      </span>
+    ));
   };
 
   return (
@@ -106,10 +124,15 @@ export default function ChatPage({
       {/* Main content area */}
       <div className="flex-1 flex flex-col items-center p-4 bg-gray-100 overflow-hidden">
         <div className="w-full max-w-2xl bg-white shadow-lg rounded-xl p-6 mb-4 flex-1 flex flex-col">
-          <h2 className="text-xl font-semibold mb-4">Chat Messages</h2>
+          <h2 className="text-xl font-semibold mb-4">
+            Thai Criminal Law Consultation
+          </h2>
 
           {/* Messages container with scroll */}
-          <div className="flex-1 overflow-y-auto mb-4">
+          <div
+            ref={messagesContainerRef} // Attach the ref here
+            className="flex-1 overflow-y-auto mb-4 max-h-[calc(100vh-250px)]"
+          >
             {isLoading ? (
               <div className="flex justify-center items-center h-full">
                 <p>Loading messages...</p>
@@ -120,16 +143,25 @@ export default function ChatPage({
                   key={msg.id}
                   className={`flex ${
                     msg.sender === "user" ? "justify-end" : "justify-start"
-                  } mb-2`}
+                  } mb-3`}
                 >
                   <div
-                    className={`px-4 py-2 rounded-lg ${
+                    className={`px-4 py-2 rounded-lg max-w-[80%] ${
                       msg.sender === "user"
                         ? "bg-blue-500 text-white"
-                        : "bg-gray-300"
+                        : "bg-gray-200"
                     }`}
                   >
-                    {msg.message}
+                    <div className="text-sm mb-1 font-medium">
+                      {msg.sender === "user" ? "You" : "Legal Assistant"}
+                    </div>
+                    <div
+                      className={
+                        msg.sender === "user" ? "text-white" : "text-gray-800"
+                      }
+                    >
+                      {formatMessage(msg.message)}
+                    </div>
                   </div>
                 </div>
               ))
@@ -146,7 +178,7 @@ export default function ChatPage({
       <div className="bg-white border-t border-gray-200 p-4">
         <div className="max-w-2xl mx-auto flex items-center gap-4">
           <Textarea
-            placeholder="Type your message here."
+            placeholder="Type your response here..."
             className="w-full"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -156,13 +188,14 @@ export default function ChatPage({
                 handleSendMessage();
               }
             }}
+            disabled={isSending}
           />
           <Button
             onClick={handleSendMessage}
-            disabled={!message.trim()}
+            disabled={!message.trim() || isSending}
             className="ml-2"
           >
-            Send
+            {isSending ? "Sending..." : "Send"}
           </Button>
         </div>
       </div>

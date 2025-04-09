@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 class IntentClassifier:
-    def __init__(self, model_name="bert-base-uncased", dataset_path="dataset.json", output_dir="./results"):
+    def __init__(self, model_name="bert-base-uncased", dataset_path="dataset.json", output_dir="./backend/results"):
         self.model_name = model_name
         self.dataset_path = dataset_path
         self.output_dir = output_dir

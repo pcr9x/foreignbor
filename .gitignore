@@ -43,3 +43,5 @@
 #logs
 /logs
 /results
+/wandb
+/backend/results/

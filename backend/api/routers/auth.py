@@ -22,9 +22,14 @@ async def signup(request: AuthRequest):
         if auth_response.user is None:
             raise HTTPException(status_code=400, detail="Signup failed")
 
-        # Return success message along with the access token
+        # Extract user_id
+        user_id = auth_response.user.id
+
+        # Return success message along with the access token and user_id
         access_token = auth_response.session.access_token
-        return JSONResponse(content={"access_token": access_token}, status_code=201)
+        return JSONResponse(
+            content={"access_token": access_token, "user_id": user_id}, status_code=201
+        )
 
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
@@ -41,9 +46,14 @@ async def login(request: AuthRequest):
         if auth_response.user is None:
             raise HTTPException(status_code=400, detail="Login failed")
 
-        # Return success message along with the access token
+        # Extract user_id
+        user_id = auth_response.user.id
+
+        # Return success message along with the access token and user_id
         access_token = auth_response.session.access_token
-        return JSONResponse(content={"access_token": access_token}, status_code=200)
+        return JSONResponse(
+            content={"access_token": access_token, "user_id": user_id}, status_code=200
+        )
 
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
