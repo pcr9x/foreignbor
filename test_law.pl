@@ -4,6 +4,7 @@
 :- begin_tests(law).
 :- consult('Law.pl').
 
+% Existing Tests
 test(section_295_basic_injury) :-
     clear_case,
     handle_case(injury_case(john, mark, true, true, true, false, false, false, false, other, false)),
@@ -69,5 +70,34 @@ test(section_299_affray_grievous) :-
     handle_case(affray_case(luke, true, false, false, true)),
     sentence(luke, Sentence),
     Sentence == 'up to 1 year or 2,000 Baht fine or both'.
+
+test(self_defense_case) :-
+    clear_case,
+    handle_case(injury_case(ray, max, true, true, true, false, false, false, false, other, true)),
+    sentence(ray, Sentence),
+    Sentence == "if the act committed is in excess of what is reasonable under the circumstances or in excess of what is necessary, or in excess of what is necessary for the defense, the Court may inflict less punishment to any extent than that provided by the law for such offence. But, if such act occurs out of excitement, fright or fear, the Court may not inflict any punishment at all.".
+
+test(underage_case) :-
+    clear_case,
+    handle_case(injury_case(tim, tom, false, true, true, false, false, false, false, other, false)),
+    sentence(tim, Sentence),
+    Sentence == "The Court shall take into account the sense of responsibility and all other things concerning such person in order to come to decision as to whether it is expedient to pass judgment inflicting punishment on such person or not.".
+
+test(murder_attempt_aggravated) :-
+    clear_case,
+    handle_case(murder_case(ben, vic, true, true, true, false, false, ascendant, false, false)),
+    sentence(ben, Sentence),
+    Sentence == 'Life time imprisonment (attempted)'.
+
+test(negligent_grievous_no_death) :-
+    clear_case,
+    handle_case(negligent_case(amy, bob, true, true, false)),
+    sentence(amy, Sentence),
+    Sentence == 'up to 3 years or 6,000 Baht fine or both'.
+
+test(suicide_aid_nonvulnerable) :-
+    clear_case,
+    handle_case(suicide_aid_case(kim, lynn, true, true, other)),
+    \+ sentence(kim, _).
 
 :- end_tests(law).
