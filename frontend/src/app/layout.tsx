@@ -2,7 +2,7 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Pencil } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
@@ -30,14 +30,34 @@ export default function RootLayout({
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [open, setOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const token = localStorage.getItem("access_token");
     setIsAuthenticated(!!token);
   }, []);
 
-  const redirectToHome = () => {
-    router.push("/");
+  const handlePencilClick = async () => {
+    const match = pathname.match(/\/chat\/([a-zA-Z0-9-]+)/);
+    const chatId = match ? match[1] : null;
+
+    if (!isAuthenticated && chatId) {
+      const confirmDelete = window.confirm(
+        "You are not logged in. This will remove the chat history. Continue?"
+      );
+      if (confirmDelete) {
+        try {
+          await fetch(`http://localhost:8000/chat/${chatId}`, {
+            method: "DELETE",
+          });
+        } catch (error) {
+          console.error("Failed to delete chat:", error);
+        }
+        router.push("/");
+      }
+    } else {
+      router.push("/");
+    }
   };
 
   return (
@@ -57,25 +77,21 @@ export default function RootLayout({
             <div className="flex flex-col min-h-screen w-full">
               <ProfileMenu />
               <div className="flex flex-1 w-full">
-                {isAuthenticated && (
-                  <>
-                    <AppSidebar />
-                    {/* Hide SidebarTrigger and Pencil when sidebar is open */}
-                    {!open && (
-                      <div className="flex pt-3 pl-4">
-                        <SidebarTrigger />
-                        <Button
-                          variant="ghost"
-                          size="icon"
-                          className={cn("h-7 w-7", "ml-2")}
-                          onClick={redirectToHome}
-                        >
-                          <Pencil />
-                        </Button>
-                      </div>
-                    )}
-                  </>
-                )}
+                {isAuthenticated && <AppSidebar />}
+                <div className="flex pt-3 pl-4">
+                  {!open && isAuthenticated && <SidebarTrigger />}
+                  {!open && (
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className={cn("h-7 w-7", "ml-2")}
+                      onClick={handlePencilClick}
+                    >
+                      <Pencil />
+                    </Button>
+                  )}
+                </div>
+
                 <main className="flex-1 flex flex-col">{children}</main>
               </div>
             </div>

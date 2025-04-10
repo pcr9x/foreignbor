@@ -31,7 +31,6 @@ export default function Login() {
       });
 
       const data = await response.json();
-      console.log(data);
 
       if (response.ok) {
         const accessToken = data.access_token;
@@ -58,7 +57,7 @@ export default function Login() {
 
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100">
       <Card className="w-full max-w-sm">
         <CardHeader>
           <h2 className="text-xl font-semibold">Log In</h2>
@@ -101,6 +100,11 @@ export default function Login() {
           </div>
         </CardContent>
       </Card>
+      <div className="mt-4 text-center">
+        <Link href="/" className="underline">
+          Continue as Guest
+        </Link>
+      </div>
     </div>
   );
 }

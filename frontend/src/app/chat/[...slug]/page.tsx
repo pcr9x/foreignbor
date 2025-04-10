@@ -31,6 +31,16 @@ export default function Page({
 
   // Create a ref to the messages container
   const messagesContainerRef = useRef<HTMLDivElement>(null);
+  
+  const [userId, setUserId] = useState<string | null>(null);
+
+  // Get the user_id from localStorage
+  useEffect(() => {
+    const storedUserId = localStorage.getItem("user_id");
+    if (storedUserId) {
+      setUserId(storedUserId);
+    }
+  }, []);
 
   // Function to fetch the messages from the backend
   const fetchMessages = async () => {
@@ -79,6 +89,7 @@ export default function Page({
       const payload = {
         message: message,
         id: chatId, // Make sure this is a string, not undefined
+        user_id: userId, // Include user_id in the payload
       };
 
       const response = await fetch(`http://localhost:8000/generate-answer`, {

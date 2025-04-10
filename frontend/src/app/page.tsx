@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -9,6 +9,16 @@ export default function Home() {
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+
+  const [userId, setUserId] = useState<string | null>(null);
+  
+  // Get the user_id from localStorage
+  useEffect(() => {
+    const storedUserId = localStorage.getItem("user_id");
+    if (storedUserId) {
+      setUserId(storedUserId);
+    }
+  }, []);
 
   // Function to handle submitting the message
   const handleSendMessage = async () => {
@@ -19,7 +29,7 @@ export default function Home() {
     try {
       const response = await fetch("http://localhost:8000/generate-answer", {
         method: "POST",
-        body: JSON.stringify({ message }),
+        body: JSON.stringify({ message, user_id: userId }),
         headers: {
           "Content-Type": "application/json",
         },

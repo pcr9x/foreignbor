@@ -118,7 +118,35 @@ export function AppSidebar() {
           <SidebarGroupLabel>
             <SidebarTrigger />
           </SidebarGroupLabel>
-          <SidebarGroupAction title="New Chat" onClick={() => router.push("/")}>
+          <SidebarGroupAction
+            title="New Chat"
+            onClick={async () => {
+              const storedUserId = localStorage.getItem("user_id");
+              if (!storedUserId) {
+                const isConfirmed = window.confirm(
+                  "You are not logged in. Do you want to delete all chats?"
+                );
+                if (isConfirmed) {
+                  try {
+                    // Delete each chat shown in the sidebar (i.e. for guests)
+                    await Promise.all(
+                      chats.map((chat) =>
+                        fetch(`http://localhost:8000/chat/${chat.id}`, {
+                          method: "DELETE",
+                        })
+                      )
+                    );
+                    setChats([]);
+                    router.push("/");
+                  } catch (error) {
+                    console.error("Error deleting chats:", error);
+                  }
+                }
+              } else {
+                router.push("/");
+              }
+            }}
+          >
             <Pencil /> <span className="sr-only">New Chat</span>
           </SidebarGroupAction>
           <SidebarGroupContent>

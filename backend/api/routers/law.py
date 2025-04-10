@@ -162,10 +162,9 @@ def query_from_prolog(prolog_query):
 
 
 class MessageInput(BaseModel):
-    userId: UUID
     message: str
-    id: str = None
-    entities: Optional[Dict[str, Any]] = None
+    id: Optional[str] = None
+    user_id: Optional[str] = None
 
 
 class ConversationState(BaseModel):
@@ -209,17 +208,18 @@ async def generate_answer(msg: MessageInput):
             try:
                 first_message = user_message if user_message else "Law Inquiry"
                 summarized_title = first_message[:15]
-                chat_response = (
-                    supabase.table("chats")
-                    .insert(
-                        {
-                            "id": conversation_id,
-                            "title": summarized_title,
-                            "last_updated": current_time,
-                        }
-                    )
-                    .execute()
-                )
+                # Create chat data - only include user_id if it exists
+                chat_data = {
+                    "id": conversation_id,
+                    "title": summarized_title,
+                    "last_updated": current_time,
+                }
+
+                # Add user_id to chat_data only if it exists
+                if msg.user_id:
+                    chat_data["user_id"] = msg.user_id
+
+                chat_response = supabase.table("chats").insert(chat_data).execute()
 
                 if not chat_response.data:
                     raise HTTPException(status_code=400, detail="Failed to create chat")
@@ -553,18 +553,7 @@ async def get_chat(chat_id: str):
 @router.delete("/chat/{chat_id}")
 async def delete_chat(chat_id: str):
     try:
-        # Try to delete the conversation state first (if exists)
-        try:
-            supabase.table("conversation_states").delete().eq(
-                "chat_id", chat_id
-            ).execute()
-        except Exception:
-            # If the table doesn't exist or there's an error, continue
-            pass
-
-        # Delete chat and its messages
         supabase.table("chats").delete().eq("id", chat_id).execute()
-
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Error deleting chat: {str(e)}")
 
